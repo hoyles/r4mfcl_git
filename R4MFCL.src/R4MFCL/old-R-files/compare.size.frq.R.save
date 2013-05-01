@@ -1,0 +1,165 @@
+compare.size.frq <-
+function(frq1,frq2,fishery=5)
+##===========================================================================
+## takes two frq files and compares the length and weight data on an annual
+##  basis for the range of years
+## just does the last 15 years at the moment
+##      was compare.frq.size2.r 
+##===========================================================================
+{
+
+  # get data
+  #frq1 <- yyy
+  data1 <- frq1$mat[frq1$mat[,4]==fishery,]
+  #frq2 <- xxx
+  data2 <- frq2$mat[frq2$mat[,4]==fishery,]
+
+  lens <- seq(from=10,length=95,by=2)
+  weis <- 1:200
+
+  # first create an objects for length and weight for each dataset - missing values are zeros
+  len.1 <- matrix(0,nrow=nrow(data1),ncol=97)
+  len.1[,1:2] <- data1[,1:2]
+  wei.1<- matrix(0,nrow=nrow(data1),ncol=202)
+  wei.1[,1:2] <- data1[,1:2]
+ 
+  # first data set
+      for(i in 1:nrow(data1))
+      {
+          #Length data first
+          if(data1[i,7]==-1)
+          {
+          # do nothing as already zeros
+              if(data1[i,8]==-1)
+              {
+                # no weight data either
+              }
+              else
+              {
+                wei.1[i,3:202] <- data1[i,8:207]
+              }
+          }
+          else
+          {
+          len.1[i,3:97] <- data1[i,7:101]
+              if(data1[i,102]==-1)
+              {
+                # no weight data
+              }
+              else
+              {
+                wei.1[i,3:202] <- data1[i,102:301]
+              }
+          }
+      }
+  # second dataset
+  # first create an objects for length and weight for each dataset - missing values are zeros
+  len.2 <- matrix(0,nrow=nrow(data2),ncol=97)
+  len.2[,1:2] <- data2[,1:2]
+  wei.2<- matrix(0,nrow=nrow(data2),ncol=202)
+  wei.2[,1:2] <- data2[,1:2]
+
+      for(i in 1:nrow(data2))
+      {
+          #Length data first
+          if(data2[i,7]==-1)
+          {
+          # do nothing as already zeros
+              if(data2[i,8]==-1)
+              {
+              # no weight data either
+              }
+              else
+              {
+              wei.2[i,3:202] <- data2[i,8:207]
+              }
+          }
+          else
+          {
+          len.2[i,3:97] <- data2[i,7:101]
+              if(data2[i,102]==-1)
+              {
+              # no weight data
+              }
+              else
+              {
+              wei.2[i,3:202] <- data2[i,102:301]
+              }
+          }
+      }
+
+
+
+  # Length plot
+  years <- unique(c(data1[,1],data2[,1]))
+    # if more than 18 years then just do the last 18
+    if(length(years)>18)
+    {
+    p.years <- rev(rev(years)[1:18])
+    }
+    else
+    {
+    p.years <- years
+    }
+
+    #browser()
+
+
+  par(mfcol=c(6,3),mar=c(1,1,1,1),oma=c(0.5,0.5,2,0.5))
+    for(i in 1:length(p.years))
+    {
+    #print(i)
+    tmp.1 <- len.1[len.1[,1]==p.years[i],]
+    #browser()
+    if(is.null(nrow(tmp.1))){
+    len.1.sum <- tmp.1[3:97]}
+    else {
+    len.sum.1 <- apply(tmp.1[,3:97],2,sum)}
+
+    tmp.2 <- len.2[len.2[,1]==p.years[i],]
+    if(is.null(nrow(tmp.2))){
+    len.2.sum <- tmp.2[3:97]}
+    else {
+    len.sum.2 <- apply(tmp.2[,3:97],2,sum)}
+
+    
+     ymax <- max(c(len.sum.1,len.sum.2))
+
+    plot(lens,len.sum.1,ylim=range(c(0,ymax)),type="n",xlab="",ylab="",axes=F)
+    lines(lens,len.sum.1,lwd=2,col=1)
+    lines(lens,len.sum.2,lwd=2,col=2)
+    box()
+    mtext(side=3,outer=F,text=p.years[i],cex=0.7)
+    }
+    mtext(side=3,outer=T,text=paste("length",fishery,sep="-"))
+    savePlot(filename=paste("length",fishery,sep="-"),type="png")
+
+  par(mfcol=c(6,3),mar=c(1,1,1,1))
+
+    for(i in 1:length(p.years))
+    {
+    tmp.1 <- wei.1[wei.1[,1]==p.years[i],]
+    if(is.null(nrow(tmp.1))){
+    wei.1.sum <- tmp.1[3:202]}
+    else {
+    wei.sum.1 <- apply(tmp.1[,3:202],2,sum)}
+
+
+    tmp.2 <- wei.2[wei.2[,1]==p.years[i],]
+    if(is.null(nrow(tmp.2))){
+    wei.2.sum <- tmp.2[3:202]}
+    else {
+    wei.sum.2 <- apply(tmp.2[,3:202],2,sum)}
+
+    ymax <- max(c(wei.sum.1,wei.sum.2))
+
+    plot(weis,wei.sum.1,ylim=range(c(0,ymax)),type="n",xlab="",ylab="",axes=F)
+    lines(weis,wei.sum.1,lwd=2,col=1)
+    lines(weis,wei.sum.2,lwd=2,col=2)
+    box()
+    mtext(side=3,outer=F,text=p.years[i],cex=0.7)
+    }
+    mtext(side=3,outer=T,text=paste("weight",fishery,sep="-"))
+    savePlot(filename=paste("weight",fishery,sep="-"),type="png")
+}
+

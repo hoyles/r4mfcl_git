@@ -1,0 +1,140 @@
+ read.par <-
+function(par.file) {
+  # by Simon Hoyle June 2008
+  # This is only partly built. Needs to be extended so it gets the whole par file into an object. Then do the same for write.par...
+  a <- readLines(par.file)
+  pfl <- as.numeric(unlist(strsplit(a[2],split="[[:blank:]]+"))[-1])
+  par_vsn <- pfl[200]
+  nages <- a[5]
+  afl <- as.numeric(unlist(strsplit(a[7],split="[[:blank:]]+"))[-1])
+  pos1 <- grep("fish flags",a) ; pos2 <- grep("tag flags",a)
+  ffl <- as.numeric(unlist(strsplit(a[pos1+1],split="[[:blank:]]+"))[-1])
+  for (i in (pos1+2):(pos2-1)) {
+    ffl <- rbind(ffl, as.numeric(unlist(strsplit(a[i],split="[[:blank:]]+"))[-1]))
+    }
+  nfisheries <- dim(ffl)[1]
+  pos1 <- pos2 ; if(par_vsn<1042) pos2 <- grep("region control flags",a) else pos2 <- grep("# tag fish rep$",a)
+  tfl <- as.numeric(unlist(strsplit(a[pos1+1],split="[[:blank:]]+"))[-1])
+  for (i in (pos1+2):(pos2-1)) {
+    tfl <- rbind(tfl, as.numeric(unlist(strsplit(a[i],split="[[:blank:]]+"))[-1]))
+    }
+  if(par_vsn==1042) {
+    pos1 <- pos2; pos2 <- grep("# tag fish rep group flags",a)
+    tagfishRR <- as.numeric(unlist(strsplit(a[pos1+1],split="[[:blank:]]+"))[-1])
+    for (i in (pos1+2):(pos2-1)) {
+      tagfishRR <- rbind(tagfishRR, as.numeric(unlist(strsplit(a[i],split="[[:blank:]]+"))[-1]))
+      }
+    pos1 <- pos2; pos2 <- grep("# tag_fish_rep active flags",a)
+    tagfish_group <- as.numeric(unlist(strsplit(a[pos1+1],split="[[:blank:]]+"))[-1])
+    for (i in (pos1+2):(pos2-1)) {
+      tagfish_group <- rbind(tagfish_group, as.numeric(unlist(strsplit(a[i],split="[[:blank:]]+"))[-1]))
+      }
+    pos1 <- pos2; pos2 <- grep("# tag_fish_rep target",a)
+    if(length(pos2) >0) {
+      tagfish_active <- as.numeric(unlist(strsplit(a[pos1+1],split="[[:blank:]]+"))[-1])
+      for (i in (pos1+2):(pos2-1)) {
+        tagfish_active <- rbind(tagfish_active, as.numeric(unlist(strsplit(a[i],split="[[:blank:]]+"))[-1]))
+        }
+      pos1 <- pos2; pos2 <- grep("# tag_fish_rep penalty",a)
+        tagfish_target <- as.numeric(unlist(strsplit(a[pos1+1],split="[[:blank:]]+"))[-1])
+        for (i in (pos1+2):(pos2-1)) {
+          tagfish_target <- rbind(tagfish_target, as.numeric(unlist(strsplit(a[i],split="[[:blank:]]+"))[-1]))
+          }
+      pos1 <- pos2; pos2 <- grep("# region control flags",a)
+        tagfish_penalty <- as.numeric(unlist(strsplit(a[pos1+1],split="[[:blank:]]+"))[-1])
+        for (i in (pos1+2):(pos2-1)) {
+          tagfish_penalty <- rbind(tagfish_penalty, as.numeric(unlist(strsplit(a[i],split="[[:blank:]]+"))[-1]))
+        }
+      } else {
+      pos2 <- grep("# region control flags",a)
+      tagfish_active <- as.numeric(unlist(strsplit(a[pos1+1],split="[[:blank:]]+"))[-1])
+      for (i in (pos1+2):(pos2-1)) {
+        tagfish_active <- rbind(tagfish_active, as.numeric(unlist(strsplit(a[i],split="[[:blank:]]+"))[-1]))
+        }
+      }
+    if(max(tagfish_group) > 0)
+      {
+      loc <- match(unique(sort(tagfish_group)),tagfish_group)
+      tagfishRR_u <- tagfishRR[loc]
+      tagfish_active_u <- tagfish_active[loc]
+      tagfish_target_u <- tagfish_target[loc]
+      tagfish_penalty_u <- tagfish_penalty[loc]
+      }  else  tagfishRR_u <-  tagfish_active_u <- tagfish_target_u <- tagfish_penalty_u <- tagfish_target <- tagfish_penalty <- 0
+    }
+  
+  pos1 <- grep("# percent maturity", a)[1]+1; maturity <- as.numeric(unlist(strsplit(a[pos1],split="[[:blank:]]+"))[-1])
+  pos1 <- grep("# total populations scaling parameter", a)[1]+1; totpop <- as.double(a[pos1])
+  pos1 <- grep("# implicit total populations scaling parameter", a)[1]+1; totpop_implicit <- as.double(a[pos1])
+  pos1 <- grep("# rec init pop level difference", a)[1]+1; rec_init <- as.double(a[pos1])
+  pos1 <- grep("# recruitment times", a)[1]+1; rectimes <- as.numeric(unlist(strsplit(a[pos1],split="[[:blank:]]+"))[-1])
+  pos1 <- grep("# relative recruitment", a)[1]+2; rel_recruitment <- as.numeric(unlist(strsplit(a[pos1],split="[[:blank:]]+"))[-1])
+  pos1 <- grep("# fishery selectivity", a)[1]+1; selectivity <- as.numeric(unlist(strsplit(a[pos1],split="[[:blank:]]+"))[-1])
+  for (i in (pos1+2):(pos1+nfisheries)) {
+    selectivity <- rbind(selectivity, as.numeric(unlist(strsplit(a[i],split="[[:blank:]]+"))[-1]))
+    }
+  pos1 <- grep("# natural mortality coefficient", a)[1]+2; Mbase <- as.double(a[pos1])
+  
+  pos1 <- grep("# effort deviation coefficients", a)[1]; pos1b <- pos1+nfisheries; effdevcoffs <- strsplit(a[(pos1+1):pos1b],split="[[:blank:]]+")
+  rowMax <- max(sapply(effdevcoffs, length)) 
+  effdevcoffs <- do.call(rbind, lapply(effdevcoffs, function(x){ length(x) <- rowMax; as.numeric(x[2:rowMax]) }))
+  pos1 <- grep("# extra fishery parameters ", a)[1]+3; fishpars <- as.numeric(unlist(strsplit(a[pos1],split="[[:blank:]]+"))[-1])
+  for (i in (pos1+1):(pos1+19)) {
+    fishpars <- rbind(fishpars, as.numeric(unlist(strsplit(a[i],split="[[:blank:]]+"))[-1]))
+    }
+  pos1 <- grep("# age-class related parameters", a)[1]+3; agepars <- as.numeric(unlist(strsplit(a[pos1],split="[[:blank:]]+"))[-1])
+  for (i in (pos1+1):(pos1+9)) {
+    agepars <- rbind(agepars, as.numeric(unlist(strsplit(a[i],split="[[:blank:]]+"))[-1]))
+    }
+  pos1 <- grep("# average catchability coefficients", a)[1]+3; meanqs <- as.numeric(unlist(strsplit(a[pos1],split="[[:blank:]]+"))[-1])
+  pos1 <- grep("# Objective function value", a)[1]; obj <- as.double(a[pos1 + 1])
+  pos1 <- grep("# The number of parameters", a)[1]; npars <- as.double(a[pos1 + 1])
+  pos1 <- grep("# Maximum magnitude gradient value", a)[1]; gradient <- as.double(a[pos1 + 1])
+  pos1 <- grep("# The von Bertalanffy parameters", a)[1]; 
+     Lmin <- as.numeric(unlist(strsplit(a[pos1+1],split="[[:blank:]]+"))[1])
+     Lmax <- as.numeric(unlist(strsplit(a[pos1+2],split="[[:blank:]]+"))[1])
+     K    <- as.numeric(unlist(strsplit(a[pos1+3],split="[[:blank:]]+"))[1])
+  pos1 <- grep("# Variance parameters", a)[1]; 
+     growth_vars <- c(as.numeric(unlist(strsplit(a[pos1+1],split="[[:blank:]]+"))[1]),as.numeric(unlist(strsplit(a[pos1+2],split="[[:blank:]]+"))[1]))
+  pos1 <- grep("# extra par for Richards", a)[1]; Richards <- as.double(a[pos1 + 1])
+  pos1 <- grep("# age-class related parameters \\(age_pars\\)", a)[1]; 
+  M_offsets <-  as.numeric(unlist(strsplit(a[pos1+4],split="[[:blank:]]+"))[-1])
+  gr_offsets <- as.numeric(unlist(strsplit(a[pos1+5],split="[[:blank:]]+"))[-1])
+  
+  par.obj <- list(pfl=pfl,
+                  nages=nages,
+                  afl=afl,ffl=ffl,tfl=tfl,
+                  maturity=maturity,totpop=totpop,totpop_implicit,totpop_implicit,
+                  fishpars=fishpars,agepars=agepars,
+                  rec_init=rec_init,rectimes=rectimes,rel_recruitment=rel_recruitment,
+                  Mbase=Mbase,
+                  selectivity=selectivity,
+                  effdevcoffs=effdevcoffs,
+                  meanqs=meanqs,
+                  obj=obj,
+                  npars=npars,
+                  gradient=gradient,
+                  Lmin=Lmin, Lmax=Lmax, K=K, growth_vars=growth_vars, Richards=Richards, gr_offsets=gr_offsets,                  
+                  rem=a[pos2:length(a)])
+  if(par_vsn==1042) {
+    par.obj <- list(pfl=pfl,
+                  nages=nages,
+                  afl=afl,ffl=ffl,tfl=tfl,
+                  tagfishRR_u = tagfishRR_u ,tagfishRR=tagfishRR,
+                  tagfish_active_u = tagfish_active_u, tagfish_active=tagfish_active,
+                  tagfish_target_u=tagfish_target_u, tagfish_target=tagfish_target,
+                  tagfish_penalty_u=tagfish_penalty_u,tagfish_penalty=tagfish_penalty,                  
+                  maturity=maturity,totpop=totpop,totpop_implicit,totpop_implicit,
+                  fishpars=fishpars,agepars=agepars,
+                  rec_init=rec_init,rectimes=rectimes,rel_recruitment=rel_recruitment,
+                  Mbase=Mbase,
+                  selectivity=selectivity,
+                  effdevcoffs=effdevcoffs,
+                  meanqs=meanqs,
+                  obj=obj,
+                  npars=npars,
+                  gradient=gradient,
+                  Lmin=Lmin, Lmax=Lmax, K=K, growth_vars=growth_vars, Richards=Richards, gr_offsets=gr_offsets,                  
+                  rem=a[pos2:length(a)])
+  }
+  return(par.obj)
+  }

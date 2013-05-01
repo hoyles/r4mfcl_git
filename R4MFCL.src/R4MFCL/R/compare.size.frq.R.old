@@ -1,0 +1,269 @@
+compare.size.frq <- function(frq1,frq2,fishery=5, wt=T, prefx = "_")
+{
+# takes two frq files and compares the length and weight data on an annual basis for the range of years
+# just does the last 42 years at the moment
+#
+# modified by SDH July 2010 to generalize and allow for no wt data
+# NMD 30 May 2011 - modified to:
+# - take account of frq file version, 
+# - plots proportions not numbers,
+# - includes an argument "prefx_" to give output plot file a unique name
+# - returns a list object for each frq file with summaries of quantities
+#
+# still needs work to generalize the weight data section
+
+# Get version number of frq file to determine first column for checking data
+vsn1 <- frq1$struct$te
+vsn2 <- frq2$struct$te
+if(vsn1 != vsn2){ 
+  print("Freq files input are different versions!")
+  break()
+}
+col1 <- ifelse(vsn1 < 6, 7, 8)
+
+# get data
+#frq1 <- yyy
+data1 <- frq1$mat[frq1$mat[,4]==fishery,]
+#frq2 <- xxx
+data2 <- frq2$mat[frq2$mat[,4]==fishery,]
+
+lfint <- frq1$dl$lfint
+lffirst <- frq1$dl$lffirst
+lfwidth <- frq1$dl$lfwidth
+
+lens <- seq(from=lffirst,length=lfint,by=lfwidth)
+weis <- 1:200
+
+# first create an objects for length and weight for each dataset - missing values are zeros
+len.1 <- matrix(0,nrow=nrow(data1),ncol=2+lfint)
+len.1[,1:2] <- data1[,1:2]
+wei.1<- matrix(0,nrow=nrow(data1),ncol=202)
+wei.1[,1:2] <- data1[,1:2]
+
+# first data set
+      for(i in 1:nrow(data1))
+      {
+          #Length data first
+          if(data1[i,col1]==-1)
+          {
+          # do nothing as already zeros
+              if(wt==F | data1[i,(col1+1)]==-1)
+              {
+              # no weight data either
+              }
+              else
+              {
+              wei.1[i,3:202] <- data1[i,(col1+1):(col1+200)]
+              }
+          }
+          else
+          {
+          len.1[i,3:(2+lfint)] <- data1[i,col1:(col1-1+lfint)]
+              if(wt==F | data1[i,(col1+lfint)]==-1)
+              {
+              # no weight data
+              }
+              else
+              {
+              wei.1[i,3:202] <- data1[i,(col1+lfint):(col1-1+lfint+200)]
+              }
+          }
+      }
+# second dataset
+# first create an objects for length and weight for each dataset - missing values are zeros
+len.2 <- matrix(0,nrow=nrow(data2),ncol=2+lfint)
+len.2[,1:2] <- data2[,1:2]
+wei.2<- matrix(0,nrow=nrow(data2),ncol=202)
+wei.2[,1:2] <- data2[,1:2]
+
+      for(i in 1:nrow(data2))
+      {
+          #Length data first
+          if(data2[i,col1]==-1)
+          {
+          # do nothing as already zeros
+              if(wt==F | data2[i,(col1+1)]==-1)
+              {
+              # no weight data either
+              }
+              else
+              {
+              wei.2[i,3:202] <- data2[i,(col1+1):(col1+200)]
+              }
+          }
+          else
+          {
+          len.2[i,3:(2+lfint)] <- data2[i,col1:(col1-1+lfint)]
+              if(wt==F | data2[i,(col1+lfint)]==-1)
+              {
+              # no weight data
+              }
+              else
+              {
+              wei.2[i,3:202] <- data2[i,(col1+lfint):(col1-1+lfint+200)]
+              }
+          }
+      }
+
+
+
+# Length plot
+years <- unique(c(data1[,1],data2[,1]))
+    # if more than 42 years then just do the last 42
+    if(length(years)>42){
+     p.years <- rev(rev(years)[1:42])
+    } else {
+    p.years <- years
+    }
+
+    #browser()
+
+x11(height=17,width=28)
+par(mfcol=c(6,7),mar=c(1,1,1,1),oma=c(0.5,0.5,2,0.5))
+    for(i in 1:length(p.years))
+    {
+      #print(i)
+      tmp.1 <- len.1[len.1[,1]==p.years[i],]
+      #browser()
+      if(is.null(nrow(tmp.1))){
+        len.sum.1 <- tmp.1[3:(2+lfint)]
+        len.sum.1[is.na(len.sum.1)] <- 0 
+        if(sum(len.sum.1) > 0.0001){
+          len.sum.1 <- len.sum.1 / sum(len.sum.1)
+        }
+        len.sum.1[len.sum.1 == Inf | len.sum.1 == -Inf] <- 0
+      } else {
+        len.sum.1 <- apply(tmp.1[,3:(2+lfint)],2,sum)
+        len.sum.1[is.na(len.sum.1)] <- 0 
+        if(sum(len.sum.1) > 0.0001){
+          len.sum.1 <- len.sum.1 / sum(len.sum.1)
+        }  
+        len.sum.1[len.sum.1 == Inf | len.sum.1 == -Inf] <- 0
+      }
+  
+      tmp.2 <- len.2[len.2[,1]==p.years[i],]
+      if(is.null(nrow(tmp.2))){
+        len.sum.2 <- tmp.2[3:(2+lfint)]
+        len.sum.2[is.na(len.sum.2)] <- 0 
+        if(sum(len.sum.1) > 0.0001){
+          len.sum.2 <- len.sum.2 / sum(len.sum.2)
+        }
+        len.sum.2[len.sum.2 == Inf | len.sum.2 == -Inf] <- 0
+      } else {
+        len.sum.2 <- apply(tmp.2[,3:(2+lfint)],2,sum)
+        len.sum.2[is.na(len.sum.2)] <- 0 
+        if(sum(len.sum.2) > 0.0001){
+          len.sum.2 <- len.sum.2 / sum(len.sum.2)  
+        }
+        len.sum.2[len.sum.2 == Inf | len.sum.2 == -Inf] <- 0
+      }
+       ymax <- max(c(len.sum.1,len.sum.2))
+  
+      plot(lens,len.sum.1,ylim=range(c(0,ymax)),type="n",xlab="",ylab="",axes=F)
+      lines(lens,len.sum.1,lwd=2,col=1)
+      lines(lens,len.sum.2,lwd=2,col=2)
+      box()
+      mtext(side=3,outer=F,text=p.years[i],cex=0.7)
+      legend(10,ymax,legend=c("Frq1","Frq2"),lty=c(1,1),lwd=c(2,2),col=c(1,2))
+    }
+    mtext(side=3,outer=T,text=paste("length",fishery,sep="-"))
+    savePlot(filename=paste(prefx,"_length",fishery,sep="-"),type="png")
+
+par(mfcol=c(6,7),mar=c(1,1,1,1))
+
+    for(i in 1:length(p.years))
+    {
+      tmp.1 <- wei.1[wei.1[,1]==p.years[i],]
+      if(is.null(nrow(tmp.1))){
+        wei.sum.1 <- tmp.1[3:202]
+        wei.sum.1[is.na(wei.sum.1)] <- 0 
+        if(sum(wei.sum.1) > 0.0001){
+          wei.sum.1 <- wei.sum.1 / sum(wei.sum.1)
+        }
+        wei.sum.1[wei.sum.1 == Inf | wei.sum.1 == -Inf] <- 0
+      } else {
+        wei.sum.1 <- apply(tmp.1[,3:202],2,sum)
+        wei.sum.1[is.na(wei.sum.1)] <- 0 
+        if(sum(wei.sum.1) > 0.0001){
+          wei.sum.1 <- wei.sum.1 / sum(wei.sum.1)
+        }
+        wei.sum.1[wei.sum.1 == Inf | wei.sum.1 == -Inf] <- 0
+      }
+    
+      tmp.2 <- wei.2[wei.2[,1]==p.years[i],]
+      if(is.null(nrow(tmp.2))){
+        wei.sum.2 <- tmp.2[3:202]
+        wei.sum.2[is.na(wei.sum.2)] <- 0 
+        if(sum(wei.sum.2) > 0.0001){
+          wei.sum.2 <- wei.sum.2 / sum(wei.sum.2)
+        }
+        wei.sum.2[wei.sum.2 == Inf | wei.sum.2 == -Inf] <- 0
+      } else {
+        wei.sum.2 <- apply(tmp.2[,3:202],2,sum)
+        wei.sum.2[is.na(wei.sum.2)] <- 0 
+        if(sum(wei.sum.2) > 0.0001){
+          wei.sum.2 <- wei.sum.2 / sum(wei.sum.2)
+        }
+        wei.sum.2[wei.sum.2 == Inf | wei.sum.2 == -Inf] <- 0
+      }
+  
+      ymax <- max(c(wei.sum.1,wei.sum.2))
+  
+      plot(weis,wei.sum.1,ylim=range(c(0,ymax)),type="n",xlab="",ylab="",axes=F)
+      lines(weis,wei.sum.1,lwd=2,col=1)
+      lines(weis,wei.sum.2,lwd=2,col=2)
+      box()
+      mtext(side=3,outer=F,text=p.years[i],cex=0.7)
+      legend(10,ymax,legend=c("Frq1","Frq2"),lty=c(1,1),lwd=c(2,2),col=c(1,2),bty="n")
+    }
+    mtext(side=3,outer=T,text=paste("weight",fishery,sep="-"))
+    savePlot(filename=paste(prefx,"_weight",fishery,sep="-"),type="png")
+
+# Now create summary list objects for quantities in frq files
+
+compr_frq <- list()
+compr_frq[[1]] <- list()
+compr_frq[[2]] <- list()
+lstnames <- c("frq1_lst","frq2_lst")
+names(compr_frq) <- lstnames
+
+# Identify frq objects
+lenfrq <- c("len.1","len.2")
+weifrq <- c("wei.1","wei.2")
+datfrq <- c("data1","data2")
+
+for(i in 1:length(lstnames)){
+# aggregate to the year
+  ann.len <- aggregate(get(lenfrq[i])[,3:(2+lfint)],list(get(lenfrq[i])[,1]),sum)
+  ann.wei <- aggregate(get(weifrq[i])[,3:202],list(get(weifrq[i])[,1]),sum)
+  ann.catch <- aggregate(get(datfrq[i])[,5],list(get(datfrq[i])[,1]),sum)
+  ann.effort <- aggregate(get(datfrq[i])[,6],list(get(datfrq[i])[,1]),sum)
+  ann.cpue <- ann.effort
+  ann.cpue[,2] <- ann.catch[,2]/ann.effort[,2]
+  
+  # setup data.frame to take quantiles for length and weight
+  out.len <- data.frame(year=ann.len[,1],p25=rep(NA,length=nrow(ann.len)),p50=rep(NA,length=nrow(ann.len)),p75=rep(NA,length=nrow(ann.len)))
+  out.wei <- data.frame(year=ann.len[,1],p25=rep(NA,length=nrow(ann.len)),p50=rep(NA,length=nrow(ann.len)),p75=rep(NA,length=nrow(ann.len)))
+  #browser()
+  
+      # get the quantiles of length and weight for each year
+      for(j in 1:nrow(ann.len))
+      {
+          if(rowSums(ann.len[j,2:96])==0)
+          {
+          } else {
+          out.len[j,2:4] <- quantile(rep(lens,ann.len[j,2:96]),probs=c(0.25,0.5,0.75))
+          }
+  
+          if(rowSums(ann.wei[j,2:96])==0)
+          {
+          } else {
+          out.wei[j,2:4] <- quantile(rep(weis,ann.wei[j,2:201]),probs=c(0.25,0.5,0.75))
+          }
+      } 
+  compr_frq[[i]] <- list(fish=fishery,len=out.len,wei=out.wei,catch=ann.catch,effort=ann.effort,cpue=ann.cpue)
+}
+return(compr_frq)
+# End of Funtion
+}
+#########################################################################################################################################################

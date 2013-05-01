@@ -1,0 +1,17 @@
+
+x86_64-unknown-linux-gnu, R 2.13.0, Sat Dec 10 07:04:44 2011
+
+* installing *source* package 'R4MFCL' ...
+** R
+** preparing package for lazy loading
+** help
+Warning: /home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/man/alb.pagocatch_2009.Rd:52: unexpected END_OF_INPUT '
+'
+*** installing help indices
+** building package indices ...
+** testing if installed package can be loaded
+
+x86_64-unknown-linux-gnu, R 2.13.0, Sat Dec 10 07:04:46 2011
+
+
+* DONE (R4MFCL)

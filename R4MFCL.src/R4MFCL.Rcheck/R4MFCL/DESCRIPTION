@@ -1,0 +1,11 @@
+Package: R4MFCL
+Title: R funcions for MFCL
+Version: 0.1
+Author: Simon Hoyle
+Description: miscellaneous funtions for dealing with input to and
+        output from MFCL
+Maintainer: <simonh@spc.int>
+License: GPL-2
+Date: 2011-05-25
+Packaged: Sun Jun 5 11:11:18 NCT 2011, P Kleiber
+Built: R 2.13.0; ; 2011-12-09 20:04:44 UTC; unix

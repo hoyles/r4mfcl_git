@@ -1,0 +1,1706 @@
+* using log directory '/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL.Rcheck'
+* using R version 2.13.0 (2011-04-13)
+* using platform: x86_64-unknown-linux-gnu (64-bit)
+* using session charset: ASCII
+* checking for file 'R4MFCL/DESCRIPTION' ... OK
+* this is package 'R4MFCL' version '0.1'
+* checking package name space information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking for executable files ... OK
+* checking whether package 'R4MFCL' can be installed ... WARNING
+Found the following significant warnings:
+  Warning: /home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/man/alb.pagocatch_2009.Rd:52: unexpected END_OF_INPUT '
+See '/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL.Rcheck/00install.out' for details.
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the name space can be loaded with stated dependencies ... OK
+* checking whether the name space can be unloaded cleanly ... OK
+* checking for unstated dependencies in R code ... WARNING
+'library' or 'require' call not declared from: RODBC
+See the information on DESCRIPTION files in the chapter 'Creating R
+packages' of the 'Writing R Extensions' manual.
+* checking S3 generic/method consistency ... WARNING
+merge:
+  function(x, y, ...)
+merge.frq:
+  function(frq.obj, oldf, newf, mergelf)
+
+merge:
+  function(x, y, ...)
+merge.tag:
+  function(tag.obj, oldf, newf)
+
+sort:
+  function(x, decreasing, ...)
+sort.frq:
+  function(frq.obj)
+
+plot:
+  function(x, ...)
+plot.F.time:
+  function(plotdir, plotrep, inifile, plotname, plottype, COL)
+
+plot:
+  function(x, ...)
+plot.Kobe:
+  function(plotdir, plotrep, type, plotname, plottype, COL)
+
+plot:
+  function(x, ...)
+plot.Kobe.template.bw:
+  function(Type)
+
+plot:
+  function(x, ...)
+plot.Kobe.template.col:
+  function(Type)
+
+plot:
+  function(x, ...)
+plot.base.comparison:
+  function(baseres, labs)
+
+plot:
+  function(x, ...)
+plot.biomass:
+  function(plotdir, plotrep, varfile, type, plotname, plottype)
+
+plot:
+  function(x, ...)
+plot.biomass.combined:
+  function(plotdir, plotrep, varfile, type, plotname, plottype)
+
+plot:
+  function(x, ...)
+plot.fishery.impact.r:
+  function(plotdir, type, plotrep, impnames, plotname, plottype, COL)
+
+plot:
+  function(x, ...)
+plot.mfcl.betyft09:
+  function(lims)
+
+plot:
+  function(x, ...)
+plot.nofishing:
+  function(plotdir, plotrep, type, plotname, plottype, COL)
+
+plot:
+  function(x, ...)
+plot.nofishing.combined:
+  function(plotdir, plotrep, type, plotname, plottype, COL)
+
+plot:
+  function(x, ...)
+plot.pacific.WCPFC:
+  function(plot_title, lims)
+
+plot:
+  function(x, ...)
+plot.pacific.alb:
+  function(plot_title, eez_dir, plot_eez)
+
+plot:
+  function(x, ...)
+plot.pacific.skj:
+  function(plot_title)
+
+plot:
+  function(x, ...)
+plot.pacific.species:
+  function(plot_title, uselims, add.WCPFC, add.EPO, sp, add.EEZ,
+           eez_file)
+
+plot:
+  function(x, ...)
+plot.pacific.yft:
+  function(plot_title, lims, add.WCPFC)
+
+plot:
+  function(x, ...)
+plot.recruitment:
+  function(plotdir, plotrep, varfile, plotname, plottype)
+
+plot:
+  function(x, ...)
+plot.recruitment.combined:
+  function(plotdir, plotrep, varfile, plotname, plottype)
+
+See section 'Generic functions and methods' of the 'Writing R
+Extensions' manual.
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... NOTE
+add.cpue.frq: no visible binding for global variable 'out.data'
+alb.clean.lfdata: no visible binding for global variable 'lfd'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/alb.clean.lfdata.R:5)
+carry.effort.frq: no visible binding for global variable 'out.data'
+clean.lfdata: no visible binding for global variable 'lfd'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/clean.lfdata.R:5)
+compare.frq.size: no visible binding for global variable 'years'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/old.compare.frq.size.R:51)
+compare.size.frq: no visible global function definition for 'jpegfile'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/compare.size.frq.R:226)
+compare.size.frq: no visible global function definition for 'jpegfile'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/compare.size.frq.R:302)
+condor.go: no visible binding for global variable 'condor_files'
+condor.go2: no visible binding for global variable 'suball'
+condor.go2: no visible binding for global variable 'condor_files'
+create.ver6.frq: no visible binding for global variable 'base.frq'
+frq.remove.size.or.weight.data: no visible binding for global variable
+  'test.data'
+get.critical.age: no visible binding for global variable 'Base.rep'
+get.length.output: no visible binding for global variable 'lfdata'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/get.length.output.R:21)
+get.length.output: no visible binding for global variable 'region'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/get.length.output.R:21)
+get.length.output: no visible binding for global variable 'region'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/get.length.output.R:22)
+get.length.output: no visible binding for global variable 'lfdata'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/get.length.output.R:23)
+get.length.output: no visible binding for global variable 'strat'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/get.length.output.R:42)
+get.length.output: no visible binding for global variable 'strat'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/get.length.output.R:44)
+get.tag.structure: no visible global function definition for 'getnums'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/get.tag.structure.R:52)
+get.tag.structure: no visible global function definition for 'getnums'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/get.tag.structure.R:53)
+get.tag.structure: no visible global function definition for 'getnums'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/get.tag.structure.R:59)
+get.tag.structure: no visible global function definition for 'scanText'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/get.tag.structure.R:83)
+get.tag.structure: no visible global function definition for 'scanText'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/get.tag.structure.R:84)
+get.weight.output: no visible binding for global variable 'wtdata'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/get.weight.output.R:18)
+get.weight.output: no visible binding for global variable 'region'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/get.weight.output.R:18)
+get.weight.output: no visible binding for global variable 'region'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/get.weight.output.R:19)
+get.weight.output: no visible binding for global variable 'wtdata'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/get.weight.output.R:20)
+labels_store: no visible binding for global variable 'basecase.labels'
+load.LFdata: no visible global function definition for
+  'odbcDriverConnect'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/load.LFdata.R:6)
+load.LFdata: no visible global function definition for 'sqlTables'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/load.LFdata.R:7)
+load.LFdata: no visible global function definition for 'odbcGetInfo'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/load.LFdata.R:8)
+load.LFdata: no visible global function definition for 'sqlQuery'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/load.LFdata.R:11)
+make.projection.betyft.frq: no visible binding for global variable
+  'base.frq'
+map_all_pacific: no visible global function definition for 'map'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/map_all_pacific.R:14)
+map_all_pacific: no visible global function definition for 'map'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/map_all_pacific.R:15)
+old.condor.go: no visible binding for global variable 'suball'
+old.condor.go: no visible binding for global variable 'condor_files'
+oldsetup: no visible binding for global variable 'pl2'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/oldsetup.R:37)
+oldsetup: no visible binding for global variable 'pl2'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/oldsetup.R:38)
+oldsetup: no visible binding for global variable 'basedir'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/oldsetup.R:76)
+pagocatch: no visible binding for global variable 'pl2'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/pagocatch.R:10)
+pagocatch: no visible binding for global variable 'pl2'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/pagocatch.R:11)
+plot.Kobe: no visible binding for global variable 'test'
+plot.biomass: no visible binding for global variable 'test'
+plot.biomass.combined: no visible binding for global variable 'test'
+plot.fishery.impact.r: no visible binding for global variable 'testq0'
+plot.fishery.impact.r: no visible binding for global variable
+  'fish.ann'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/plot.fishery.impact.r.R:69)
+plot.fishery.impact.r: no visible binding for global variable
+  'fish.ann'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/plot.fishery.impact.r.R:73)
+plot.fishery.impact.r: no visible binding for global variable
+  'fish.ann'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/plot.fishery.impact.r.R:80)
+plot.fishery.impact.r: no visible binding for global variable
+  'nofish.ann'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/plot.fishery.impact.r.R:85)
+plot.fishery.impact.r: no visible binding for global variable
+  'fish.ann'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/plot.fishery.impact.r.R:85)
+plot.mfcl.betyft09: no visible global function definition for 'map'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/plot.mfcl.betyft09.R:15)
+plot.mfcl.betyft09: no visible global function definition for 'map'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/plot.mfcl.betyft09.R:16)
+plot.nofishing: no visible binding for global variable 'testq0'
+plot.nofishing.combined: no visible binding for global variable
+  'testq0'
+plot.pacific.WCPFC: no visible global function definition for 'map'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/plot.pacific.WCPFC.R:14)
+plot.pacific.WCPFC: no visible global function definition for 'map'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/plot.pacific.WCPFC.R:15)
+plot.pacific.alb: no visible global function definition for 'map'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/plot.pacific.alb.R:21)
+plot.pacific.alb: no visible global function definition for 'map'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/plot.pacific.alb.R:22-23)
+plot.pacific.skj: no visible global function definition for 'map'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/plot.pacific.skj.R:9)
+plot.pacific.skj: no visible global function definition for 'map'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/plot.pacific.skj.R:10)
+plot.pacific.species: no visible global function definition for 'map'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/plot.pacific.species.R:21)
+plot.pacific.species: no visible global function definition for 'map'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/plot.pacific.species.R:22-24)
+plot.pacific.species: no visible global function definition for 'map'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/plot.pacific.species.R:26-28)
+plot.pacific.yft: no visible global function definition for 'map'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/plot.pacific.yft.R:14)
+plot.pacific.yft: no visible global function definition for 'map'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/plot.pacific.yft.R:15)
+plot.recruitment: no visible binding for global variable 'test'
+plot.recruitment.combined: no visible binding for global variable
+  'test'
+read.ini: no visible global function definition for 'scanText'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/read.ini.R:14-15)
+read.ini: no visible global function definition for 'scanText'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/read.ini.R:20)
+read.ini: no visible global function definition for 'scanText'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/read.ini.R:26)
+read.ini: no visible global function definition for 'scanText'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/read.ini.R:32)
+read.ini: no visible global function definition for 'scanText'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/read.ini.R:38)
+read.ini: no visible global function definition for 'scanText'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/read.ini.R:44)
+read.ini: no visible global function definition for 'scanText'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/read.ini.R:49)
+read.ini: no visible global function definition for 'scanText'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/read.ini.R:57)
+read.ini: no visible global function definition for 'scanText'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/read.ini.R:60)
+read.ini: no visible global function definition for 'scanText'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/read.ini.R:63)
+read.ini: no visible global function definition for 'scanText'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/read.ini.R:74)
+read.ini: no visible global function definition for 'scanText'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/read.ini.R:80)
+read.ini: no visible global function definition for 'scanText'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/read.ini.R:84)
+read.ini: no visible global function definition for 'scanText'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/read.ini.R:86)
+reconstruct.frq.ce: no visible binding for global variable 'out.data'
+reconstruct.frq.ce2008: no visible binding for global variable
+  'out.data'
+retro.frq: no visible binding for global variable 'yr'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/retro.frq.R:6)
+run.profile: no visible global function definition for
+  'gocondor.commandline.alb'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/run.profile.R:11)
+setup.cpue: no visible binding for global variable 'psfshries'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/setup.cpue.R:12)
+setup.cpue: no visible binding for global variable 'psfshries'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/setup.cpue.R:15)
+setup.growth: no visible binding for global variable 'fixVB'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/setup.growth.R:4-8)
+setup.growth: no visible binding for global variable 'startVB'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/setup.growth.R:9)
+setup.growth: no visible binding for global variable 'startVB'
+  (/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/R/setup.growth.R:10)
+* checking Rd files ... WARNING
+prepare_Rd: Convert.frq.ver6.Rd:7-9: Dropping empty section \description
+prepare_Rd: Convert.frq.ver6.Rd:19-21: Dropping empty section \details
+prepare_Rd: Convert.frq.ver6.Rd:22-28: Dropping empty section \value
+prepare_Rd: Convert.frq.ver6.Rd:35-37: Dropping empty section \note
+prepare_Rd: Convert.frq.ver6.Rd:32-34: Dropping empty section \author
+prepare_Rd: Convert.frq.ver6.Rd:29-31: Dropping empty section \references
+prepare_Rd: Convert.frq.ver6.Rd:41-43: Dropping empty section \seealso
+checkRd: (5) Convert.frq.ver6.Rd:0-54: Must have a \description
+prepare_Rd: NZtrollglm.Rd:7-9: Dropping empty section \description
+prepare_Rd: NZtrollglm.Rd:25-27: Dropping empty section \details
+prepare_Rd: NZtrollglm.Rd:28-34: Dropping empty section \value
+prepare_Rd: NZtrollglm.Rd:41-43: Dropping empty section \note
+prepare_Rd: NZtrollglm.Rd:38-40: Dropping empty section \author
+prepare_Rd: NZtrollglm.Rd:35-37: Dropping empty section \references
+prepare_Rd: NZtrollglm.Rd:47-49: Dropping empty section \seealso
+checkRd: (5) NZtrollglm.Rd:0-60: Must have a \description
+prepare_Rd: add.catch.frq.Rd:7-9: Dropping empty section \description
+prepare_Rd: add.catch.frq.Rd:25-27: Dropping empty section \details
+prepare_Rd: add.catch.frq.Rd:28-34: Dropping empty section \value
+prepare_Rd: add.catch.frq.Rd:41-43: Dropping empty section \note
+prepare_Rd: add.catch.frq.Rd:38-40: Dropping empty section \author
+prepare_Rd: add.catch.frq.Rd:35-37: Dropping empty section \references
+prepare_Rd: add.catch.frq.Rd:47-49: Dropping empty section \seealso
+checkRd: (5) add.catch.frq.Rd:0-60: Must have a \description
+prepare_Rd: add.cpue.frq.Rd:7-9: Dropping empty section \description
+prepare_Rd: add.cpue.frq.Rd:28-30: Dropping empty section \details
+prepare_Rd: add.cpue.frq.Rd:31-37: Dropping empty section \value
+prepare_Rd: add.cpue.frq.Rd:44-46: Dropping empty section \note
+prepare_Rd: add.cpue.frq.Rd:41-43: Dropping empty section \author
+prepare_Rd: add.cpue.frq.Rd:38-40: Dropping empty section \references
+prepare_Rd: add.cpue.frq.Rd:50-52: Dropping empty section \seealso
+checkRd: (5) add.cpue.frq.Rd:0-63: Must have a \description
+prepare_Rd: add.flag.Rd:7-9: Dropping empty section \description
+prepare_Rd: add.flag.Rd:31-33: Dropping empty section \details
+prepare_Rd: add.flag.Rd:34-40: Dropping empty section \value
+prepare_Rd: add.flag.Rd:47-49: Dropping empty section \note
+prepare_Rd: add.flag.Rd:44-46: Dropping empty section \author
+prepare_Rd: add.flag.Rd:41-43: Dropping empty section \references
+prepare_Rd: add.flag.Rd:53-55: Dropping empty section \seealso
+checkRd: (5) add.flag.Rd:0-66: Must have a \description
+prepare_Rd: alb.clean.lfdata.Rd:7-9: Dropping empty section \description
+prepare_Rd: alb.clean.lfdata.Rd:19-21: Dropping empty section \details
+prepare_Rd: alb.clean.lfdata.Rd:22-28: Dropping empty section \value
+prepare_Rd: alb.clean.lfdata.Rd:35-37: Dropping empty section \note
+prepare_Rd: alb.clean.lfdata.Rd:32-34: Dropping empty section \author
+prepare_Rd: alb.clean.lfdata.Rd:29-31: Dropping empty section \references
+prepare_Rd: alb.clean.lfdata.Rd:41-43: Dropping empty section \seealso
+checkRd: (5) alb.clean.lfdata.Rd:0-54: Must have a \description
+prepare_Rd: alb.initial_clean_2008.Rd:7-9: Dropping empty section \description
+prepare_Rd: alb.initial_clean_2008.Rd:19-21: Dropping empty section \details
+prepare_Rd: alb.initial_clean_2008.Rd:22-28: Dropping empty section \value
+prepare_Rd: alb.initial_clean_2008.Rd:35-37: Dropping empty section \note
+prepare_Rd: alb.initial_clean_2008.Rd:32-34: Dropping empty section \author
+prepare_Rd: alb.initial_clean_2008.Rd:29-31: Dropping empty section \references
+prepare_Rd: alb.initial_clean_2008.Rd:41-43: Dropping empty section \seealso
+checkRd: (5) alb.initial_clean_2008.Rd:0-54: Must have a \description
+prepare_Rd: alb.initial_clean_2009.Rd:7-9: Dropping empty section \description
+prepare_Rd: alb.initial_clean_2009.Rd:19-21: Dropping empty section \details
+prepare_Rd: alb.initial_clean_2009.Rd:22-28: Dropping empty section \value
+prepare_Rd: alb.initial_clean_2009.Rd:35-37: Dropping empty section \note
+prepare_Rd: alb.initial_clean_2009.Rd:32-34: Dropping empty section \author
+prepare_Rd: alb.initial_clean_2009.Rd:29-31: Dropping empty section \references
+prepare_Rd: alb.initial_clean_2009.Rd:41-43: Dropping empty section \seealso
+checkRd: (5) alb.initial_clean_2009.Rd:0-54: Must have a \description
+prepare_Rd: alb.initial_clean_2011.Rd:7-9: Dropping empty section \description
+prepare_Rd: alb.initial_clean_2011.Rd:19-21: Dropping empty section \details
+prepare_Rd: alb.initial_clean_2011.Rd:22-28: Dropping empty section \value
+prepare_Rd: alb.initial_clean_2011.Rd:35-37: Dropping empty section \note
+prepare_Rd: alb.initial_clean_2011.Rd:32-34: Dropping empty section \author
+prepare_Rd: alb.initial_clean_2011.Rd:29-31: Dropping empty section \references
+prepare_Rd: alb.initial_clean_2011.Rd:41-43: Dropping empty section \seealso
+checkRd: (5) alb.initial_clean_2011.Rd:0-54: Must have a \description
+prepare_Rd: alb.pagocatch_2009.Rd:52: unexpected END_OF_INPUT '
+'
+prepare_Rd: alb.pagocatch_2009.Rd:7-9: Dropping empty section \description
+prepare_Rd: alb.pagocatch_2009.Rd:19-21: Dropping empty section \details
+prepare_Rd: alb.pagocatch_2009.Rd:22-28: Dropping empty section \value
+prepare_Rd: alb.pagocatch_2009.Rd:35-37: Dropping empty section \note
+prepare_Rd: alb.pagocatch_2009.Rd:32-34: Dropping empty section \author
+prepare_Rd: alb.pagocatch_2009.Rd:29-31: Dropping empty section \references
+prepare_Rd: alb.pagocatch_2009.Rd:41-43: Dropping empty section \seealso
+checkRd: (5) alb.pagocatch_2009.Rd:0-53: Must have a \description
+prepare_Rd: carry.effort.frq.Rd:7-9: Dropping empty section \description
+prepare_Rd: carry.effort.frq.Rd:25-27: Dropping empty section \details
+prepare_Rd: carry.effort.frq.Rd:28-34: Dropping empty section \value
+prepare_Rd: carry.effort.frq.Rd:41-43: Dropping empty section \note
+prepare_Rd: carry.effort.frq.Rd:38-40: Dropping empty section \author
+prepare_Rd: carry.effort.frq.Rd:35-37: Dropping empty section \references
+prepare_Rd: carry.effort.frq.Rd:47-49: Dropping empty section \seealso
+checkRd: (5) carry.effort.frq.Rd:0-60: Must have a \description
+prepare_Rd: change.fishflag.Rd:7-9: Dropping empty section \description
+prepare_Rd: change.fishflag.Rd:28-30: Dropping empty section \details
+prepare_Rd: change.fishflag.Rd:31-37: Dropping empty section \value
+prepare_Rd: change.fishflag.Rd:44-46: Dropping empty section \note
+prepare_Rd: change.fishflag.Rd:41-43: Dropping empty section \author
+prepare_Rd: change.fishflag.Rd:38-40: Dropping empty section \references
+prepare_Rd: change.fishflag.Rd:50-52: Dropping empty section \seealso
+checkRd: (5) change.fishflag.Rd:0-63: Must have a \description
+prepare_Rd: change.flag.Rd:7-9: Dropping empty section \description
+prepare_Rd: change.flag.Rd:28-30: Dropping empty section \details
+prepare_Rd: change.flag.Rd:31-37: Dropping empty section \value
+prepare_Rd: change.flag.Rd:44-46: Dropping empty section \note
+prepare_Rd: change.flag.Rd:41-43: Dropping empty section \author
+prepare_Rd: change.flag.Rd:38-40: Dropping empty section \references
+prepare_Rd: change.flag.Rd:50-52: Dropping empty section \seealso
+checkRd: (5) change.flag.Rd:0-63: Must have a \description
+prepare_Rd: change.negflag.Rd:7-9: Dropping empty section \description
+prepare_Rd: change.negflag.Rd:28-30: Dropping empty section \details
+prepare_Rd: change.negflag.Rd:31-37: Dropping empty section \value
+prepare_Rd: change.negflag.Rd:44-46: Dropping empty section \note
+prepare_Rd: change.negflag.Rd:41-43: Dropping empty section \author
+prepare_Rd: change.negflag.Rd:38-40: Dropping empty section \references
+prepare_Rd: change.negflag.Rd:50-52: Dropping empty section \seealso
+checkRd: (5) change.negflag.Rd:0-63: Must have a \description
+prepare_Rd: change.size.frq.Rd:7-9: Dropping empty section \description
+prepare_Rd: change.size.frq.Rd:31-33: Dropping empty section \details
+prepare_Rd: change.size.frq.Rd:34-40: Dropping empty section \value
+prepare_Rd: change.size.frq.Rd:47-49: Dropping empty section \note
+prepare_Rd: change.size.frq.Rd:44-46: Dropping empty section \author
+prepare_Rd: change.size.frq.Rd:41-43: Dropping empty section \references
+prepare_Rd: change.size.frq.Rd:53-55: Dropping empty section \seealso
+checkRd: (5) change.size.frq.Rd:0-66: Must have a \description
+prepare_Rd: change_data.Rd:7-9: Dropping empty section \description
+prepare_Rd: change_data.Rd:28-30: Dropping empty section \details
+prepare_Rd: change_data.Rd:31-37: Dropping empty section \value
+prepare_Rd: change_data.Rd:44-46: Dropping empty section \note
+prepare_Rd: change_data.Rd:41-43: Dropping empty section \author
+prepare_Rd: change_data.Rd:38-40: Dropping empty section \references
+prepare_Rd: change_data.Rd:50-52: Dropping empty section \seealso
+checkRd: (5) change_data.Rd:0-63: Must have a \description
+prepare_Rd: check.eff.devs.Rd:7-9: Dropping empty section \description
+prepare_Rd: check.eff.devs.Rd:28-30: Dropping empty section \details
+prepare_Rd: check.eff.devs.Rd:31-37: Dropping empty section \value
+prepare_Rd: check.eff.devs.Rd:44-46: Dropping empty section \note
+prepare_Rd: check.eff.devs.Rd:41-43: Dropping empty section \author
+prepare_Rd: check.eff.devs.Rd:38-40: Dropping empty section \references
+prepare_Rd: check.eff.devs.Rd:50-52: Dropping empty section \seealso
+checkRd: (5) check.eff.devs.Rd:0-63: Must have a \description
+prepare_Rd: check_flag_value.Rd:7-9: Dropping empty section \description
+prepare_Rd: check_flag_value.Rd:31-33: Dropping empty section \details
+prepare_Rd: check_flag_value.Rd:34-40: Dropping empty section \value
+prepare_Rd: check_flag_value.Rd:47-49: Dropping empty section \note
+prepare_Rd: check_flag_value.Rd:44-46: Dropping empty section \author
+prepare_Rd: check_flag_value.Rd:41-43: Dropping empty section \references
+prepare_Rd: check_flag_value.Rd:53-55: Dropping empty section \seealso
+checkRd: (5) check_flag_value.Rd:0-66: Must have a \description
+prepare_Rd: clean.lfdata.Rd:7-9: Dropping empty section \description
+prepare_Rd: clean.lfdata.Rd:19-21: Dropping empty section \details
+prepare_Rd: clean.lfdata.Rd:22-28: Dropping empty section \value
+prepare_Rd: clean.lfdata.Rd:35-37: Dropping empty section \note
+prepare_Rd: clean.lfdata.Rd:32-34: Dropping empty section \author
+prepare_Rd: clean.lfdata.Rd:29-31: Dropping empty section \references
+prepare_Rd: clean.lfdata.Rd:41-43: Dropping empty section \seealso
+checkRd: (5) clean.lfdata.Rd:0-54: Must have a \description
+prepare_Rd: compare.ce.frq.Rd:7-9: Dropping empty section \description
+prepare_Rd: compare.ce.frq.Rd:31-33: Dropping empty section \details
+prepare_Rd: compare.ce.frq.Rd:34-40: Dropping empty section \value
+prepare_Rd: compare.ce.frq.Rd:47-49: Dropping empty section \note
+prepare_Rd: compare.ce.frq.Rd:44-46: Dropping empty section \author
+prepare_Rd: compare.ce.frq.Rd:41-43: Dropping empty section \references
+prepare_Rd: compare.ce.frq.Rd:53-55: Dropping empty section \seealso
+checkRd: (5) compare.ce.frq.Rd:0-66: Must have a \description
+prepare_Rd: compare.frq.Rd:7-9: Dropping empty section \description
+prepare_Rd: compare.frq.Rd:31-33: Dropping empty section \details
+prepare_Rd: compare.frq.Rd:34-40: Dropping empty section \value
+prepare_Rd: compare.frq.Rd:47-49: Dropping empty section \note
+prepare_Rd: compare.frq.Rd:44-46: Dropping empty section \author
+prepare_Rd: compare.frq.Rd:41-43: Dropping empty section \references
+prepare_Rd: compare.frq.Rd:53-55: Dropping empty section \seealso
+checkRd: (5) compare.frq.Rd:0-66: Must have a \description
+prepare_Rd: compare.size.frq.Rd:7-9: Dropping empty section \description
+prepare_Rd: compare.size.frq.Rd:25-27: Dropping empty section \details
+prepare_Rd: compare.size.frq.Rd:28-34: Dropping empty section \value
+prepare_Rd: compare.size.frq.Rd:41-43: Dropping empty section \note
+prepare_Rd: compare.size.frq.Rd:38-40: Dropping empty section \author
+prepare_Rd: compare.size.frq.Rd:35-37: Dropping empty section \references
+prepare_Rd: compare.size.frq.Rd:47-49: Dropping empty section \seealso
+checkRd: (5) compare.size.frq.Rd:0-60: Must have a \description
+prepare_Rd: compare.size.frq2.Rd:7-9: Dropping empty section \description
+prepare_Rd: compare.size.frq2.Rd:28-30: Dropping empty section \details
+prepare_Rd: compare.size.frq2.Rd:31-37: Dropping empty section \value
+prepare_Rd: compare.size.frq2.Rd:44-46: Dropping empty section \note
+prepare_Rd: compare.size.frq2.Rd:41-43: Dropping empty section \author
+prepare_Rd: compare.size.frq2.Rd:38-40: Dropping empty section \references
+prepare_Rd: compare.size.frq2.Rd:50-52: Dropping empty section \seealso
+checkRd: (5) compare.size.frq2.Rd:0-63: Must have a \description
+prepare_Rd: compare_par_flags.Rd:7-9: Dropping empty section \description
+prepare_Rd: compare_par_flags.Rd:25-27: Dropping empty section \details
+prepare_Rd: compare_par_flags.Rd:28-34: Dropping empty section \value
+prepare_Rd: compare_par_flags.Rd:41-43: Dropping empty section \note
+prepare_Rd: compare_par_flags.Rd:38-40: Dropping empty section \author
+prepare_Rd: compare_par_flags.Rd:35-37: Dropping empty section \references
+prepare_Rd: compare_par_flags.Rd:47-49: Dropping empty section \seealso
+checkRd: (5) compare_par_flags.Rd:0-60: Must have a \description
+prepare_Rd: condor.go.Rd:7-9: Dropping empty section \description
+prepare_Rd: condor.go.Rd:46-48: Dropping empty section \details
+prepare_Rd: condor.go.Rd:49-55: Dropping empty section \value
+prepare_Rd: condor.go.Rd:62-64: Dropping empty section \note
+prepare_Rd: condor.go.Rd:59-61: Dropping empty section \author
+prepare_Rd: condor.go.Rd:56-58: Dropping empty section \references
+prepare_Rd: condor.go.Rd:68-70: Dropping empty section \seealso
+checkRd: (5) condor.go.Rd:0-81: Must have a \description
+prepare_Rd: condor.go2.Rd:7-9: Dropping empty section \description
+prepare_Rd: condor.go2.Rd:46-48: Dropping empty section \details
+prepare_Rd: condor.go2.Rd:49-55: Dropping empty section \value
+prepare_Rd: condor.go2.Rd:62-64: Dropping empty section \note
+prepare_Rd: condor.go2.Rd:59-61: Dropping empty section \author
+prepare_Rd: condor.go2.Rd:56-58: Dropping empty section \references
+prepare_Rd: condor.go2.Rd:68-70: Dropping empty section \seealso
+checkRd: (5) condor.go2.Rd:0-81: Must have a \description
+prepare_Rd: create.missing.ce.Rd:7-9: Dropping empty section \description
+prepare_Rd: create.missing.ce.Rd:22-24: Dropping empty section \details
+prepare_Rd: create.missing.ce.Rd:25-31: Dropping empty section \value
+prepare_Rd: create.missing.ce.Rd:38-40: Dropping empty section \note
+prepare_Rd: create.missing.ce.Rd:35-37: Dropping empty section \author
+prepare_Rd: create.missing.ce.Rd:32-34: Dropping empty section \references
+prepare_Rd: create.missing.ce.Rd:44-46: Dropping empty section \seealso
+checkRd: (5) create.missing.ce.Rd:0-57: Must have a \description
+prepare_Rd: create.ver6.frq.Rd:7-9: Dropping empty section \description
+prepare_Rd: create.ver6.frq.Rd:19-21: Dropping empty section \details
+prepare_Rd: create.ver6.frq.Rd:22-28: Dropping empty section \value
+prepare_Rd: create.ver6.frq.Rd:35-37: Dropping empty section \note
+prepare_Rd: create.ver6.frq.Rd:32-34: Dropping empty section \author
+prepare_Rd: create.ver6.frq.Rd:29-31: Dropping empty section \references
+prepare_Rd: create.ver6.frq.Rd:41-43: Dropping empty section \seealso
+checkRd: (5) create.ver6.frq.Rd:0-54: Must have a \description
+prepare_Rd: crit.fishery.summary.Rd:7-9: Dropping empty section \description
+prepare_Rd: crit.fishery.summary.Rd:19-21: Dropping empty section \details
+prepare_Rd: crit.fishery.summary.Rd:22-28: Dropping empty section \value
+prepare_Rd: crit.fishery.summary.Rd:35-37: Dropping empty section \note
+prepare_Rd: crit.fishery.summary.Rd:32-34: Dropping empty section \author
+prepare_Rd: crit.fishery.summary.Rd:29-31: Dropping empty section \references
+prepare_Rd: crit.fishery.summary.Rd:41-43: Dropping empty section \seealso
+checkRd: (5) crit.fishery.summary.Rd:0-54: Must have a \description
+prepare_Rd: crit.summary.Rd:7-9: Dropping empty section \description
+prepare_Rd: crit.summary.Rd:22-24: Dropping empty section \details
+prepare_Rd: crit.summary.Rd:25-31: Dropping empty section \value
+prepare_Rd: crit.summary.Rd:38-40: Dropping empty section \note
+prepare_Rd: crit.summary.Rd:35-37: Dropping empty section \author
+prepare_Rd: crit.summary.Rd:32-34: Dropping empty section \references
+prepare_Rd: crit.summary.Rd:44-46: Dropping empty section \seealso
+checkRd: (5) crit.summary.Rd:0-57: Must have a \description
+prepare_Rd: datfromstr.Rd:7-9: Dropping empty section \description
+prepare_Rd: datfromstr.Rd:19-21: Dropping empty section \details
+prepare_Rd: datfromstr.Rd:22-28: Dropping empty section \value
+prepare_Rd: datfromstr.Rd:35-37: Dropping empty section \note
+prepare_Rd: datfromstr.Rd:32-34: Dropping empty section \author
+prepare_Rd: datfromstr.Rd:29-31: Dropping empty section \references
+prepare_Rd: datfromstr.Rd:41-43: Dropping empty section \seealso
+checkRd: (5) datfromstr.Rd:0-54: Must have a \description
+prepare_Rd: do.critical.calcs.Rd:7-9: Dropping empty section \description
+prepare_Rd: do.critical.calcs.Rd:22-24: Dropping empty section \details
+prepare_Rd: do.critical.calcs.Rd:25-31: Dropping empty section \value
+prepare_Rd: do.critical.calcs.Rd:38-40: Dropping empty section \note
+prepare_Rd: do.critical.calcs.Rd:35-37: Dropping empty section \author
+prepare_Rd: do.critical.calcs.Rd:32-34: Dropping empty section \references
+prepare_Rd: do.critical.calcs.Rd:44-46: Dropping empty section \seealso
+checkRd: (5) do.critical.calcs.Rd:0-57: Must have a \description
+prepare_Rd: doit.rm_flag.Rd:7-9: Dropping empty section \description
+prepare_Rd: doit.rm_flag.Rd:28-30: Dropping empty section \details
+prepare_Rd: doit.rm_flag.Rd:31-37: Dropping empty section \value
+prepare_Rd: doit.rm_flag.Rd:44-46: Dropping empty section \note
+prepare_Rd: doit.rm_flag.Rd:41-43: Dropping empty section \author
+prepare_Rd: doit.rm_flag.Rd:38-40: Dropping empty section \references
+prepare_Rd: doit.rm_flag.Rd:50-52: Dropping empty section \seealso
+checkRd: (5) doit.rm_flag.Rd:0-63: Must have a \description
+prepare_Rd: effortcreep.Rd:7-9: Dropping empty section \description
+prepare_Rd: effortcreep.Rd:25-27: Dropping empty section \details
+prepare_Rd: effortcreep.Rd:28-34: Dropping empty section \value
+prepare_Rd: effortcreep.Rd:41-43: Dropping empty section \note
+prepare_Rd: effortcreep.Rd:38-40: Dropping empty section \author
+prepare_Rd: effortcreep.Rd:35-37: Dropping empty section \references
+prepare_Rd: effortcreep.Rd:47-49: Dropping empty section \seealso
+checkRd: (5) effortcreep.Rd:0-60: Must have a \description
+prepare_Rd: fix_growth.Rd:7-9: Dropping empty section \description
+prepare_Rd: fix_growth.Rd:19-21: Dropping empty section \details
+prepare_Rd: fix_growth.Rd:22-28: Dropping empty section \value
+prepare_Rd: fix_growth.Rd:35-37: Dropping empty section \note
+prepare_Rd: fix_growth.Rd:32-34: Dropping empty section \author
+prepare_Rd: fix_growth.Rd:29-31: Dropping empty section \references
+prepare_Rd: fix_growth.Rd:41-43: Dropping empty section \seealso
+checkRd: (5) fix_growth.Rd:0-54: Must have a \description
+prepare_Rd: frq.change.nint.Rd:7-9: Dropping empty section \description
+prepare_Rd: frq.change.nint.Rd:25-27: Dropping empty section \details
+prepare_Rd: frq.change.nint.Rd:28-34: Dropping empty section \value
+prepare_Rd: frq.change.nint.Rd:41-43: Dropping empty section \note
+prepare_Rd: frq.change.nint.Rd:38-40: Dropping empty section \author
+prepare_Rd: frq.change.nint.Rd:35-37: Dropping empty section \references
+prepare_Rd: frq.change.nint.Rd:47-49: Dropping empty section \seealso
+checkRd: (5) frq.change.nint.Rd:0-60: Must have a \description
+prepare_Rd: frq.remove.size.or.weight.data.Rd:7-9: Dropping empty section \description
+prepare_Rd: frq.remove.size.or.weight.data.Rd:28-30: Dropping empty section \details
+prepare_Rd: frq.remove.size.or.weight.data.Rd:31-37: Dropping empty section \value
+prepare_Rd: frq.remove.size.or.weight.data.Rd:44-46: Dropping empty section \note
+prepare_Rd: frq.remove.size.or.weight.data.Rd:41-43: Dropping empty section \author
+prepare_Rd: frq.remove.size.or.weight.data.Rd:38-40: Dropping empty section \references
+prepare_Rd: frq.remove.size.or.weight.data.Rd:50-52: Dropping empty section \seealso
+checkRd: (5) frq.remove.size.or.weight.data.Rd:0-63: Must have a \description
+prepare_Rd: get.critical.age.Rd:7-9: Dropping empty section \description
+prepare_Rd: get.critical.age.Rd:19-21: Dropping empty section \details
+prepare_Rd: get.critical.age.Rd:22-28: Dropping empty section \value
+prepare_Rd: get.critical.age.Rd:35-37: Dropping empty section \note
+prepare_Rd: get.critical.age.Rd:32-34: Dropping empty section \author
+prepare_Rd: get.critical.age.Rd:29-31: Dropping empty section \references
+prepare_Rd: get.critical.age.Rd:41-43: Dropping empty section \seealso
+checkRd: (5) get.critical.age.Rd:0-54: Must have a \description
+prepare_Rd: get.length.output.Rd:7-9: Dropping empty section \description
+prepare_Rd: get.length.output.Rd:22-24: Dropping empty section \details
+prepare_Rd: get.length.output.Rd:25-31: Dropping empty section \value
+prepare_Rd: get.length.output.Rd:38-40: Dropping empty section \note
+prepare_Rd: get.length.output.Rd:35-37: Dropping empty section \author
+prepare_Rd: get.length.output.Rd:32-34: Dropping empty section \references
+prepare_Rd: get.length.output.Rd:44-46: Dropping empty section \seealso
+checkRd: (5) get.length.output.Rd:0-57: Must have a \description
+prepare_Rd: get.outcomes.Rd:7-9: Dropping empty section \description
+prepare_Rd: get.outcomes.Rd:25-27: Dropping empty section \details
+prepare_Rd: get.outcomes.Rd:28-34: Dropping empty section \value
+prepare_Rd: get.outcomes.Rd:41-43: Dropping empty section \note
+prepare_Rd: get.outcomes.Rd:38-40: Dropping empty section \author
+prepare_Rd: get.outcomes.Rd:35-37: Dropping empty section \references
+prepare_Rd: get.outcomes.Rd:47-49: Dropping empty section \seealso
+checkRd: (5) get.outcomes.Rd:0-60: Must have a \description
+prepare_Rd: get.outcomes.alb.Rd:7-9: Dropping empty section \description
+prepare_Rd: get.outcomes.alb.Rd:31-33: Dropping empty section \details
+prepare_Rd: get.outcomes.alb.Rd:34-40: Dropping empty section \value
+prepare_Rd: get.outcomes.alb.Rd:47-49: Dropping empty section \note
+prepare_Rd: get.outcomes.alb.Rd:44-46: Dropping empty section \author
+prepare_Rd: get.outcomes.alb.Rd:41-43: Dropping empty section \references
+prepare_Rd: get.outcomes.alb.Rd:53-55: Dropping empty section \seealso
+checkRd: (5) get.outcomes.alb.Rd:0-66: Must have a \description
+prepare_Rd: get.outcomes.test.Rd:7-9: Dropping empty section \description
+prepare_Rd: get.outcomes.test.Rd:28-30: Dropping empty section \details
+prepare_Rd: get.outcomes.test.Rd:31-37: Dropping empty section \value
+prepare_Rd: get.outcomes.test.Rd:44-46: Dropping empty section \note
+prepare_Rd: get.outcomes.test.Rd:41-43: Dropping empty section \author
+prepare_Rd: get.outcomes.test.Rd:38-40: Dropping empty section \references
+prepare_Rd: get.outcomes.test.Rd:50-52: Dropping empty section \seealso
+checkRd: (5) get.outcomes.test.Rd:0-63: Must have a \description
+prepare_Rd: get.weight.output.Rd:7-9: Dropping empty section \description
+prepare_Rd: get.weight.output.Rd:22-24: Dropping empty section \details
+prepare_Rd: get.weight.output.Rd:25-31: Dropping empty section \value
+prepare_Rd: get.weight.output.Rd:38-40: Dropping empty section \note
+prepare_Rd: get.weight.output.Rd:35-37: Dropping empty section \author
+prepare_Rd: get.weight.output.Rd:32-34: Dropping empty section \references
+prepare_Rd: get.weight.output.Rd:44-46: Dropping empty section \seealso
+checkRd: (5) get.weight.output.Rd:0-57: Must have a \description
+prepare_Rd: initial_clean_2008.Rd:7-9: Dropping empty section \description
+prepare_Rd: initial_clean_2008.Rd:19-21: Dropping empty section \details
+prepare_Rd: initial_clean_2008.Rd:22-28: Dropping empty section \value
+prepare_Rd: initial_clean_2008.Rd:35-37: Dropping empty section \note
+prepare_Rd: initial_clean_2008.Rd:32-34: Dropping empty section \author
+prepare_Rd: initial_clean_2008.Rd:29-31: Dropping empty section \references
+prepare_Rd: initial_clean_2008.Rd:41-43: Dropping empty section \seealso
+checkRd: (5) initial_clean_2008.Rd:0-54: Must have a \description
+prepare_Rd: labels_store.Rd:7-9: Dropping empty section \description
+prepare_Rd: labels_store.Rd:19-21: Dropping empty section \details
+prepare_Rd: labels_store.Rd:22-28: Dropping empty section \value
+prepare_Rd: labels_store.Rd:35-37: Dropping empty section \note
+prepare_Rd: labels_store.Rd:32-34: Dropping empty section \author
+prepare_Rd: labels_store.Rd:29-31: Dropping empty section \references
+prepare_Rd: labels_store.Rd:41-43: Dropping empty section \seealso
+checkRd: (5) labels_store.Rd:0-54: Must have a \description
+prepare_Rd: load.LFdata.Rd:7-9: Dropping empty section \description
+prepare_Rd: load.LFdata.Rd:22-24: Dropping empty section \details
+prepare_Rd: load.LFdata.Rd:25-31: Dropping empty section \value
+prepare_Rd: load.LFdata.Rd:38-40: Dropping empty section \note
+prepare_Rd: load.LFdata.Rd:35-37: Dropping empty section \author
+prepare_Rd: load.LFdata.Rd:32-34: Dropping empty section \references
+prepare_Rd: load.LFdata.Rd:44-46: Dropping empty section \seealso
+checkRd: (5) load.LFdata.Rd:0-57: Must have a \description
+prepare_Rd: make.projection.betyft.frq.Rd:7-9: Dropping empty section \description
+prepare_Rd: make.projection.betyft.frq.Rd:25-27: Dropping empty section \details
+prepare_Rd: make.projection.betyft.frq.Rd:28-34: Dropping empty section \value
+prepare_Rd: make.projection.betyft.frq.Rd:41-43: Dropping empty section \note
+prepare_Rd: make.projection.betyft.frq.Rd:38-40: Dropping empty section \author
+prepare_Rd: make.projection.betyft.frq.Rd:35-37: Dropping empty section \references
+prepare_Rd: make.projection.betyft.frq.Rd:47-49: Dropping empty section \seealso
+checkRd: (5) make.projection.betyft.frq.Rd:0-60: Must have a \description
+prepare_Rd: map_all_pacific.Rd:7-9: Dropping empty section \description
+prepare_Rd: map_all_pacific.Rd:25-27: Dropping empty section \details
+prepare_Rd: map_all_pacific.Rd:28-34: Dropping empty section \value
+prepare_Rd: map_all_pacific.Rd:41-43: Dropping empty section \note
+prepare_Rd: map_all_pacific.Rd:38-40: Dropping empty section \author
+prepare_Rd: map_all_pacific.Rd:35-37: Dropping empty section \references
+prepare_Rd: map_all_pacific.Rd:47-49: Dropping empty section \seealso
+checkRd: (5) map_all_pacific.Rd:0-60: Must have a \description
+prepare_Rd: merge.frq.Rd:7-9: Dropping empty section \description
+prepare_Rd: merge.frq.Rd:28-30: Dropping empty section \details
+prepare_Rd: merge.frq.Rd:31-37: Dropping empty section \value
+prepare_Rd: merge.frq.Rd:44-46: Dropping empty section \note
+prepare_Rd: merge.frq.Rd:41-43: Dropping empty section \author
+prepare_Rd: merge.frq.Rd:38-40: Dropping empty section \references
+prepare_Rd: merge.frq.Rd:50-52: Dropping empty section \seealso
+checkRd: (5) merge.frq.Rd:0-63: Must have a \description
+prepare_Rd: merge.tag.Rd:7-9: Dropping empty section \description
+prepare_Rd: merge.tag.Rd:25-27: Dropping empty section \details
+prepare_Rd: merge.tag.Rd:28-34: Dropping empty section \value
+prepare_Rd: merge.tag.Rd:41-43: Dropping empty section \note
+prepare_Rd: merge.tag.Rd:38-40: Dropping empty section \author
+prepare_Rd: merge.tag.Rd:35-37: Dropping empty section \references
+prepare_Rd: merge.tag.Rd:47-49: Dropping empty section \seealso
+checkRd: (5) merge.tag.Rd:0-60: Must have a \description
+prepare_Rd: merge_tag_objs.Rd:7-9: Dropping empty section \description
+prepare_Rd: merge_tag_objs.Rd:25-27: Dropping empty section \details
+prepare_Rd: merge_tag_objs.Rd:28-34: Dropping empty section \value
+prepare_Rd: merge_tag_objs.Rd:41-43: Dropping empty section \note
+prepare_Rd: merge_tag_objs.Rd:38-40: Dropping empty section \author
+prepare_Rd: merge_tag_objs.Rd:35-37: Dropping empty section \references
+prepare_Rd: merge_tag_objs.Rd:47-49: Dropping empty section \seealso
+checkRd: (5) merge_tag_objs.Rd:0-60: Must have a \description
+prepare_Rd: oldsetup.Rd:7-9: Dropping empty section \description
+prepare_Rd: oldsetup.Rd:19-21: Dropping empty section \details
+prepare_Rd: oldsetup.Rd:22-28: Dropping empty section \value
+prepare_Rd: oldsetup.Rd:35-37: Dropping empty section \note
+prepare_Rd: oldsetup.Rd:32-34: Dropping empty section \author
+prepare_Rd: oldsetup.Rd:29-31: Dropping empty section \references
+prepare_Rd: oldsetup.Rd:41-43: Dropping empty section \seealso
+checkRd: (5) oldsetup.Rd:0-54: Must have a \description
+prepare_Rd: pack.fisheries.frq.Rd:7-9: Dropping empty section \description
+prepare_Rd: pack.fisheries.frq.Rd:19-21: Dropping empty section \details
+prepare_Rd: pack.fisheries.frq.Rd:22-28: Dropping empty section \value
+prepare_Rd: pack.fisheries.frq.Rd:35-37: Dropping empty section \note
+prepare_Rd: pack.fisheries.frq.Rd:32-34: Dropping empty section \author
+prepare_Rd: pack.fisheries.frq.Rd:29-31: Dropping empty section \references
+prepare_Rd: pack.fisheries.frq.Rd:41-43: Dropping empty section \seealso
+checkRd: (5) pack.fisheries.frq.Rd:0-54: Must have a \description
+prepare_Rd: pagocatch.Rd:7-9: Dropping empty section \description
+prepare_Rd: pagocatch.Rd:19-21: Dropping empty section \details
+prepare_Rd: pagocatch.Rd:22-28: Dropping empty section \value
+prepare_Rd: pagocatch.Rd:35-37: Dropping empty section \note
+prepare_Rd: pagocatch.Rd:32-34: Dropping empty section \author
+prepare_Rd: pagocatch.Rd:29-31: Dropping empty section \references
+prepare_Rd: pagocatch.Rd:41-43: Dropping empty section \seealso
+checkRd: (5) pagocatch.Rd:0-54: Must have a \description
+prepare_Rd: plot.F.time.Rd:7-9: Dropping empty section \description
+prepare_Rd: plot.F.time.Rd:34-36: Dropping empty section \details
+prepare_Rd: plot.F.time.Rd:37-43: Dropping empty section \value
+prepare_Rd: plot.F.time.Rd:50-52: Dropping empty section \note
+prepare_Rd: plot.F.time.Rd:47-49: Dropping empty section \author
+prepare_Rd: plot.F.time.Rd:44-46: Dropping empty section \references
+prepare_Rd: plot.F.time.Rd:56-58: Dropping empty section \seealso
+checkRd: (5) plot.F.time.Rd:0-69: Must have a \description
+prepare_Rd: plot.Kobe.Rd:7-9: Dropping empty section \description
+prepare_Rd: plot.Kobe.Rd:34-36: Dropping empty section \details
+prepare_Rd: plot.Kobe.Rd:37-43: Dropping empty section \value
+prepare_Rd: plot.Kobe.Rd:50-52: Dropping empty section \note
+prepare_Rd: plot.Kobe.Rd:47-49: Dropping empty section \author
+prepare_Rd: plot.Kobe.Rd:44-46: Dropping empty section \references
+prepare_Rd: plot.Kobe.Rd:56-58: Dropping empty section \seealso
+checkRd: (5) plot.Kobe.Rd:0-69: Must have a \description
+prepare_Rd: plot.Kobe.template.bw.Rd:7-9: Dropping empty section \description
+prepare_Rd: plot.Kobe.template.bw.Rd:19-21: Dropping empty section \details
+prepare_Rd: plot.Kobe.template.bw.Rd:22-28: Dropping empty section \value
+prepare_Rd: plot.Kobe.template.bw.Rd:35-37: Dropping empty section \note
+prepare_Rd: plot.Kobe.template.bw.Rd:32-34: Dropping empty section \author
+prepare_Rd: plot.Kobe.template.bw.Rd:29-31: Dropping empty section \references
+prepare_Rd: plot.Kobe.template.bw.Rd:41-43: Dropping empty section \seealso
+checkRd: (5) plot.Kobe.template.bw.Rd:0-54: Must have a \description
+prepare_Rd: plot.Kobe.template.col.Rd:7-9: Dropping empty section \description
+prepare_Rd: plot.Kobe.template.col.Rd:19-21: Dropping empty section \details
+prepare_Rd: plot.Kobe.template.col.Rd:22-28: Dropping empty section \value
+prepare_Rd: plot.Kobe.template.col.Rd:35-37: Dropping empty section \note
+prepare_Rd: plot.Kobe.template.col.Rd:32-34: Dropping empty section \author
+prepare_Rd: plot.Kobe.template.col.Rd:29-31: Dropping empty section \references
+prepare_Rd: plot.Kobe.template.col.Rd:41-43: Dropping empty section \seealso
+checkRd: (5) plot.Kobe.template.col.Rd:0-54: Must have a \description
+prepare_Rd: plot.base.comparison.Rd:7-9: Dropping empty section \description
+prepare_Rd: plot.base.comparison.Rd:22-24: Dropping empty section \details
+prepare_Rd: plot.base.comparison.Rd:25-31: Dropping empty section \value
+prepare_Rd: plot.base.comparison.Rd:38-40: Dropping empty section \note
+prepare_Rd: plot.base.comparison.Rd:35-37: Dropping empty section \author
+prepare_Rd: plot.base.comparison.Rd:32-34: Dropping empty section \references
+prepare_Rd: plot.base.comparison.Rd:44-46: Dropping empty section \seealso
+checkRd: (5) plot.base.comparison.Rd:0-57: Must have a \description
+prepare_Rd: plot.biomass.Rd:7-9: Dropping empty section \description
+prepare_Rd: plot.biomass.Rd:34-36: Dropping empty section \details
+prepare_Rd: plot.biomass.Rd:37-43: Dropping empty section \value
+prepare_Rd: plot.biomass.Rd:50-52: Dropping empty section \note
+prepare_Rd: plot.biomass.Rd:47-49: Dropping empty section \author
+prepare_Rd: plot.biomass.Rd:44-46: Dropping empty section \references
+prepare_Rd: plot.biomass.Rd:56-58: Dropping empty section \seealso
+checkRd: (5) plot.biomass.Rd:0-69: Must have a \description
+prepare_Rd: plot.biomass.combined.Rd:7-9: Dropping empty section \description
+prepare_Rd: plot.biomass.combined.Rd:34-36: Dropping empty section \details
+prepare_Rd: plot.biomass.combined.Rd:37-43: Dropping empty section \value
+prepare_Rd: plot.biomass.combined.Rd:50-52: Dropping empty section \note
+prepare_Rd: plot.biomass.combined.Rd:47-49: Dropping empty section \author
+prepare_Rd: plot.biomass.combined.Rd:44-46: Dropping empty section \references
+prepare_Rd: plot.biomass.combined.Rd:56-58: Dropping empty section \seealso
+checkRd: (5) plot.biomass.combined.Rd:0-69: Must have a \description
+prepare_Rd: plot.fishery.impact.r.Rd:7-9: Dropping empty section \description
+prepare_Rd: plot.fishery.impact.r.Rd:37-39: Dropping empty section \details
+prepare_Rd: plot.fishery.impact.r.Rd:40-46: Dropping empty section \value
+prepare_Rd: plot.fishery.impact.r.Rd:53-55: Dropping empty section \note
+prepare_Rd: plot.fishery.impact.r.Rd:50-52: Dropping empty section \author
+prepare_Rd: plot.fishery.impact.r.Rd:47-49: Dropping empty section \references
+prepare_Rd: plot.fishery.impact.r.Rd:59-61: Dropping empty section \seealso
+checkRd: (5) plot.fishery.impact.r.Rd:0-72: Must have a \description
+prepare_Rd: plot.mfcl.betyft09.Rd:7-9: Dropping empty section \description
+prepare_Rd: plot.mfcl.betyft09.Rd:19-21: Dropping empty section \details
+prepare_Rd: plot.mfcl.betyft09.Rd:22-28: Dropping empty section \value
+prepare_Rd: plot.mfcl.betyft09.Rd:35-37: Dropping empty section \note
+prepare_Rd: plot.mfcl.betyft09.Rd:32-34: Dropping empty section \author
+prepare_Rd: plot.mfcl.betyft09.Rd:29-31: Dropping empty section \references
+prepare_Rd: plot.mfcl.betyft09.Rd:41-43: Dropping empty section \seealso
+checkRd: (5) plot.mfcl.betyft09.Rd:0-54: Must have a \description
+prepare_Rd: plot.nofishing.Rd:7-9: Dropping empty section \description
+prepare_Rd: plot.nofishing.Rd:34-36: Dropping empty section \details
+prepare_Rd: plot.nofishing.Rd:37-43: Dropping empty section \value
+prepare_Rd: plot.nofishing.Rd:50-52: Dropping empty section \note
+prepare_Rd: plot.nofishing.Rd:47-49: Dropping empty section \author
+prepare_Rd: plot.nofishing.Rd:44-46: Dropping empty section \references
+prepare_Rd: plot.nofishing.Rd:56-58: Dropping empty section \seealso
+checkRd: (5) plot.nofishing.Rd:0-69: Must have a \description
+prepare_Rd: plot.nofishing.combined.Rd:7-9: Dropping empty section \description
+prepare_Rd: plot.nofishing.combined.Rd:34-36: Dropping empty section \details
+prepare_Rd: plot.nofishing.combined.Rd:37-43: Dropping empty section \value
+prepare_Rd: plot.nofishing.combined.Rd:50-52: Dropping empty section \note
+prepare_Rd: plot.nofishing.combined.Rd:47-49: Dropping empty section \author
+prepare_Rd: plot.nofishing.combined.Rd:44-46: Dropping empty section \references
+prepare_Rd: plot.nofishing.combined.Rd:56-58: Dropping empty section \seealso
+checkRd: (5) plot.nofishing.combined.Rd:0-69: Must have a \description
+prepare_Rd: plot.pacific.WCPFC.Rd:7-9: Dropping empty section \description
+prepare_Rd: plot.pacific.WCPFC.Rd:22-24: Dropping empty section \details
+prepare_Rd: plot.pacific.WCPFC.Rd:25-31: Dropping empty section \value
+prepare_Rd: plot.pacific.WCPFC.Rd:38-40: Dropping empty section \note
+prepare_Rd: plot.pacific.WCPFC.Rd:35-37: Dropping empty section \author
+prepare_Rd: plot.pacific.WCPFC.Rd:32-34: Dropping empty section \references
+prepare_Rd: plot.pacific.WCPFC.Rd:44-46: Dropping empty section \seealso
+checkRd: (5) plot.pacific.WCPFC.Rd:0-57: Must have a \description
+prepare_Rd: plot.pacific.alb.Rd:7-9: Dropping empty section \description
+prepare_Rd: plot.pacific.alb.Rd:25-27: Dropping empty section \details
+prepare_Rd: plot.pacific.alb.Rd:28-34: Dropping empty section \value
+prepare_Rd: plot.pacific.alb.Rd:41-43: Dropping empty section \note
+prepare_Rd: plot.pacific.alb.Rd:38-40: Dropping empty section \author
+prepare_Rd: plot.pacific.alb.Rd:35-37: Dropping empty section \references
+prepare_Rd: plot.pacific.alb.Rd:47-49: Dropping empty section \seealso
+checkRd: (5) plot.pacific.alb.Rd:0-60: Must have a \description
+prepare_Rd: plot.pacific.skj.Rd:7-9: Dropping empty section \description
+prepare_Rd: plot.pacific.skj.Rd:19-21: Dropping empty section \details
+prepare_Rd: plot.pacific.skj.Rd:22-28: Dropping empty section \value
+prepare_Rd: plot.pacific.skj.Rd:35-37: Dropping empty section \note
+prepare_Rd: plot.pacific.skj.Rd:32-34: Dropping empty section \author
+prepare_Rd: plot.pacific.skj.Rd:29-31: Dropping empty section \references
+prepare_Rd: plot.pacific.skj.Rd:41-43: Dropping empty section \seealso
+checkRd: (5) plot.pacific.skj.Rd:0-54: Must have a \description
+prepare_Rd: plot.pacific.species.Rd:7-9: Dropping empty section \description
+prepare_Rd: plot.pacific.species.Rd:37-39: Dropping empty section \details
+prepare_Rd: plot.pacific.species.Rd:40-46: Dropping empty section \value
+prepare_Rd: plot.pacific.species.Rd:53-55: Dropping empty section \note
+prepare_Rd: plot.pacific.species.Rd:50-52: Dropping empty section \author
+prepare_Rd: plot.pacific.species.Rd:47-49: Dropping empty section \references
+prepare_Rd: plot.pacific.species.Rd:59-61: Dropping empty section \seealso
+checkRd: (5) plot.pacific.species.Rd:0-72: Must have a \description
+prepare_Rd: plot.pacific.yft.Rd:7-9: Dropping empty section \description
+prepare_Rd: plot.pacific.yft.Rd:25-27: Dropping empty section \details
+prepare_Rd: plot.pacific.yft.Rd:28-34: Dropping empty section \value
+prepare_Rd: plot.pacific.yft.Rd:41-43: Dropping empty section \note
+prepare_Rd: plot.pacific.yft.Rd:38-40: Dropping empty section \author
+prepare_Rd: plot.pacific.yft.Rd:35-37: Dropping empty section \references
+prepare_Rd: plot.pacific.yft.Rd:47-49: Dropping empty section \seealso
+checkRd: (5) plot.pacific.yft.Rd:0-60: Must have a \description
+prepare_Rd: plot.recruitment.Rd:7-9: Dropping empty section \description
+prepare_Rd: plot.recruitment.Rd:31-33: Dropping empty section \details
+prepare_Rd: plot.recruitment.Rd:34-40: Dropping empty section \value
+prepare_Rd: plot.recruitment.Rd:47-49: Dropping empty section \note
+prepare_Rd: plot.recruitment.Rd:44-46: Dropping empty section \author
+prepare_Rd: plot.recruitment.Rd:41-43: Dropping empty section \references
+prepare_Rd: plot.recruitment.Rd:53-55: Dropping empty section \seealso
+checkRd: (5) plot.recruitment.Rd:0-66: Must have a \description
+prepare_Rd: plot.recruitment.combined.Rd:7-9: Dropping empty section \description
+prepare_Rd: plot.recruitment.combined.Rd:31-33: Dropping empty section \details
+prepare_Rd: plot.recruitment.combined.Rd:34-40: Dropping empty section \value
+prepare_Rd: plot.recruitment.combined.Rd:47-49: Dropping empty section \note
+prepare_Rd: plot.recruitment.combined.Rd:44-46: Dropping empty section \author
+prepare_Rd: plot.recruitment.combined.Rd:41-43: Dropping empty section \references
+prepare_Rd: plot.recruitment.combined.Rd:53-55: Dropping empty section \seealso
+checkRd: (5) plot.recruitment.combined.Rd:0-66: Must have a \description
+prepare_Rd: plot_cpue_cv_frq.Rd:7-9: Dropping empty section \description
+prepare_Rd: plot_cpue_cv_frq.Rd:25-27: Dropping empty section \details
+prepare_Rd: plot_cpue_cv_frq.Rd:28-34: Dropping empty section \value
+prepare_Rd: plot_cpue_cv_frq.Rd:41-43: Dropping empty section \note
+prepare_Rd: plot_cpue_cv_frq.Rd:38-40: Dropping empty section \author
+prepare_Rd: plot_cpue_cv_frq.Rd:35-37: Dropping empty section \references
+prepare_Rd: plot_cpue_cv_frq.Rd:47-49: Dropping empty section \seealso
+checkRd: (5) plot_cpue_cv_frq.Rd:0-60: Must have a \description
+prepare_Rd: read.catchrep.Rd:7-9: Dropping empty section \description
+prepare_Rd: read.catchrep.Rd:19-21: Dropping empty section \details
+prepare_Rd: read.catchrep.Rd:22-28: Dropping empty section \value
+prepare_Rd: read.catchrep.Rd:35-37: Dropping empty section \note
+prepare_Rd: read.catchrep.Rd:32-34: Dropping empty section \author
+prepare_Rd: read.catchrep.Rd:29-31: Dropping empty section \references
+prepare_Rd: read.catchrep.Rd:41-43: Dropping empty section \seealso
+checkRd: (5) read.catchrep.Rd:0-54: Must have a \description
+prepare_Rd: read.ests.Rd:7-9: Dropping empty section \description
+prepare_Rd: read.ests.Rd:25-27: Dropping empty section \details
+prepare_Rd: read.ests.Rd:28-34: Dropping empty section \value
+prepare_Rd: read.ests.Rd:41-43: Dropping empty section \note
+prepare_Rd: read.ests.Rd:38-40: Dropping empty section \author
+prepare_Rd: read.ests.Rd:35-37: Dropping empty section \references
+prepare_Rd: read.ests.Rd:47-49: Dropping empty section \seealso
+checkRd: (5) read.ests.Rd:0-60: Must have a \description
+prepare_Rd: read.fit.Rd:7-9: Dropping empty section \description
+prepare_Rd: read.fit.Rd:19-21: Dropping empty section \details
+prepare_Rd: read.fit.Rd:22-28: Dropping empty section \value
+prepare_Rd: read.fit.Rd:35-37: Dropping empty section \note
+prepare_Rd: read.fit.Rd:32-34: Dropping empty section \author
+prepare_Rd: read.fit.Rd:29-31: Dropping empty section \references
+prepare_Rd: read.fit.Rd:41-43: Dropping empty section \seealso
+checkRd: (5) read.fit.Rd:0-54: Must have a \description
+prepare_Rd: read.frq.Rd:7-9: Dropping empty section \description
+prepare_Rd: read.frq.Rd:28-30: Dropping empty section \details
+prepare_Rd: read.frq.Rd:31-37: Dropping empty section \value
+prepare_Rd: read.frq.Rd:44-46: Dropping empty section \note
+prepare_Rd: read.frq.Rd:41-43: Dropping empty section \author
+prepare_Rd: read.frq.Rd:38-40: Dropping empty section \references
+prepare_Rd: read.frq.Rd:50-52: Dropping empty section \seealso
+checkRd: (5) read.frq.Rd:0-63: Must have a \description
+prepare_Rd: read.impact.Rd:7-9: Dropping empty section \description
+prepare_Rd: read.impact.Rd:22-24: Dropping empty section \details
+prepare_Rd: read.impact.Rd:25-31: Dropping empty section \value
+prepare_Rd: read.impact.Rd:38-40: Dropping empty section \note
+prepare_Rd: read.impact.Rd:35-37: Dropping empty section \author
+prepare_Rd: read.impact.Rd:32-34: Dropping empty section \references
+prepare_Rd: read.impact.Rd:44-46: Dropping empty section \seealso
+checkRd: (5) read.impact.Rd:0-57: Must have a \description
+prepare_Rd: read.ini.Rd:7-9: Dropping empty section \description
+prepare_Rd: read.ini.Rd:19-21: Dropping empty section \details
+prepare_Rd: read.ini.Rd:22-28: Dropping empty section \value
+prepare_Rd: read.ini.Rd:35-37: Dropping empty section \note
+prepare_Rd: read.ini.Rd:32-34: Dropping empty section \author
+prepare_Rd: read.ini.Rd:29-31: Dropping empty section \references
+prepare_Rd: read.ini.Rd:41-43: Dropping empty section \seealso
+checkRd: (5) read.ini.Rd:0-54: Must have a \description
+prepare_Rd: read.par.Rd:7-9: Dropping empty section \description
+prepare_Rd: read.par.Rd:19-21: Dropping empty section \details
+prepare_Rd: read.par.Rd:22-28: Dropping empty section \value
+prepare_Rd: read.par.Rd:35-37: Dropping empty section \note
+prepare_Rd: read.par.Rd:32-34: Dropping empty section \author
+prepare_Rd: read.par.Rd:29-31: Dropping empty section \references
+prepare_Rd: read.par.Rd:41-43: Dropping empty section \seealso
+checkRd: (5) read.par.Rd:0-54: Must have a \description
+prepare_Rd: read.rep.Rd:7-9: Dropping empty section \description
+prepare_Rd: read.rep.Rd:19-21: Dropping empty section \details
+prepare_Rd: read.rep.Rd:22-28: Dropping empty section \value
+prepare_Rd: read.rep.Rd:35-37: Dropping empty section \note
+prepare_Rd: read.rep.Rd:32-34: Dropping empty section \author
+prepare_Rd: read.rep.Rd:29-31: Dropping empty section \references
+prepare_Rd: read.rep.Rd:41-43: Dropping empty section \seealso
+checkRd: (5) read.rep.Rd:0-54: Must have a \description
+prepare_Rd: read.tag.Rd:7-9: Dropping empty section \description
+prepare_Rd: read.tag.Rd:19-21: Dropping empty section \details
+prepare_Rd: read.tag.Rd:22-28: Dropping empty section \value
+prepare_Rd: read.tag.Rd:35-37: Dropping empty section \note
+prepare_Rd: read.tag.Rd:32-34: Dropping empty section \author
+prepare_Rd: read.tag.Rd:29-31: Dropping empty section \references
+prepare_Rd: read.tag.Rd:41-43: Dropping empty section \seealso
+checkRd: (5) read.tag.Rd:0-54: Must have a \description
+prepare_Rd: read.tags.JP.Rd:7-9: Dropping empty section \description
+prepare_Rd: read.tags.JP.Rd:25-27: Dropping empty section \details
+prepare_Rd: read.tags.JP.Rd:28-34: Dropping empty section \value
+prepare_Rd: read.tags.JP.Rd:41-43: Dropping empty section \note
+prepare_Rd: read.tags.JP.Rd:38-40: Dropping empty section \author
+prepare_Rd: read.tags.JP.Rd:35-37: Dropping empty section \references
+prepare_Rd: read.tags.JP.Rd:47-49: Dropping empty section \seealso
+checkRd: (5) read.tags.JP.Rd:0-60: Must have a \description
+prepare_Rd: read.var.Rd:7-9: Dropping empty section \description
+prepare_Rd: read.var.Rd:19-21: Dropping empty section \details
+prepare_Rd: read.var.Rd:22-28: Dropping empty section \value
+prepare_Rd: read.var.Rd:35-37: Dropping empty section \note
+prepare_Rd: read.var.Rd:32-34: Dropping empty section \author
+prepare_Rd: read.var.Rd:29-31: Dropping empty section \references
+prepare_Rd: read.var.Rd:41-43: Dropping empty section \seealso
+checkRd: (5) read.var.Rd:0-54: Must have a \description
+prepare_Rd: read_nmd.frq.Rd:7-9: Dropping empty section \description
+prepare_Rd: read_nmd.frq.Rd:28-30: Dropping empty section \details
+prepare_Rd: read_nmd.frq.Rd:31-37: Dropping empty section \value
+prepare_Rd: read_nmd.frq.Rd:44-46: Dropping empty section \note
+prepare_Rd: read_nmd.frq.Rd:41-43: Dropping empty section \author
+prepare_Rd: read_nmd.frq.Rd:38-40: Dropping empty section \references
+prepare_Rd: read_nmd.frq.Rd:50-52: Dropping empty section \seealso
+checkRd: (5) read_nmd.frq.Rd:0-63: Must have a \description
+prepare_Rd: read_nmd.par.Rd:7-9: Dropping empty section \description
+prepare_Rd: read_nmd.par.Rd:19-21: Dropping empty section \details
+prepare_Rd: read_nmd.par.Rd:22-28: Dropping empty section \value
+prepare_Rd: read_nmd.par.Rd:35-37: Dropping empty section \note
+prepare_Rd: read_nmd.par.Rd:32-34: Dropping empty section \author
+prepare_Rd: read_nmd.par.Rd:29-31: Dropping empty section \references
+prepare_Rd: read_nmd.par.Rd:41-43: Dropping empty section \seealso
+checkRd: (5) read_nmd.par.Rd:0-54: Must have a \description
+prepare_Rd: reconstruct.frq.ce.Rd:7-9: Dropping empty section \description
+prepare_Rd: reconstruct.frq.ce.Rd:25-27: Dropping empty section \details
+prepare_Rd: reconstruct.frq.ce.Rd:28-34: Dropping empty section \value
+prepare_Rd: reconstruct.frq.ce.Rd:41-43: Dropping empty section \note
+prepare_Rd: reconstruct.frq.ce.Rd:38-40: Dropping empty section \author
+prepare_Rd: reconstruct.frq.ce.Rd:35-37: Dropping empty section \references
+prepare_Rd: reconstruct.frq.ce.Rd:47-49: Dropping empty section \seealso
+checkRd: (5) reconstruct.frq.ce.Rd:0-60: Must have a \description
+prepare_Rd: reconstruct.frq.ce2008.Rd:7-9: Dropping empty section \description
+prepare_Rd: reconstruct.frq.ce2008.Rd:22-24: Dropping empty section \details
+prepare_Rd: reconstruct.frq.ce2008.Rd:25-31: Dropping empty section \value
+prepare_Rd: reconstruct.frq.ce2008.Rd:38-40: Dropping empty section \note
+prepare_Rd: reconstruct.frq.ce2008.Rd:35-37: Dropping empty section \author
+prepare_Rd: reconstruct.frq.ce2008.Rd:32-34: Dropping empty section \references
+prepare_Rd: reconstruct.frq.ce2008.Rd:44-46: Dropping empty section \seealso
+checkRd: (5) reconstruct.frq.ce2008.Rd:0-57: Must have a \description
+prepare_Rd: reconstruct.frq.size.Rd:7-9: Dropping empty section \description
+prepare_Rd: reconstruct.frq.size.Rd:28-30: Dropping empty section \details
+prepare_Rd: reconstruct.frq.size.Rd:31-37: Dropping empty section \value
+prepare_Rd: reconstruct.frq.size.Rd:44-46: Dropping empty section \note
+prepare_Rd: reconstruct.frq.size.Rd:41-43: Dropping empty section \author
+prepare_Rd: reconstruct.frq.size.Rd:38-40: Dropping empty section \references
+prepare_Rd: reconstruct.frq.size.Rd:50-52: Dropping empty section \seealso
+checkRd: (5) reconstruct.frq.size.Rd:0-63: Must have a \description
+prepare_Rd: region_single_frq.Rd:7-9: Dropping empty section \description
+prepare_Rd: region_single_frq.Rd:22-24: Dropping empty section \details
+prepare_Rd: region_single_frq.Rd:25-31: Dropping empty section \value
+prepare_Rd: region_single_frq.Rd:38-40: Dropping empty section \note
+prepare_Rd: region_single_frq.Rd:35-37: Dropping empty section \author
+prepare_Rd: region_single_frq.Rd:32-34: Dropping empty section \references
+prepare_Rd: region_single_frq.Rd:44-46: Dropping empty section \seealso
+checkRd: (5) region_single_frq.Rd:0-57: Must have a \description
+prepare_Rd: region_single_ini.Rd:7-9: Dropping empty section \description
+prepare_Rd: region_single_ini.Rd:19-21: Dropping empty section \details
+prepare_Rd: region_single_ini.Rd:22-28: Dropping empty section \value
+prepare_Rd: region_single_ini.Rd:35-37: Dropping empty section \note
+prepare_Rd: region_single_ini.Rd:32-34: Dropping empty section \author
+prepare_Rd: region_single_ini.Rd:29-31: Dropping empty section \references
+prepare_Rd: region_single_ini.Rd:41-43: Dropping empty section \seealso
+checkRd: (5) region_single_ini.Rd:0-54: Must have a \description
+prepare_Rd: region_single_tag.Rd:7-9: Dropping empty section \description
+prepare_Rd: region_single_tag.Rd:25-27: Dropping empty section \details
+prepare_Rd: region_single_tag.Rd:28-34: Dropping empty section \value
+prepare_Rd: region_single_tag.Rd:41-43: Dropping empty section \note
+prepare_Rd: region_single_tag.Rd:38-40: Dropping empty section \author
+prepare_Rd: region_single_tag.Rd:35-37: Dropping empty section \references
+prepare_Rd: region_single_tag.Rd:47-49: Dropping empty section \seealso
+checkRd: (5) region_single_tag.Rd:0-60: Must have a \description
+prepare_Rd: regroup_fishery_grps.doitall.Rd:7-9: Dropping empty section \description
+prepare_Rd: regroup_fishery_grps.doitall.Rd:28-30: Dropping empty section \details
+prepare_Rd: regroup_fishery_grps.doitall.Rd:31-37: Dropping empty section \value
+prepare_Rd: regroup_fishery_grps.doitall.Rd:44-46: Dropping empty section \note
+prepare_Rd: regroup_fishery_grps.doitall.Rd:41-43: Dropping empty section \author
+prepare_Rd: regroup_fishery_grps.doitall.Rd:38-40: Dropping empty section \references
+prepare_Rd: regroup_fishery_grps.doitall.Rd:50-52: Dropping empty section \seealso
+checkRd: (5) regroup_fishery_grps.doitall.Rd:0-63: Must have a \description
+prepare_Rd: rename.fisheries.doitall.Rd:7-9: Dropping empty section \description
+prepare_Rd: rename.fisheries.doitall.Rd:25-27: Dropping empty section \details
+prepare_Rd: rename.fisheries.doitall.Rd:28-34: Dropping empty section \value
+prepare_Rd: rename.fisheries.doitall.Rd:41-43: Dropping empty section \note
+prepare_Rd: rename.fisheries.doitall.Rd:38-40: Dropping empty section \author
+prepare_Rd: rename.fisheries.doitall.Rd:35-37: Dropping empty section \references
+prepare_Rd: rename.fisheries.doitall.Rd:47-49: Dropping empty section \seealso
+checkRd: (5) rename.fisheries.doitall.Rd:0-60: Must have a \description
+prepare_Rd: rename.fisheries.frq.Rd:7-9: Dropping empty section \description
+prepare_Rd: rename.fisheries.frq.Rd:25-27: Dropping empty section \details
+prepare_Rd: rename.fisheries.frq.Rd:28-34: Dropping empty section \value
+prepare_Rd: rename.fisheries.frq.Rd:41-43: Dropping empty section \note
+prepare_Rd: rename.fisheries.frq.Rd:38-40: Dropping empty section \author
+prepare_Rd: rename.fisheries.frq.Rd:35-37: Dropping empty section \references
+prepare_Rd: rename.fisheries.frq.Rd:47-49: Dropping empty section \seealso
+checkRd: (5) rename.fisheries.frq.Rd:0-60: Must have a \description
+prepare_Rd: rename.fisheries.tag.Rd:7-9: Dropping empty section \description
+prepare_Rd: rename.fisheries.tag.Rd:25-27: Dropping empty section \details
+prepare_Rd: rename.fisheries.tag.Rd:28-34: Dropping empty section \value
+prepare_Rd: rename.fisheries.tag.Rd:41-43: Dropping empty section \note
+prepare_Rd: rename.fisheries.tag.Rd:38-40: Dropping empty section \author
+prepare_Rd: rename.fisheries.tag.Rd:35-37: Dropping empty section \references
+prepare_Rd: rename.fisheries.tag.Rd:47-49: Dropping empty section \seealso
+checkRd: (5) rename.fisheries.tag.Rd:0-60: Must have a \description
+prepare_Rd: rename.fishery.grps.doitall.Rd:7-9: Dropping empty section \description
+prepare_Rd: rename.fishery.grps.doitall.Rd:34-36: Dropping empty section \details
+prepare_Rd: rename.fishery.grps.doitall.Rd:37-43: Dropping empty section \value
+prepare_Rd: rename.fishery.grps.doitall.Rd:50-52: Dropping empty section \note
+prepare_Rd: rename.fishery.grps.doitall.Rd:47-49: Dropping empty section \author
+prepare_Rd: rename.fishery.grps.doitall.Rd:44-46: Dropping empty section \references
+prepare_Rd: rename.fishery.grps.doitall.Rd:56-58: Dropping empty section \seealso
+checkRd: (5) rename.fishery.grps.doitall.Rd:0-69: Must have a \description
+prepare_Rd: retro.frq.Rd:7-9: Dropping empty section \description
+prepare_Rd: retro.frq.Rd:22-24: Dropping empty section \details
+prepare_Rd: retro.frq.Rd:25-31: Dropping empty section \value
+prepare_Rd: retro.frq.Rd:38-40: Dropping empty section \note
+prepare_Rd: retro.frq.Rd:35-37: Dropping empty section \author
+prepare_Rd: retro.frq.Rd:32-34: Dropping empty section \references
+prepare_Rd: retro.frq.Rd:44-46: Dropping empty section \seealso
+checkRd: (5) retro.frq.Rd:0-57: Must have a \description
+prepare_Rd: retro.tag.Rd:7-9: Dropping empty section \description
+prepare_Rd: retro.tag.Rd:22-24: Dropping empty section \details
+prepare_Rd: retro.tag.Rd:25-31: Dropping empty section \value
+prepare_Rd: retro.tag.Rd:38-40: Dropping empty section \note
+prepare_Rd: retro.tag.Rd:35-37: Dropping empty section \author
+prepare_Rd: retro.tag.Rd:32-34: Dropping empty section \references
+prepare_Rd: retro.tag.Rd:44-46: Dropping empty section \seealso
+checkRd: (5) retro.tag.Rd:0-57: Must have a \description
+prepare_Rd: rm_fisheries.doitall.Rd:7-9: Dropping empty section \description
+prepare_Rd: rm_fisheries.doitall.Rd:22-24: Dropping empty section \details
+prepare_Rd: rm_fisheries.doitall.Rd:25-31: Dropping empty section \value
+prepare_Rd: rm_fisheries.doitall.Rd:38-40: Dropping empty section \note
+prepare_Rd: rm_fisheries.doitall.Rd:35-37: Dropping empty section \author
+prepare_Rd: rm_fisheries.doitall.Rd:32-34: Dropping empty section \references
+prepare_Rd: rm_fisheries.doitall.Rd:44-46: Dropping empty section \seealso
+checkRd: (5) rm_fisheries.doitall.Rd:0-57: Must have a \description
+prepare_Rd: rm_fisheries.frq.Rd:7-9: Dropping empty section \description
+prepare_Rd: rm_fisheries.frq.Rd:22-24: Dropping empty section \details
+prepare_Rd: rm_fisheries.frq.Rd:25-31: Dropping empty section \value
+prepare_Rd: rm_fisheries.frq.Rd:38-40: Dropping empty section \note
+prepare_Rd: rm_fisheries.frq.Rd:35-37: Dropping empty section \author
+prepare_Rd: rm_fisheries.frq.Rd:32-34: Dropping empty section \references
+prepare_Rd: rm_fisheries.frq.Rd:44-46: Dropping empty section \seealso
+checkRd: (5) rm_fisheries.frq.Rd:0-57: Must have a \description
+prepare_Rd: rm_fisheries.tag.Rd:7-9: Dropping empty section \description
+prepare_Rd: rm_fisheries.tag.Rd:22-24: Dropping empty section \details
+prepare_Rd: rm_fisheries.tag.Rd:25-31: Dropping empty section \value
+prepare_Rd: rm_fisheries.tag.Rd:38-40: Dropping empty section \note
+prepare_Rd: rm_fisheries.tag.Rd:35-37: Dropping empty section \author
+prepare_Rd: rm_fisheries.tag.Rd:32-34: Dropping empty section \references
+prepare_Rd: rm_fisheries.tag.Rd:44-46: Dropping empty section \seealso
+checkRd: (5) rm_fisheries.tag.Rd:0-57: Must have a \description
+prepare_Rd: rm_fishflag.Rd:7-9: Dropping empty section \description
+prepare_Rd: rm_fishflag.Rd:22-24: Dropping empty section \details
+prepare_Rd: rm_fishflag.Rd:25-31: Dropping empty section \value
+prepare_Rd: rm_fishflag.Rd:38-40: Dropping empty section \note
+prepare_Rd: rm_fishflag.Rd:35-37: Dropping empty section \author
+prepare_Rd: rm_fishflag.Rd:32-34: Dropping empty section \references
+prepare_Rd: rm_fishflag.Rd:44-46: Dropping empty section \seealso
+checkRd: (5) rm_fishflag.Rd:0-57: Must have a \description
+prepare_Rd: rm_flag.doitall.Rd:7-9: Dropping empty section \description
+prepare_Rd: rm_flag.doitall.Rd:28-30: Dropping empty section \details
+prepare_Rd: rm_flag.doitall.Rd:31-37: Dropping empty section \value
+prepare_Rd: rm_flag.doitall.Rd:44-46: Dropping empty section \note
+prepare_Rd: rm_flag.doitall.Rd:41-43: Dropping empty section \author
+prepare_Rd: rm_flag.doitall.Rd:38-40: Dropping empty section \references
+prepare_Rd: rm_flag.doitall.Rd:50-52: Dropping empty section \seealso
+checkRd: (5) rm_flag.doitall.Rd:0-63: Must have a \description
+prepare_Rd: run.profile.Rd:7-9: Dropping empty section \description
+prepare_Rd: run.profile.Rd:37-39: Dropping empty section \details
+prepare_Rd: run.profile.Rd:40-46: Dropping empty section \value
+prepare_Rd: run.profile.Rd:53-55: Dropping empty section \note
+prepare_Rd: run.profile.Rd:50-52: Dropping empty section \author
+prepare_Rd: run.profile.Rd:47-49: Dropping empty section \references
+prepare_Rd: run.profile.Rd:59-61: Dropping empty section \seealso
+checkRd: (5) run.profile.Rd:0-72: Must have a \description
+prepare_Rd: seas.flag.Rd:7-9: Dropping empty section \description
+prepare_Rd: seas.flag.Rd:28-30: Dropping empty section \details
+prepare_Rd: seas.flag.Rd:31-37: Dropping empty section \value
+prepare_Rd: seas.flag.Rd:44-46: Dropping empty section \note
+prepare_Rd: seas.flag.Rd:41-43: Dropping empty section \author
+prepare_Rd: seas.flag.Rd:38-40: Dropping empty section \references
+prepare_Rd: seas.flag.Rd:50-52: Dropping empty section \seealso
+checkRd: (5) seas.flag.Rd:0-63: Must have a \description
+prepare_Rd: seas.frq.Rd:7-9: Dropping empty section \description
+prepare_Rd: seas.frq.Rd:22-24: Dropping empty section \details
+prepare_Rd: seas.frq.Rd:25-31: Dropping empty section \value
+prepare_Rd: seas.frq.Rd:38-40: Dropping empty section \note
+prepare_Rd: seas.frq.Rd:35-37: Dropping empty section \author
+prepare_Rd: seas.frq.Rd:32-34: Dropping empty section \references
+prepare_Rd: seas.frq.Rd:44-46: Dropping empty section \seealso
+checkRd: (5) seas.frq.Rd:0-57: Must have a \description
+prepare_Rd: seas.tag.Rd:7-9: Dropping empty section \description
+prepare_Rd: seas.tag.Rd:22-24: Dropping empty section \details
+prepare_Rd: seas.tag.Rd:25-31: Dropping empty section \value
+prepare_Rd: seas.tag.Rd:38-40: Dropping empty section \note
+prepare_Rd: seas.tag.Rd:35-37: Dropping empty section \author
+prepare_Rd: seas.tag.Rd:32-34: Dropping empty section \references
+prepare_Rd: seas.tag.Rd:44-46: Dropping empty section \seealso
+checkRd: (5) seas.tag.Rd:0-57: Must have a \description
+prepare_Rd: setup.LFwt.Rd:7-9: Dropping empty section \description
+prepare_Rd: setup.LFwt.Rd:22-24: Dropping empty section \details
+prepare_Rd: setup.LFwt.Rd:25-31: Dropping empty section \value
+prepare_Rd: setup.LFwt.Rd:38-40: Dropping empty section \note
+prepare_Rd: setup.LFwt.Rd:35-37: Dropping empty section \author
+prepare_Rd: setup.LFwt.Rd:32-34: Dropping empty section \references
+prepare_Rd: setup.LFwt.Rd:44-46: Dropping empty section \seealso
+checkRd: (5) setup.LFwt.Rd:0-57: Must have a \description
+prepare_Rd: setup.M.Rd:7-9: Dropping empty section \description
+prepare_Rd: setup.M.Rd:22-24: Dropping empty section \details
+prepare_Rd: setup.M.Rd:25-31: Dropping empty section \value
+prepare_Rd: setup.M.Rd:38-40: Dropping empty section \note
+prepare_Rd: setup.M.Rd:35-37: Dropping empty section \author
+prepare_Rd: setup.M.Rd:32-34: Dropping empty section \references
+prepare_Rd: setup.M.Rd:44-46: Dropping empty section \seealso
+checkRd: (5) setup.M.Rd:0-57: Must have a \description
+prepare_Rd: setup.cpue.Rd:7-9: Dropping empty section \description
+prepare_Rd: setup.cpue.Rd:28-30: Dropping empty section \details
+prepare_Rd: setup.cpue.Rd:31-37: Dropping empty section \value
+prepare_Rd: setup.cpue.Rd:44-46: Dropping empty section \note
+prepare_Rd: setup.cpue.Rd:41-43: Dropping empty section \author
+prepare_Rd: setup.cpue.Rd:38-40: Dropping empty section \references
+prepare_Rd: setup.cpue.Rd:50-52: Dropping empty section \seealso
+checkRd: (5) setup.cpue.Rd:0-63: Must have a \description
+prepare_Rd: setup.effcreep.Rd:7-9: Dropping empty section \description
+prepare_Rd: setup.effcreep.Rd:22-24: Dropping empty section \details
+prepare_Rd: setup.effcreep.Rd:25-31: Dropping empty section \value
+prepare_Rd: setup.effcreep.Rd:38-40: Dropping empty section \note
+prepare_Rd: setup.effcreep.Rd:35-37: Dropping empty section \author
+prepare_Rd: setup.effcreep.Rd:32-34: Dropping empty section \references
+prepare_Rd: setup.effcreep.Rd:44-46: Dropping empty section \seealso
+checkRd: (5) setup.effcreep.Rd:0-57: Must have a \description
+prepare_Rd: setup.growth.Rd:7-9: Dropping empty section \description
+prepare_Rd: setup.growth.Rd:22-24: Dropping empty section \details
+prepare_Rd: setup.growth.Rd:25-31: Dropping empty section \value
+prepare_Rd: setup.growth.Rd:38-40: Dropping empty section \note
+prepare_Rd: setup.growth.Rd:35-37: Dropping empty section \author
+prepare_Rd: setup.growth.Rd:32-34: Dropping empty section \references
+prepare_Rd: setup.growth.Rd:44-46: Dropping empty section \seealso
+checkRd: (5) setup.growth.Rd:0-57: Must have a \description
+prepare_Rd: setup.growth.offsets.Rd:7-9: Dropping empty section \description
+prepare_Rd: setup.growth.offsets.Rd:31-33: Dropping empty section \details
+prepare_Rd: setup.growth.offsets.Rd:34-40: Dropping empty section \value
+prepare_Rd: setup.growth.offsets.Rd:47-49: Dropping empty section \note
+prepare_Rd: setup.growth.offsets.Rd:44-46: Dropping empty section \author
+prepare_Rd: setup.growth.offsets.Rd:41-43: Dropping empty section \references
+prepare_Rd: setup.growth.offsets.Rd:53-55: Dropping empty section \seealso
+checkRd: (5) setup.growth.offsets.Rd:0-66: Must have a \description
+prepare_Rd: setup.idphcatch.Rd:7-9: Dropping empty section \description
+prepare_Rd: setup.idphcatch.Rd:28-30: Dropping empty section \details
+prepare_Rd: setup.idphcatch.Rd:31-37: Dropping empty section \value
+prepare_Rd: setup.idphcatch.Rd:44-46: Dropping empty section \note
+prepare_Rd: setup.idphcatch.Rd:41-43: Dropping empty section \author
+prepare_Rd: setup.idphcatch.Rd:38-40: Dropping empty section \references
+prepare_Rd: setup.idphcatch.Rd:50-52: Dropping empty section \seealso
+checkRd: (5) setup.idphcatch.Rd:0-63: Must have a \description
+prepare_Rd: setup.lensel.Rd:7-9: Dropping empty section \description
+prepare_Rd: setup.lensel.Rd:25-27: Dropping empty section \details
+prepare_Rd: setup.lensel.Rd:28-34: Dropping empty section \value
+prepare_Rd: setup.lensel.Rd:41-43: Dropping empty section \note
+prepare_Rd: setup.lensel.Rd:38-40: Dropping empty section \author
+prepare_Rd: setup.lensel.Rd:35-37: Dropping empty section \references
+prepare_Rd: setup.lensel.Rd:47-49: Dropping empty section \seealso
+checkRd: (5) setup.lensel.Rd:0-60: Must have a \description
+prepare_Rd: setup.pscatch.Rd:7-9: Dropping empty section \description
+prepare_Rd: setup.pscatch.Rd:28-30: Dropping empty section \details
+prepare_Rd: setup.pscatch.Rd:31-37: Dropping empty section \value
+prepare_Rd: setup.pscatch.Rd:44-46: Dropping empty section \note
+prepare_Rd: setup.pscatch.Rd:41-43: Dropping empty section \author
+prepare_Rd: setup.pscatch.Rd:38-40: Dropping empty section \references
+prepare_Rd: setup.pscatch.Rd:50-52: Dropping empty section \seealso
+checkRd: (5) setup.pscatch.Rd:0-63: Must have a \description
+prepare_Rd: setup.startyr.Rd:7-9: Dropping empty section \description
+prepare_Rd: setup.startyr.Rd:22-24: Dropping empty section \details
+prepare_Rd: setup.startyr.Rd:25-31: Dropping empty section \value
+prepare_Rd: setup.startyr.Rd:38-40: Dropping empty section \note
+prepare_Rd: setup.startyr.Rd:35-37: Dropping empty section \author
+prepare_Rd: setup.startyr.Rd:32-34: Dropping empty section \references
+prepare_Rd: setup.startyr.Rd:44-46: Dropping empty section \seealso
+checkRd: (5) setup.startyr.Rd:0-57: Must have a \description
+prepare_Rd: setup.steepness.Rd:7-9: Dropping empty section \description
+prepare_Rd: setup.steepness.Rd:22-24: Dropping empty section \details
+prepare_Rd: setup.steepness.Rd:25-31: Dropping empty section \value
+prepare_Rd: setup.steepness.Rd:38-40: Dropping empty section \note
+prepare_Rd: setup.steepness.Rd:35-37: Dropping empty section \author
+prepare_Rd: setup.steepness.Rd:32-34: Dropping empty section \references
+prepare_Rd: setup.steepness.Rd:44-46: Dropping empty section \seealso
+checkRd: (5) setup.steepness.Rd:0-57: Must have a \description
+prepare_Rd: setup.timesplit.Rd:7-9: Dropping empty section \description
+prepare_Rd: setup.timesplit.Rd:25-27: Dropping empty section \details
+prepare_Rd: setup.timesplit.Rd:28-34: Dropping empty section \value
+prepare_Rd: setup.timesplit.Rd:41-43: Dropping empty section \note
+prepare_Rd: setup.timesplit.Rd:38-40: Dropping empty section \author
+prepare_Rd: setup.timesplit.Rd:35-37: Dropping empty section \references
+prepare_Rd: setup.timesplit.Rd:47-49: Dropping empty section \seealso
+checkRd: (5) setup.timesplit.Rd:0-60: Must have a \description
+prepare_Rd: sort.frq.Rd:7-9: Dropping empty section \description
+prepare_Rd: sort.frq.Rd:19-21: Dropping empty section \details
+prepare_Rd: sort.frq.Rd:22-28: Dropping empty section \value
+prepare_Rd: sort.frq.Rd:35-37: Dropping empty section \note
+prepare_Rd: sort.frq.Rd:32-34: Dropping empty section \author
+prepare_Rd: sort.frq.Rd:29-31: Dropping empty section \references
+prepare_Rd: sort.frq.Rd:41-43: Dropping empty section \seealso
+checkRd: (5) sort.frq.Rd:0-54: Must have a \description
+prepare_Rd: start_year.frq.Rd:7-9: Dropping empty section \description
+prepare_Rd: start_year.frq.Rd:25-27: Dropping empty section \details
+prepare_Rd: start_year.frq.Rd:28-34: Dropping empty section \value
+prepare_Rd: start_year.frq.Rd:41-43: Dropping empty section \note
+prepare_Rd: start_year.frq.Rd:38-40: Dropping empty section \author
+prepare_Rd: start_year.frq.Rd:35-37: Dropping empty section \references
+prepare_Rd: start_year.frq.Rd:47-49: Dropping empty section \seealso
+checkRd: (5) start_year.frq.Rd:0-60: Must have a \description
+prepare_Rd: steepness.doit.Rd:7-9: Dropping empty section \description
+prepare_Rd: steepness.doit.Rd:28-30: Dropping empty section \details
+prepare_Rd: steepness.doit.Rd:31-37: Dropping empty section \value
+prepare_Rd: steepness.doit.Rd:44-46: Dropping empty section \note
+prepare_Rd: steepness.doit.Rd:41-43: Dropping empty section \author
+prepare_Rd: steepness.doit.Rd:38-40: Dropping empty section \references
+prepare_Rd: steepness.doit.Rd:50-52: Dropping empty section \seealso
+checkRd: (5) steepness.doit.Rd:0-63: Must have a \description
+prepare_Rd: summarise.size.frq.bet.Rd:7-9: Dropping empty section \description
+prepare_Rd: summarise.size.frq.bet.Rd:22-24: Dropping empty section \details
+prepare_Rd: summarise.size.frq.bet.Rd:25-31: Dropping empty section \value
+prepare_Rd: summarise.size.frq.bet.Rd:38-40: Dropping empty section \note
+prepare_Rd: summarise.size.frq.bet.Rd:35-37: Dropping empty section \author
+prepare_Rd: summarise.size.frq.bet.Rd:32-34: Dropping empty section \references
+prepare_Rd: summarise.size.frq.bet.Rd:44-46: Dropping empty section \seealso
+checkRd: (5) summarise.size.frq.bet.Rd:0-57: Must have a \description
+prepare_Rd: tag_grps_rm.Rd:7-9: Dropping empty section \description
+prepare_Rd: tag_grps_rm.Rd:22-24: Dropping empty section \details
+prepare_Rd: tag_grps_rm.Rd:25-31: Dropping empty section \value
+prepare_Rd: tag_grps_rm.Rd:38-40: Dropping empty section \note
+prepare_Rd: tag_grps_rm.Rd:35-37: Dropping empty section \author
+prepare_Rd: tag_grps_rm.Rd:32-34: Dropping empty section \references
+prepare_Rd: tag_grps_rm.Rd:44-46: Dropping empty section \seealso
+checkRd: (5) tag_grps_rm.Rd:0-57: Must have a \description
+prepare_Rd: timesplit.doitall.Rd:7-9: Dropping empty section \description
+prepare_Rd: timesplit.doitall.Rd:25-27: Dropping empty section \details
+prepare_Rd: timesplit.doitall.Rd:28-34: Dropping empty section \value
+prepare_Rd: timesplit.doitall.Rd:41-43: Dropping empty section \note
+prepare_Rd: timesplit.doitall.Rd:38-40: Dropping empty section \author
+prepare_Rd: timesplit.doitall.Rd:35-37: Dropping empty section \references
+prepare_Rd: timesplit.doitall.Rd:47-49: Dropping empty section \seealso
+checkRd: (5) timesplit.doitall.Rd:0-60: Must have a \description
+prepare_Rd: timesplit.frq.Rd:7-9: Dropping empty section \description
+prepare_Rd: timesplit.frq.Rd:25-27: Dropping empty section \details
+prepare_Rd: timesplit.frq.Rd:28-34: Dropping empty section \value
+prepare_Rd: timesplit.frq.Rd:41-43: Dropping empty section \note
+prepare_Rd: timesplit.frq.Rd:38-40: Dropping empty section \author
+prepare_Rd: timesplit.frq.Rd:35-37: Dropping empty section \references
+prepare_Rd: timesplit.frq.Rd:47-49: Dropping empty section \seealso
+checkRd: (5) timesplit.frq.Rd:0-60: Must have a \description
+prepare_Rd: timesplit.tag.Rd:7-9: Dropping empty section \description
+prepare_Rd: timesplit.tag.Rd:22-24: Dropping empty section \details
+prepare_Rd: timesplit.tag.Rd:25-31: Dropping empty section \value
+prepare_Rd: timesplit.tag.Rd:38-40: Dropping empty section \note
+prepare_Rd: timesplit.tag.Rd:35-37: Dropping empty section \author
+prepare_Rd: timesplit.tag.Rd:32-34: Dropping empty section \references
+prepare_Rd: timesplit.tag.Rd:44-46: Dropping empty section \seealso
+checkRd: (5) timesplit.tag.Rd:0-57: Must have a \description
+prepare_Rd: varfromstr.Rd:7-9: Dropping empty section \description
+prepare_Rd: varfromstr.Rd:22-24: Dropping empty section \details
+prepare_Rd: varfromstr.Rd:25-31: Dropping empty section \value
+prepare_Rd: varfromstr.Rd:38-40: Dropping empty section \note
+prepare_Rd: varfromstr.Rd:35-37: Dropping empty section \author
+prepare_Rd: varfromstr.Rd:32-34: Dropping empty section \references
+prepare_Rd: varfromstr.Rd:44-46: Dropping empty section \seealso
+checkRd: (5) varfromstr.Rd:0-57: Must have a \description
+prepare_Rd: write.frq.Rd:7-9: Dropping empty section \description
+prepare_Rd: write.frq.Rd:22-24: Dropping empty section \details
+prepare_Rd: write.frq.Rd:25-31: Dropping empty section \value
+prepare_Rd: write.frq.Rd:38-40: Dropping empty section \note
+prepare_Rd: write.frq.Rd:35-37: Dropping empty section \author
+prepare_Rd: write.frq.Rd:32-34: Dropping empty section \references
+prepare_Rd: write.frq.Rd:44-46: Dropping empty section \seealso
+checkRd: (5) write.frq.Rd:0-57: Must have a \description
+prepare_Rd: write.ini.Rd:7-9: Dropping empty section \description
+prepare_Rd: write.ini.Rd:22-24: Dropping empty section \details
+prepare_Rd: write.ini.Rd:25-31: Dropping empty section \value
+prepare_Rd: write.ini.Rd:38-40: Dropping empty section \note
+prepare_Rd: write.ini.Rd:35-37: Dropping empty section \author
+prepare_Rd: write.ini.Rd:32-34: Dropping empty section \references
+prepare_Rd: write.ini.Rd:44-46: Dropping empty section \seealso
+checkRd: (5) write.ini.Rd:0-57: Must have a \description
+prepare_Rd: write.par.Rd:7-9: Dropping empty section \description
+prepare_Rd: write.par.Rd:22-24: Dropping empty section \details
+prepare_Rd: write.par.Rd:25-31: Dropping empty section \value
+prepare_Rd: write.par.Rd:38-40: Dropping empty section \note
+prepare_Rd: write.par.Rd:35-37: Dropping empty section \author
+prepare_Rd: write.par.Rd:32-34: Dropping empty section \references
+prepare_Rd: write.par.Rd:44-46: Dropping empty section \seealso
+checkRd: (5) write.par.Rd:0-57: Must have a \description
+prepare_Rd: write.tag.Rd:7-9: Dropping empty section \description
+prepare_Rd: write.tag.Rd:22-24: Dropping empty section \details
+prepare_Rd: write.tag.Rd:25-31: Dropping empty section \value
+prepare_Rd: write.tag.Rd:38-40: Dropping empty section \note
+prepare_Rd: write.tag.Rd:35-37: Dropping empty section \author
+prepare_Rd: write.tag.Rd:32-34: Dropping empty section \references
+prepare_Rd: write.tag.Rd:44-46: Dropping empty section \seealso
+checkRd: (5) write.tag.Rd:0-57: Must have a \description
+prepare_Rd: write_nmd.frq.Rd:7-9: Dropping empty section \description
+prepare_Rd: write_nmd.frq.Rd:22-24: Dropping empty section \details
+prepare_Rd: write_nmd.frq.Rd:25-31: Dropping empty section \value
+prepare_Rd: write_nmd.frq.Rd:38-40: Dropping empty section \note
+prepare_Rd: write_nmd.frq.Rd:35-37: Dropping empty section \author
+prepare_Rd: write_nmd.frq.Rd:32-34: Dropping empty section \references
+prepare_Rd: write_nmd.frq.Rd:44-46: Dropping empty section \seealso
+checkRd: (5) write_nmd.frq.Rd:0-57: Must have a \description
+prepare_Rd: write_nmd.par.Rd:7-9: Dropping empty section \description
+prepare_Rd: write_nmd.par.Rd:22-24: Dropping empty section \details
+prepare_Rd: write_nmd.par.Rd:25-31: Dropping empty section \value
+prepare_Rd: write_nmd.par.Rd:38-40: Dropping empty section \note
+prepare_Rd: write_nmd.par.Rd:35-37: Dropping empty section \author
+prepare_Rd: write_nmd.par.Rd:32-34: Dropping empty section \references
+prepare_Rd: write_nmd.par.Rd:44-46: Dropping empty section \seealso
+checkRd: (5) write_nmd.par.Rd:0-57: Must have a \description
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... WARNING
+Undocumented code objects:
+  alb.pagocatch_2011 compare.frq.size convert.frq.ver6
+  copy.condor.files get.tag.structure old.condor.go ppath rep.file
+All user-level objects in a package should have documentation entries.
+See the chapter 'Writing R documentation files' in manual 'Writing R
+Extensions'.
+* checking for code/documentation mismatches ... WARNING
+Functions/methods with usage in documentation object 'Convert.frq.ver6' but not in code:
+  Convert.frq.ver6
+
+Functions/methods with usage in documentation object 'compare.size.frq2' but not in code:
+  compare.size.frq2
+
+Functions/methods with usage in documentation object 'read_nmd.par' but not in code:
+  read_nmd.par
+
+Functions/methods with usage in documentation object 'write_nmd.par' but not in code:
+  write_nmd.par
+
+Codoc mismatches from documentation object 'add.cpue.frq':
+add.cpue.frq
+  Code: function(CPUE.file = "P:\\yft\\2009\\Data
+                 Preparation\\CPUE\\indices\\yft_JPstd_R1.txt", data =
+                 out.data, fishery = 1, add.cv = "T")
+  Docs: function(CPUE.file = "P:/yft/2009/Data
+                 Preparation/CPUE/indices/yft_JPstd_R1.txt", data =
+                 out.data, fishery = 1, add.cv = "T")
+  Mismatches in argument default values:
+    Name: 'CPUE.file' Code: "P:\\yft\\2009\\Data Preparation\\CPUE\\indices\\yft_JPstd_R1.txt" Docs: "P:/yft/2009/Data Preparation/CPUE/indices/yft_JPstd_R1.txt"
+
+Codoc mismatches from documentation object 'change.size.frq':
+change.size.frq
+  Code: function(ver = 6, data = data, FISH = 1, LF.FILE =
+                 "P:\\yft\\2009\\Data Preparation\\size
+                 data\\LLlendataR1.txt", WT.FILE = "P:\\yft\\2009\\Data
+                 Preparation\\size data\\LLwtdataR1.txt")
+  Docs: function(ver = 6, data = data, FISH = 1, LF.FILE =
+                 "P:/yft/2009/Data Preparation/size
+                 data/LLlendataR1.txt", WT.FILE = "P:/yft/2009/Data
+                 Preparation/size data/LLwtdataR1.txt")
+  Mismatches in argument default values:
+    Name: 'LF.FILE' Code: "P:\\yft\\2009\\Data Preparation\\size data\\LLlendataR1.txt" Docs: "P:/yft/2009/Data Preparation/size data/LLlendataR1.txt"
+    Name: 'WT.FILE' Code: "P:\\yft\\2009\\Data Preparation\\size data\\LLwtdataR1.txt" Docs: "P:/yft/2009/Data Preparation/size data/LLwtdataR1.txt"
+
+Codoc mismatches from documentation object 'compare.frq':
+compare.frq
+  Code: function(file1, file2, fm = "all", plotname, fdesc = "", lwd =
+                 2, what = rep(TRUE, 3))
+  Docs: function(file1, file2, fm = "all", plotname, fdesc = "")
+  Argument names in code not in docs:
+    lwd what
+
+Codoc mismatches from documentation object 'compare.size.frq':
+compare.size.frq
+  Code: function(frq1, frq2, fishery = 5, wt = T, prefx = "_", doyears,
+                 fdesc = "", summary = TRUE)
+  Docs: function(frq1, frq2, fishery = 5)
+  Argument names in code not in docs:
+    wt prefx doyears fdesc summary
+
+Codoc mismatches from documentation object 'condor.go':
+condor.go
+  Code: function(run.dir, frq.obj, tag.obj, doitall.obj, ini.obj,
+                 sub.obj, species = "alb", condor_f = condor_files,
+                 par.obj = NA, run_now = TRUE, fixpermissions = TRUE)
+  Docs: function(run.dir, frq.obj, tag.obj, doitall.obj, ini.obj,
+                 sub.obj = suball, species = "alb", condor_f =
+                 condor_files, par.obj = NA, run_now = T)
+  Argument names in code not in docs:
+    fixpermissions
+  Mismatches in argument default values:
+    Name: 'sub.obj' Code:  Docs: suball
+    Name: 'run_now' Code: TRUE Docs: T
+
+Codoc mismatches from documentation object 'create.missing.ce':
+create.missing.ce
+  Code: function(data = data, yr = 2009, termfish)
+  Docs: function(data = data, year = 2008)
+  Argument names in code not in docs:
+    yr termfish
+  Argument names in docs not in code:
+    year
+  Mismatches in argument names:
+    Position: 2 Code: yr Docs: year
+
+Codoc mismatches from documentation object 'do.critical.calcs':
+do.critical.calcs
+  Code: function(repfile = "P:\\yft\\2007\\BaseYFT\\yftfinal2007.rep",
+                 ests = "P:\\yft\\2007\\BaseYFT\\ests.rep")
+  Docs: function(repfile = "P:/yft/2007/BaseYFT/yftfinal2007.rep", ests
+                 = "P:/yft/2007/BaseYFT/ests.rep")
+  Mismatches in argument default values:
+    Name: 'repfile' Code: "P:\\yft\\2007\\BaseYFT\\yftfinal2007.rep" Docs: "P:/yft/2007/BaseYFT/yftfinal2007.rep"
+    Name: 'ests' Code: "P:\\yft\\2007\\BaseYFT\\ests.rep" Docs: "P:/yft/2007/BaseYFT/ests.rep"
+
+Codoc mismatches from documentation object 'get.length.output':
+get.length.output
+  Code: function(REGION = 1, DIR = "P:\\yft\\2009\\Data
+                 Preparation\\size data\\")
+  Docs: function(REGION = 1, DIR = "P:/yft/2009/Data Preparation/size
+                 data/")
+  Mismatches in argument default values:
+    Name: 'DIR' Code: "P:\\yft\\2009\\Data Preparation\\size data\\" Docs: "P:/yft/2009/Data Preparation/size data/"
+
+Codoc mismatches from documentation object 'get.weight.output':
+get.weight.output
+  Code: function(REGION = 1, DIR = "P:\\yft\\2009\\Data
+                 Preparation\\size data\\")
+  Docs: function(REGION = 1, DIR = "P:/yft/2009/Data Preparation/size
+                 data/")
+  Mismatches in argument default values:
+    Name: 'DIR' Code: "P:\\yft\\2009\\Data Preparation\\size data\\" Docs: "P:/yft/2009/Data Preparation/size data/"
+
+Codoc mismatches from documentation object 'map_all_pacific':
+map_all_pacific
+  Code: function(plot_title = "", lims = c(100, 300, -45, 45), eezfile
+                 = "L:\\alb\\2008\\Pago\\eznew2.txt")
+  Docs: function(plot_title = "", lims = c(100, 300, -45, 45), eezfile
+                 = "L:/alb/2008/Pago/eznew2.txt")
+  Mismatches in argument default values:
+    Name: 'eezfile' Code: "L:\\alb\\2008\\Pago\\eznew2.txt" Docs: "L:/alb/2008/Pago/eznew2.txt"
+
+Codoc mismatches from documentation object 'plot.F.time':
+plot.F.time
+  Code: function(plotdir = "H:\\rmfcl\\test\\figs\\", plotrep =
+                 "C:\\assessments\\alb\\2008\\6_area\\28.splitgr3\\plot-08.par.rep",
+                 inifile =
+                 "C:\\assessments\\alb\\2008\\6_area\\28.splitgr3\\alb.ini",
+                 plotname = "plotFtime", plottype = "wmf", COL = T)
+  Docs: function(plotdir = "H:/rmfcl/test/figs/", plotrep =
+                 "C:/assessments/alb/2008/6_area/28.splitgr3/plot-08.par.rep",
+                 inifile =
+                 "C:/assessments/alb/2008/6_area/28.splitgr3/alb.ini",
+                 plotname = "plotFtime", plottype = "wmf", COL = T)
+  Mismatches in argument default values:
+    Name: 'plotdir' Code: "H:\\rmfcl\\test\\figs\\" Docs: "H:/rmfcl/test/figs/"
+    Name: 'plotrep' Code: "C:\\assessments\\alb\\2008\\6_area\\28.splitgr3\\plot-08.par.rep" Docs: "C:/assessments/alb/2008/6_area/28.splitgr3/plot-08.par.rep"
+    Name: 'inifile' Code: "C:\\assessments\\alb\\2008\\6_area\\28.splitgr3\\alb.ini" Docs: "C:/assessments/alb/2008/6_area/28.splitgr3/alb.ini"
+
+Codoc mismatches from documentation object 'plot.Kobe':
+plot.Kobe
+  Code: function(plotdir = "S:\\OFP Publications\\Tuna Fishery
+                 Assessment Report\\2007\\Figures\\BET\\", plotrep =
+                 test, type = "SSB", plotname = "Kobe", plottype =
+                 "wmf", COL = T)
+  Docs: function(plotdir = "S:/OFP Publications/Tuna Fishery Assessment
+                 Report/2007/Figures/BET/", plotrep = test, type =
+                 "SSB", plotname = "Kobe", plottype = "wmf", COL = T)
+  Mismatches in argument default values:
+    Name: 'plotdir' Code: "S:\\OFP Publications\\Tuna Fishery Assessment Report\\2007\\Figures\\BET\\" Docs: "S:/OFP Publications/Tuna Fishery Assessment Report/2007/Figures/BET/"
+
+Codoc mismatches from documentation object 'plot.biomass':
+plot.biomass
+  Code: function(plotdir = "H:\\rmfcl\\test\\figs\\", plotrep = test,
+                 varfile = NULL, type = "SSB", plotname =
+                 "H:\\rmfcl\\test\\figs\\biomass", plottype = "wmf")
+  Docs: function(plotdir = "H:/rmfcl/test/figs/", plotrep = test,
+                 varfile = NULL, type = "SSB", plotname =
+                 "H:/rmfcl/test/figs/biomass", plottype = "wmf")
+  Mismatches in argument default values:
+    Name: 'plotdir' Code: "H:\\rmfcl\\test\\figs\\" Docs: "H:/rmfcl/test/figs/"
+    Name: 'plotname' Code: "H:\\rmfcl\\test\\figs\\biomass" Docs: "H:/rmfcl/test/figs/biomass"
+
+Codoc mismatches from documentation object 'plot.biomass.combined':
+plot.biomass.combined
+  Code: function(plotdir = "H:\\rmfcl\\test\\figs\\", plotrep = test,
+                 varfile = NULL, type = "SSB", plotname =
+                 "H:\\rmfcl\\test\\figs\\biomass", plottype = "wmf")
+  Docs: function(plotdir = "H:/rmfcl/test/figs/", plotrep = test,
+                 varfile = NULL, type = "SSB", plotname =
+                 "H:/rmfcl/test/figs/biomass", plottype = "wmf")
+  Mismatches in argument default values:
+    Name: 'plotdir' Code: "H:\\rmfcl\\test\\figs\\" Docs: "H:/rmfcl/test/figs/"
+    Name: 'plotname' Code: "H:\\rmfcl\\test\\figs\\biomass" Docs: "H:/rmfcl/test/figs/biomass"
+
+Codoc mismatches from documentation object 'plot.fishery.impact.r':
+plot.fishery.impact.r
+  Code: function(plotdir = "H:\\rmfcl\\test\\figs\\", type = "Total",
+                 plotrep = testq0, impnames = c("ll", "psass",
+                 "psunass", "idph", "other"), plotname = "plotimpact",
+                 plottype = "wmf", COL = T)
+  Docs: function(plotdir = "H:/rmfcl/test/figs/", type = "Total",
+                 plotrep = testq0, impnames = c("ll", "psass",
+                 "psunass", "idph", "other"), plotname = "plotimpact",
+                 plottype = "wmf", COL = T)
+  Mismatches in argument default values:
+    Name: 'plotdir' Code: "H:\\rmfcl\\test\\figs\\" Docs: "H:/rmfcl/test/figs/"
+
+Codoc mismatches from documentation object 'plot.nofishing':
+plot.nofishing
+  Code: function(plotdir = "H:\\rmfcl\\test\\figs\\", plotrep = testq0,
+                 type = "SSB", plotname =
+                 "H:\\rmfcl\\test\\figs\\Kobe", plottype = "wmf", COL =
+                 T)
+  Docs: function(plotdir = "H:/rmfcl/test/figs/", plotrep = testq0,
+                 type = "SSB", plotname = "H:/rmfcl/test/figs/Kobe",
+                 plottype = "wmf", COL = T)
+  Mismatches in argument default values:
+    Name: 'plotdir' Code: "H:\\rmfcl\\test\\figs\\" Docs: "H:/rmfcl/test/figs/"
+    Name: 'plotname' Code: "H:\\rmfcl\\test\\figs\\Kobe" Docs: "H:/rmfcl/test/figs/Kobe"
+
+Codoc mismatches from documentation object 'plot.nofishing.combined':
+plot.nofishing.combined
+  Code: function(plotdir = "H:\\rmfcl\\test\\figs\\", plotrep = testq0,
+                 type = "SSB", plotname =
+                 "H:\\rmfcl\\test\\figs\\Kobe", plottype = "wmf", COL =
+                 T)
+  Docs: function(plotdir = "H:/rmfcl/test/figs/", plotrep = testq0,
+                 type = "SSB", plotname = "H:/rmfcl/test/figs/Kobe",
+                 plottype = "wmf", COL = T)
+  Mismatches in argument default values:
+    Name: 'plotdir' Code: "H:\\rmfcl\\test\\figs\\" Docs: "H:/rmfcl/test/figs/"
+    Name: 'plotname' Code: "H:\\rmfcl\\test\\figs\\Kobe" Docs: "H:/rmfcl/test/figs/Kobe"
+
+Codoc mismatches from documentation object 'plot.recruitment':
+plot.recruitment
+  Code: function(plotdir = "H:\\rmfcl\\test\\figs\\", plotrep = test,
+                 varfile = NULL, plotname =
+                 "H:\\rmfcl\\test\\figs\\recruitment", plottype =
+                 "wmf")
+  Docs: function(plotdir = "H:/rmfcl/test/figs/", plotrep = test,
+                 varfile = NULL, plotname =
+                 "H:/rmfcl/test/figs/recruitment", plottype = "wmf")
+  Mismatches in argument default values:
+    Name: 'plotdir' Code: "H:\\rmfcl\\test\\figs\\" Docs: "H:/rmfcl/test/figs/"
+    Name: 'plotname' Code: "H:\\rmfcl\\test\\figs\\recruitment" Docs: "H:/rmfcl/test/figs/recruitment"
+
+Codoc mismatches from documentation object 'plot.recruitment.combined':
+plot.recruitment.combined
+  Code: function(plotdir = "H:\\rmfcl\\test\\figs\\", plotrep = test,
+                 varfile = NULL, plotname =
+                 "H:\\rmfcl\\test\\figs\\recruitment_combined",
+                 plottype = "wmf")
+  Docs: function(plotdir = "H:/rmfcl/test/figs/", plotrep = test,
+                 varfile = NULL, plotname =
+                 "H:/rmfcl/test/figs/recruitment_combined", plottype =
+                 "wmf")
+  Mismatches in argument default values:
+    Name: 'plotdir' Code: "H:\\rmfcl\\test\\figs\\" Docs: "H:/rmfcl/test/figs/"
+    Name: 'plotname' Code: "H:\\rmfcl\\test\\figs\\recruitment_combined" Docs: "H:/rmfcl/test/figs/recruitment_combined"
+
+Codoc mismatches from documentation object 'read.impact':
+read.impact
+  Code: function(impdir = "H:\\rmfcl\\test\\", impnames = c("ll",
+                 "psassoc", "psunassoc", "idph", "other"))
+  Docs: function(impdir = "H:/rmfcl/test/", impnames = c("ll",
+                 "psassoc", "psunassoc", "idph", "other"))
+  Mismatches in argument default values:
+    Name: 'impdir' Code: "H:\\rmfcl\\test\\" Docs: "H:/rmfcl/test/"
+
+Codoc mismatches from documentation object 'reconstruct.frq.ce':
+reconstruct.frq.ce
+  Code: function(CPUE.file = "X:\\yft\\2009\\Data
+                 Preparation\\CPUE\\indices\\yft_JPstd_R1.txt", data =
+                 out.data, fishery = 1)
+  Docs: function(CPUE.file = "X:/yft/2009/Data
+                 Preparation/CPUE/indices/yft_JPstd_R1.txt", data =
+                 out.data, fishery = 1)
+  Mismatches in argument default values:
+    Name: 'CPUE.file' Code: "X:\\yft\\2009\\Data Preparation\\CPUE\\indices\\yft_JPstd_R1.txt" Docs: "X:/yft/2009/Data Preparation/CPUE/indices/yft_JPstd_R1.txt"
+
+Codoc mismatches from documentation object 'reconstruct.frq.size':
+reconstruct.frq.size
+  Code: function(data = data, FISH = 1, LF.FILE = "P:\\yft\\2009\\Data
+                 Preparation\\size data\\LLlendataR1.txt", WT.FILE =
+                 "P:\\yft\\2009\\Data Preparation\\size
+                 data\\LLwtdataR1.txt")
+  Docs: function(data = data, FISH = 1, LF.FILE = "P:/yft/2009/Data
+                 Preparation/size data/LLlendataR1.txt", WT.FILE =
+                 "P:/yft/2009/Data Preparation/size
+                 data/LLwtdataR1.txt")
+  Mismatches in argument default values:
+    Name: 'LF.FILE' Code: "P:\\yft\\2009\\Data Preparation\\size data\\LLlendataR1.txt" Docs: "P:/yft/2009/Data Preparation/size data/LLlendataR1.txt"
+    Name: 'WT.FILE' Code: "P:\\yft\\2009\\Data Preparation\\size data\\LLwtdataR1.txt" Docs: "P:/yft/2009/Data Preparation/size data/LLwtdataR1.txt"
+
+Codoc mismatches from documentation object 'write.frq':
+write.frq
+  Code: function(frqfile, frq.obj)
+  Docs: function(new.frq, frq.obj)
+  Argument names in code not in docs:
+    frqfile
+  Argument names in docs not in code:
+    new.frq
+  Mismatches in argument names:
+    Position: 1 Code: frqfile Docs: new.frq
+
+Codoc mismatches from documentation object 'write.ini':
+write.ini
+  Code: function(ini.file, ini.obj, old.format = FALSE)
+  Docs: function(ini.file, ini.obj)
+  Argument names in code not in docs:
+    old.format
+
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking examples ... OK
+* checking PDF version of manual ... OK
+WARNING: There were 6 warnings, see
+  '/home/shares/assessments/R/packages/R4MFCL.src/R4MFCL.Rcheck/00check.log'
+for details

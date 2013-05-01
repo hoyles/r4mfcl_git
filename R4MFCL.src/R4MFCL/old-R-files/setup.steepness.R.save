@@ -1,0 +1,10 @@
+ setup.steepness <-
+function(rungrp,newsteep){
+  rungrp$doitall <- steepness.doit(rungrp$doitall,newsteep)
+  strun <- grep("export",rungrp$doitall)[1]
+  a <- (strun-1) + grep("recruitmentConstraints",rungrp$doitall[strun:length(rungrp$doitall)])
+  if(length(a)>1) {
+    rungrp$doitall <- rungrp$doitall[-a[2]]
+    }
+  return(rungrp)
+}
