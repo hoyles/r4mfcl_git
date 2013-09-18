@@ -8,15 +8,18 @@ create.missing.ce.Rd
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-create.missing.ce(data = data, year = 2008)
+create.missing.ce(data = data, yr = 2008, termfish)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{data}{
 %%     ~~Describe \code{data} here~~
 }
-  \item{year}{
-%%     ~~Describe \code{year} here~~
+  \item{yr}{
+%%     ~~Describe \code{yr} here~~
+}
+  \item{termfish}{
+%%     ~~Describe \code{termfish} here~~
 }
 }
 \details{
@@ -34,6 +37,7 @@ create.missing.ce(data = data, year = 2008)
 }
 \author{
 %%  ~~who you are~~
+Shelton Harley
 }
 \note{
 %%  ~~further notes~~

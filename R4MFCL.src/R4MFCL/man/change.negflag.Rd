@@ -39,6 +39,7 @@ change.negflag(doitall, flagtype, flagnum, newval)
 %% ~put references to the literature/web site here ~
 }
 \author{
+Simon Hoyle
 %%  ~~who you are~~
 }
 \note{

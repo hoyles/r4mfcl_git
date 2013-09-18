@@ -1,0 +1,22 @@
+#!/bin/sh
+pkg=R4MFCL
+R CMD build $pkg
+R CMD check $pkg |tee tt
+if [ ` grep -c ERROR tt` == 0 ] ; then
+  R CMD INSTALL -l ../ *.gz
+  chmod -R 0777 *
+  (cd ../
+   rm $pkg.zip
+   zip -r $pkg.zip $pkg
+   chmod 0777 $pkg
+   chmod 0777 $pkg.zip
+   chmod 0777 $pkg.src
+  ) 
+  echo ""
+  echo "Installation succeeded"
+else
+  echo ""
+  echo "THERE IS AN ERROR! Look in $pkg.Rcheck/00check.log for clues."
+  echo ""
+fi
+ 

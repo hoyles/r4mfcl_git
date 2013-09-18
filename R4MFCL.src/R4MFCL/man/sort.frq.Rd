@@ -6,6 +6,7 @@ sort.frq.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Sorts the data in a frq file with the fisheries and times in ascending order. 
 }
 \usage{
 sort.frq(frq.obj)
@@ -31,6 +32,7 @@ sort.frq(frq.obj)
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

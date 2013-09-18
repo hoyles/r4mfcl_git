@@ -6,6 +6,7 @@ read.catchrep.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Reads the catch.rep result file imnto an object. 
 }
 \usage{
 read.catchrep(catchrep.file)
@@ -31,6 +32,7 @@ read.catchrep(catchrep.file)
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

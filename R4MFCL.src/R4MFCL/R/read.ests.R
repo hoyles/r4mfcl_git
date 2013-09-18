@@ -1,5 +1,4 @@
- read.ests <-
-function(rep.obj,ests="C:/assessments/alb/2008/6_area/28.splitgr3/ests.rep",x=1)
+ read.ests <- function(rep.obj,ests="C:/assessments/alb/2008/6_area/28.splitgr3/ests.rep",x=1)
 {
 # Simon D Hoyle 24/6/09
 # Based on do.critical.calcs
@@ -8,7 +7,8 @@ myrep <- rep.obj
 # Dimensioning stuff
 Nages <- myrep$nAges
 Nfish <- myrep$nFisheries
-Nyears <- (myrep$nTimes/myrep$nRecs.yr)-1
+#Nyears <- (myrep$nTimes/myrep$nRecs.yr)-1
+Nyears <- (myrep$nTimes/myrep$nRecs.yr)
 Fyear <- myrep$Year1
 
 # Biological stuff
@@ -30,8 +30,6 @@ catage <- array(NA,dim=c(Nyears,Nages,Nfish),dimnames=list(seq(from=Fyear,length
     }
 
 start.lines <- grep("fishery  realiz. realiz. ratio      predicted     observed   observed    effort      number of", a)
-
-
 
 return(list(
     catage = catage))

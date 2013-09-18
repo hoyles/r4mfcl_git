@@ -6,6 +6,7 @@ rename.fishery.grps.doitall.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Rename all the fisheries in the vector oldfs to the numbers in the vector newfs, for the specified flag. 
 }
 \usage{
 rename.fishery.grps.doitall(doitall, oldfs, newfs, flag, keep = T, newgrps = c(0))
@@ -46,6 +47,7 @@ rename.fishery.grps.doitall(doitall, oldfs, newfs, flag, keep = T, newgrps = c(0
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

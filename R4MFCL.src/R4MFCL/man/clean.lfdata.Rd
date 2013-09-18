@@ -30,6 +30,7 @@ clean.lfdata(infrq)
 %% ~put references to the literature/web site here ~
 }
 \author{
+Simon Hoyle
 %%  ~~who you are~~
 }
 \note{

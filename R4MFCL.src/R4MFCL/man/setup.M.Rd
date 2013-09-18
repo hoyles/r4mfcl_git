@@ -6,6 +6,8 @@ setup.M.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Change the starting value of mean natural mortality in the ini file, and turn off M estimation. 
+The setup files are generally used in structural sensitivity analyses. They modify an object that contains all the MULTIFAN-CL input files. 
 }
 \usage{
 setup.M(rungrp, newM)
@@ -34,6 +36,7 @@ setup.M(rungrp, newM)
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

@@ -6,6 +6,7 @@ frq.remove.size.or.weight.data.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Provide a matrix (exclude) containing the following columns: Year | Month | week | fishery, and the function will remove the size and/or weight observations depending on the T/F flags. 
 }
 \usage{
 frq.remove.size.or.weight.data(data = test.data, exclude = exclude, size = T, weight = F)
@@ -40,6 +41,7 @@ frq.remove.size.or.weight.data(data = test.data, exclude = exclude, size = T, we
 }
 \author{
 %%  ~~who you are~~
+Shelton Harley
 }
 \note{
 %%  ~~further notes~~

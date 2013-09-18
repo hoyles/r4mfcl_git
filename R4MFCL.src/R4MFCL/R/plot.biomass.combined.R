@@ -1,8 +1,8 @@
  plot.biomass.combined <-
-function(plotdir="H:\\rmfcl\\test\\figs\\",plotrep=test,
+function(plotdir="H:/rmfcl/test/figs/",plotrep=test,
 varfile=NULL,
 type="SSB",
-plotname="H:\\rmfcl\\test\\figs\\biomass",
+plotname="H:/rmfcl/test/figs/biomass",
 plottype="wmf")
 {
 ##-----------------------------------------------------------------------

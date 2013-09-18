@@ -6,6 +6,8 @@ plot.recruitment.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Plot recruitment by region and then combined
+Option to add on CI as a polygoon for combined R only
 }
 \usage{
 plot.recruitment(plotdir = "H:/rmfcl/test/figs/", plotrep = test, varfile = NULL, plotname = "H:/rmfcl/test/figs/recruitment", plottype = "wmf")
@@ -43,6 +45,7 @@ plot.recruitment(plotdir = "H:/rmfcl/test/figs/", plotrep = test, varfile = NULL
 }
 \author{
 %%  ~~who you are~~
+Pierre Kleiber
 }
 \note{
 %%  ~~further notes~~

@@ -6,6 +6,7 @@ condor.go2.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Used to compile MULTIFAN-CL files and submit a job to condor. 
 }
 \usage{
 condor.go2(run.dir, frq.obj, tag.obj, doitall.obj, ini.obj, sub.obj = suball, species = "alb", condor_f = condor_files, par.obj = NA, run_now = T)
@@ -57,6 +58,7 @@ condor.go2(run.dir, frq.obj, tag.obj, doitall.obj, ini.obj, sub.obj = suball, sp
 %% ~put references to the literature/web site here ~
 }
 \author{
+Simon Hoyle
 %%  ~~who you are~~
 }
 \note{

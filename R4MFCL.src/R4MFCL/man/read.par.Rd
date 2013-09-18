@@ -6,6 +6,7 @@ read.par.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Reads the *.par output and input MULTIFAN-CL parameter file into an object. 
 }
 \usage{
 read.par(par.file)
@@ -31,6 +32,7 @@ read.par(par.file)
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

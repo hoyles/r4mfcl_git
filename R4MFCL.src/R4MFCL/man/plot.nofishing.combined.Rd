@@ -6,6 +6,7 @@ plot.nofishing.combined.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Plot the nofishing plots. 
 }
 \usage{
 plot.nofishing.combined(plotdir = "H:/rmfcl/test/figs/", plotrep = testq0, type = "SSB", plotname = "H:/rmfcl/test/figs/Kobe", plottype = "wmf", COL = T)
@@ -46,6 +47,7 @@ plot.nofishing.combined(plotdir = "H:/rmfcl/test/figs/", plotrep = testq0, type 
 }
 \author{
 %%  ~~who you are~~
+Shelton Harley
 }
 \note{
 %%  ~~further notes~~

@@ -8,7 +8,7 @@ compare.size.frq.Rd
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-compare.size.frq(frq1, frq2, fishery = 5)
+compare.size.frq(frq1, frq2, fishery = 5, wt=T, prefx = "_",doyears, fdesc="",summary=TRUE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -20,6 +20,21 @@ compare.size.frq(frq1, frq2, fishery = 5)
 }
   \item{fishery}{
 %%     ~~Describe \code{fishery} here~~
+}
+  \item{wt}{
+%%     ~~Describe \code{wt} here~~
+}
+  \item{prefx}{
+%%     ~~Describe \code{prefx} here~~
+}
+  \item{doyears}{
+%%     ~~Describe \code{doyears} here~~
+}
+  \item{fdesc}{
+%%     ~~Describe \code{fdesc} here~~
+}
+  \item{summary}{
+%%     ~~Describe \code{summary} here~~
 }
 }
 \details{
@@ -36,6 +51,7 @@ compare.size.frq(frq1, frq2, fishery = 5)
 %% ~put references to the literature/web site here ~
 }
 \author{
+Nick Davies
 %%  ~~who you are~~
 }
 \note{

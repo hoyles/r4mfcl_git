@@ -37,6 +37,7 @@ frq.change.nint(in.frq, add.lfint, add.wfint)
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

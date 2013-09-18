@@ -39,6 +39,7 @@ change.fishflag(a, fisheries, flagnum, newvals)
 %% ~put references to the literature/web site here ~
 }
 \author{
+Simon Hoyle
 %%  ~~who you are~~
 }
 \note{

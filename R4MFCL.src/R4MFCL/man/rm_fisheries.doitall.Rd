@@ -6,6 +6,7 @@ rm_fisheries.doitall.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Removes all flags for specified fisheries from the doitall. 
 }
 \usage{
 rm_fisheries.doitall(a, rmfisheries)
@@ -34,6 +35,7 @@ rm_fisheries.doitall(a, rmfisheries)
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

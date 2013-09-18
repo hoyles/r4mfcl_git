@@ -1,10 +1,11 @@
-rep.file <- "I:/assessments/Pop dy modeling/MFCL/R functions/testing/200201plot.rep"
+#rep.file <- "I:/assessments/Pop dy modeling/MFCL/R functions/testing/200201plot.rep"
 
 read.rep <- function(rep.file) {
   # Simon Hoyle June 2008
   # NMD June 2011 - flexibility for tag reporting rates structure
   # SDH October 2011 - adapt for projections ##
   # NMD November 2011 - small fix for input of NexpbyYrFsh
+  # SDH September 2013 - added yrs and alltimes. Won't cover all options, but will save calculating each time they're needed.
   a <- readLines(rep.file)
   # find startpoint
   pos1 <- grep("Observed spawning Biomass",a) ;  top <- a[1:pos1]
@@ -31,6 +32,8 @@ read.rep <- function(rep.file) {
   pos1 <- grep("# Catchability\\+effort dev\\. by realization ",a) ; qEdevAtAge <- matrix(nrow=nFisheries,ncol=max(nRlz.fsh)) ;
     for(i in 1:nFisheries) { qEdevAtAge[i,1:nRlz.fsh[i]] <- as.numeric(unlist(strsplit(a[pos1+i],split="[[:blank:]]+"))[-1]) }
   pos1 <- grep("# Fishing mortality by age class \\(across\\) and year \\(down\\)",a) ; FbyAgeYr <- t(sapply(a[(pos1+1):(pos1+nTimes)],datfromstr,USE.NAMES =F))
+  yrs  <- Year1 + (0:(nTimes-1))/nRecs.yr + ifelse(nRecs.yr==1,0,1/(2*nRecs.yr))
+  alltimes  <- sort(unique(as.vector(Rlz.t.fsh)))
 
   pos1 <- grep("# Fishing mortality by age class \\(across\\), year \\(down\\) and region \\(block\\)",a) ; FatYrAgeReg <- array(dim=c(nTimes,nAges,nReg)) ;
     for(j in 1:nReg) {
@@ -58,7 +61,7 @@ read.rep <- function(rep.file) {
   } else {
     pos1 <- grep("# Exploitable population biomass by fishery \\(across\\) and year \\(down\\)",a)
   }
-  NexpbyYrFsh <- t(sapply(a[(pos1+1):(pos1+nTimes)],datfromstr,USE.NAMES =F))
+  if(length(pos1)!=0) NexpbyYrFsh <- t(sapply(a[(pos1+1):(pos1+nTimes)],datfromstr,USE.NAMES =F)) else NexpbyYrFsh <- NA
   pos1 <- grep("# Exploitable population in same units as catch by fishery \\(across\\) and year \\(down\\)",a) ;
   if(length(pos1)!=0) {
     ExPopCUnitsbyYrFsh <- t(sapply(a[(pos1+1):(pos1+nTimes)],datfromstr,USE.NAMES =F))
@@ -142,26 +145,31 @@ read.rep <- function(rep.file) {
     }
   if (nReg>1) {
     pos1 <- grep("# Movement analysis",a);
-    nMPars <- grep("# Region 2",a[pos1:length(a)])[1] - 3;
-   MoveRates <- array(dim=c(nMPars,nReg,nReg)) ;
-   for (i in 1:nReg) {
-      MoveRates[,,i] <- t(sapply(a[(pos1+2):(pos1+nMPars+1)],datfromstr,USE.NAMES =F))
-      pos1 <- pos1 + nMPars + 1
-      }
-   } else { MoveRates <- NA }
+    if(length(pos1) > 0) {
+      nMPars <- grep("# Region 2",a[pos1:length(a)])[1] - 3;
+      MoveRates <- array(dim=c(nMPars,nReg,nReg)) ;
+     for (i in 1:nReg) {
+        MoveRates[,,i] <- t(sapply(a[(pos1+2):(pos1+nMPars+1)],datfromstr,USE.NAMES =F))
+        pos1 <- pos1 + nMPars + 1
+        }
+     } else { MoveRates <- NA }
+     } else { MoveRates <- NA }
   pos1 <- grep("# length-sample components of likelihood by fishery",a) ; lenLiks <- as.numeric(unlist(strsplit(a[pos1+1],split="[[:blank:]]+"))[-1])
   pos1 <- grep("# weight-sample components of likelihood by fishery",a) ; wtLiks <- as.numeric(unlist(strsplit(a[pos1+1],split="[[:blank:]]+"))[-1])
 
   pos1 <- grep("# Total biomass in absence of fishing",a) ;
   if(length(pos1)>0) {
     TotalBiomass.nofish <- t(sapply(a[(pos1+1):(pos1+nTimes)],datfromstr,USE.NAMES =F))
-    pos1 <- grep("# Adult biomass in absence of fishing",a) ; AdultBiomass.nofish <- t(sapply(a[(pos1+1):(pos1+nTimes)],datfromstr,USE.NAMES =F))
-    pos1 <- grep("# Exploitable populations in absence of fishing",a) ; ExplBiomass.nofish <- t(sapply(a[(pos1+1):(pos1+nTimes)],datfromstr,USE.NAMES =F))
-    pos1 <- grep("# Predicted catch for interaction analysis",a) ; PredCatch.interact <- matrix(nrow=nFisheries,ncol=max(nRlz.fsh)) ;
-      for(i in 1:nFisheries) { PredCatch.interact[i,1:nRlz.fsh[i]] <- datfromstr(a[pos1+i]) }
-    } else { TotalBiomass.nofish <- AdultBiomass.nofish <- ExplBiomass.nofish  <- PredCatch.interact <- NULL }
+    pos1 <- grep("# Adult biomass in absence of fishing",a) ; if(length(pos1)>0) AdultBiomass.nofish <- t(sapply(a[(pos1+1):(pos1+nTimes)],datfromstr,USE.NAMES =F)) else AdultBiomass.nofish <- NA
+    pos1 <- grep("# Exploitable populations in absence of fishing",a) ; if(length(pos1)>0) ExplBiomass.nofish <- t(sapply(a[(pos1+1):(pos1+nTimes)],datfromstr,USE.NAMES =F)) else ExplBiomass.nofish <- NA
+    pos1 <- grep("# Predicted catch for interaction analysis",a) ;
+    if(length(pos1)>0) {
+      PredCatch.interact <- matrix(nrow=nFisheries,ncol=max(nRlz.fsh)) ;
+      for(i in 1:nFisheries) { PredCatch.interact[i,1:nRlz.fsh[i]] <- datfromstr(a[pos1+i]) } }
+    else PredCatch.interact  <- NA
+      } else { TotalBiomass.nofish <- AdultBiomass.nofish <- ExplBiomass.nofish  <- PredCatch.interact <- NULL }
 
-  rep.obj <- list(nTimes=nTimes,Year1=Year1,nReg=nReg,nAges=nAges,nRecs.yr=nRecs.yr,
+  rep.obj <- list(nTimes=nTimes,Year1=Year1,nReg=nReg,nAges=nAges,nRecs.yr=nRecs.yr,yrs=yrs,alltimes=alltimes,
             nFisheries=nFisheries,nRlz.fsh=nRlz.fsh,Region.fsh=Region.fsh,Rlz.t.fsh=Rlz.t.fsh,mean.LatAge=mean.LatAge,
             sd.LatAge=sd.LatAge,mean.WatAge=mean.WatAge,
             MatAge=MatAge,SelAtAge=SelAtAge,qAtAge=qAtAge,qEdevAtAge=qEdevAtAge,FbyAgeYr=FbyAgeYr,FatYrAgeReg=FatYrAgeReg,

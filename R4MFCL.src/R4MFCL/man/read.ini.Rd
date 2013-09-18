@@ -6,6 +6,7 @@ read.ini.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Reads the *.ini data input file into an object. 
 }
 \usage{
 read.ini(ini.file)
@@ -31,6 +32,7 @@ read.ini(ini.file)
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

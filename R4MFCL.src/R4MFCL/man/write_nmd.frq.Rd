@@ -6,6 +6,7 @@ write_nmd.frq.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+An alternative write.frq function - writes out the frq file (catch and effort, size frequency and model structure)
 }
 \usage{
 write_nmd.frq(new.frq, frq.obj)
@@ -34,6 +35,7 @@ write_nmd.frq(new.frq, frq.obj)
 }
 \author{
 %%  ~~who you are~~
+Nick Davies
 }
 \note{
 %%  ~~further notes~~

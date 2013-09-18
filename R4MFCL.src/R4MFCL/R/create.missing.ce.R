@@ -1,4 +1,4 @@
-create.missing.ce <- function(data=data, yr=2009, termfish){
+create.missing.ce <- function(data=data, yr=2008, termfish){
 # By Shelton J Harley
 # modified 11/06/09 - it fell over when only 1 quarter of data was available!!
 # Updated 26/06/10 to have flexibility in the yr

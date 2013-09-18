@@ -46,6 +46,7 @@ plot.nofishing(plotdir = "H:/rmfcl/test/figs/", plotrep = testq0, type = "SSB", 
 }
 \author{
 %%  ~~who you are~~
+Shelton Harley
 }
 \note{
 %%  ~~further notes~~

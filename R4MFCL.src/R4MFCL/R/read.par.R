@@ -3,12 +3,15 @@ function(par.file) {
   # by Simon Hoyle June 2008
   # This is only partly built. Needs to be extended so it gets the whole par file into an object. Then do the same for write.par...
   # Nick : added sections explicitly for # tag flags; # tag fish rep; # tag fish rep group flags; # tag_fish_rep active flags; # tag_fish_rep target; # tag_fish_rep penalty
+  # NMD 22/06/12 - allow instance of no tag flags or tag pars at all (e.g. striped marlin)
 
   a <- readLines(par.file)
   pfl <- as.numeric(unlist(strsplit(a[2],split="[[:blank:]]+"))[-1])
   nages <- a[5]
   afl <- as.numeric(unlist(strsplit(a[7],split="[[:blank:]]+"))[-1])
-  pos1 <- grep("fish flags",a) ; pos2 <- grep("tag flags",a)
+  pos1 <- grep("fish flags",a) ;
+  pos2 <- grep("tag flags",a) ;
+  if(length(pos2)==0)   pos2 <- grep("# region control flags",a) ;
   ffl <- as.numeric(unlist(strsplit(a[pos1+1],split="[[:blank:]]+"))[-1])
   for (i in (pos1+2):(pos2-1)) {
     ffl <- rbind(ffl, as.numeric(unlist(strsplit(a[i],split="[[:blank:]]+"))[-1]))
@@ -16,7 +19,9 @@ function(par.file) {
   nfisheries <- dim(ffl)[1]
 # Check if there are the new tag report sections in the par file
   tsw <- 0  #Default switch setting on tag parameters to zero
+  tsw1 <- 0  #Default switch setting on tag parameters to zero
   tsw2 <- 0  #Default switch setting on tag parameters to zero
+  tsw3 <- 0  #Default switch setting on tag parameters to zero
   if(length(as.numeric(grep("# tag fish rep",a))) > 0){
 #   set the switch on for existence of tagging reporting parameters
     tsw <- 1
@@ -66,13 +71,16 @@ function(par.file) {
         treppen <- rbind(treppen, as.numeric(unlist(strsplit(a[i],split="[[:blank:]]+"))[-1]))
       }
     } 
-  } else {   # Tag reporting rate parameter blocks - just load tag flags
+  } else if(length(as.numeric(grep("tag flags",a))) > 0) {   # Tag reporting rate parameter blocks - just load tag flags
 #   load block of tag flags
+    tsw3 <- 1
     pos1 <- pos2 ; pos2 <- grep("# region control flags",a)
     tfl <- as.numeric(unlist(strsplit(a[pos1+1],split="[[:blank:]]+"))[-1])
     for (i in (pos1+2):(pos2-1)) {
       tfl <- rbind(tfl, as.numeric(unlist(strsplit(a[i],split="[[:blank:]]+"))[-1]))
     }
+  } else { #no tag data at all
+    tsw1 <- 1
   }
   pos1 <- grep("# percent maturity", a)[1]+1; maturity <- as.numeric(unlist(strsplit(a[pos1],split="[[:blank:]]+"))[-1])
   pos1 <- grep("# total populations scaling parameter", a)[1]+1; totpop <- as.double(a[pos1])
@@ -137,10 +145,25 @@ function(par.file) {
                   Lmin=Lmin, Lmax=Lmax, K=K, growth_vars=growth_vars, Richards=Richards, gr_offsets=gr_offsets,                  
                   rem=a[pos2:length(a)])
     }    
-  } else {    # Just load up to and including tag flags
+  } else if(tsw3 == 1) {    # Just load up to and including tag flags
     par.obj <- list(pfl=pfl,
                   nages=nages,
                   afl=afl,ffl=ffl,tfl=tfl,
+                  maturity=maturity,totpop=totpop,totpop_implicit,totpop_implicit,
+                  rec_init=rec_init,rectimes=rectimes,rel_recruitment=rel_recruitment,
+                  Mbase=Mbase,
+                  selectivity=selectivity,
+                  effdevcoffs=effdevcoffs,
+                  meanqs=meanqs,
+                  obj=obj,
+                  npars=npars,
+                  gradient=gradient,
+                  Lmin=Lmin, Lmax=Lmax, K=K, growth_vars=growth_vars, Richards=Richards, gr_offsets=gr_offsets,                  
+                  rem=a[pos2:length(a)])
+  } else if(tsw1 == 1) {    # No tag data at all
+    par.obj <- list(pfl=pfl,
+                  nages=nages,
+                  afl=afl,ffl=ffl,
                   maturity=maturity,totpop=totpop,totpop_implicit,totpop_implicit,
                   rec_init=rec_init,rectimes=rectimes,rel_recruitment=rel_recruitment,
                   Mbase=Mbase,

@@ -6,6 +6,8 @@ load.LFdata.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Loads length frequency data from a database via ODBC and labels it with region. These data can then be processed into MFCL format, via another function.  
+Mainly included as an example. 
 }
 \usage{
 load.LFdata(species = "ALB", gear = "L")
@@ -34,6 +36,7 @@ load.LFdata(species = "ALB", gear = "L")
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

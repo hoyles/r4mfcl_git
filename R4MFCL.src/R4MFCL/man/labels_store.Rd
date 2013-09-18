@@ -6,6 +6,7 @@ labels_store.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Loads the labels.tmp file into an object. 
 }
 \usage{
 labels_store(labelfile = basecase.labels)
@@ -31,6 +32,7 @@ labels_store(labelfile = basecase.labels)
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

@@ -6,6 +6,7 @@ plot_cpue_cv_frq.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Takes a version 6 frq file and par file and plots the CPUE and CVs for the chosen fisheries. Currently the fisheries need to have effort wts.
 }
 \usage{
 plot_cpue_cv_frq(frq, parf, fisheries)
@@ -37,6 +38,7 @@ plot_cpue_cv_frq(frq, parf, fisheries)
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

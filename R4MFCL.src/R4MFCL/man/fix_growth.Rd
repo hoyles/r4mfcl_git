@@ -31,6 +31,7 @@ fix_growth(a)
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

@@ -1,0 +1,28 @@
+ write.ini <-
+function(ini.file,ini.obj) {
+  # by Simon Hoyle June 2008
+  o <- ini.obj
+  a1 <- c("# number of age classes",o$nages,"# maturity at age",paste(o$mat,collapse=" "),"# natural mortality (per year)",o$M)
+  mv <- c("# movement map",paste(o$movemap,collapse=" "))
+#  dc1 <- rep("",dim(o$diffcoffs)[1])
+#  if (is.null(dim(o$diffcoffs))==F & dim(o$diffcoffs)!=1) {  
+  if (is.null(dim(o$diffcoffs))==F & max(dim(o$diffcoffs))!=1) {  
+    dc1 <- vector(mode="integer",length=dim(o$diffcoffs)[1]) 
+    for (i in 1:length(dc1)) { dc1[i] <- paste(o$diffcoffs[i,],collapse=" ") }
+    } else {
+  dc1 <- 0  }
+  dc <- paste(c("# diffusion coffs (per year)",dc1))
+  ap1 <- rep("",10)
+  for (i in 1:10) { ap1[i] <- paste(o$agepars[i,],collapse=" ") }
+  ap <- paste(c("# age_pars",ap1))
+  a2 <- c("# recruitment distribution by region",paste(o$recbyreg,collapse=" "),
+        "# The von Bertalanffy parameters","# Initial  lower bound  upper bound",
+        "# ML1",paste(o$VBLmin,collapse=" "),
+        "# ML12",paste(o$VBLmax,collapse=" "),
+        "# K (per year)",paste(o$VBK,collapse=" "),
+        "# Length-weight parameters",paste(o$LW,collapse=" "),
+        "# Generic SD of length at age",paste(o$sdLatA,collapse=" "),
+        "# Length-dependent SD",paste(o$Ldep_sd,collapse=" "),
+        "# The number of mean constraints",o$Nmeanconstr)
+  writeLines(c(a1,mv,dc,ap,a2),ini.file)
+}

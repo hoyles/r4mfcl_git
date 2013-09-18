@@ -6,6 +6,8 @@ plot.biomass.combined.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Plots biomass combined across all regions
+Option to add on CI as a polygoon
 }
 \usage{
 plot.biomass.combined(plotdir = "H:/rmfcl/test/figs/", plotrep = test, varfile = NULL, type = "SSB", plotname = "H:/rmfcl/test/figs/biomass", plottype = "wmf")
@@ -46,6 +48,7 @@ plot.biomass.combined(plotdir = "H:/rmfcl/test/figs/", plotrep = test, varfile =
 }
 \author{
 %%  ~~who you are~~
+Pierre Kleiber
 }
 \note{
 %%  ~~further notes~~

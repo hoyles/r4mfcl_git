@@ -6,6 +6,7 @@ regroup_fishery_grps.doitall.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Regroup all the fisheries in the vector f to the groups in the vector newgrps for the specified flag. 
 }
 \usage{
 regroup_fishery_grps.doitall(doitall, f, flag, newgrps)
@@ -40,6 +41,7 @@ regroup_fishery_grps.doitall(doitall, f, flag, newgrps)
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

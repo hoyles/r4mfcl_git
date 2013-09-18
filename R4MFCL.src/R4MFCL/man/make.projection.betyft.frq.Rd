@@ -6,6 +6,7 @@ make.projection.betyft.frq.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Formats MULTIFAN-CL frq file for projections. Has been made obsolete by a collection of more complex projection functions. 
 }
 \usage{
 make.projection.betyft.frq(frq.in = base.frq, fish = 1:24, years = 10)
@@ -37,6 +38,7 @@ make.projection.betyft.frq(frq.in = base.frq, fish = 1:24, years = 10)
 }
 \author{
 %%  ~~who you are~~
+Shelton Harley
 }
 \note{
 %%  ~~further notes~~

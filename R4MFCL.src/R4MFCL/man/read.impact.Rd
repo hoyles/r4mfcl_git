@@ -6,6 +6,7 @@ read.impact.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Reads the *.rep files from various impact runs into their own objects, and names them. 
 }
 \usage{
 read.impact(impdir = "H:/rmfcl/test/", impnames = c("ll", "psassoc", "psunassoc", "idph", "other"))
@@ -34,6 +35,7 @@ read.impact(impdir = "H:/rmfcl/test/", impnames = c("ll", "psassoc", "psunassoc"
 }
 \author{
 %%  ~~who you are~~
+Shelton Harley
 }
 \note{
 %%  ~~further notes~~

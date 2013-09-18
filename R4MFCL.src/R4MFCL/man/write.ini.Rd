@@ -6,9 +6,10 @@ write.ini.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Writes out the ini file in MULTIFAN-CL inoput format, from an ini object. 
 }
 \usage{
-write.ini(ini.file, ini.obj)
+write.ini(ini.file, ini.obj, old.format=FALSE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -17,6 +18,9 @@ write.ini(ini.file, ini.obj)
 }
   \item{ini.obj}{
 %%     ~~Describe \code{ini.obj} here~~
+}
+  \item{old.format}{
+%%     ~~Describe \code{old.format} here~~
 }
 }
 \details{
@@ -34,6 +38,7 @@ write.ini(ini.file, ini.obj)
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

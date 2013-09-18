@@ -6,6 +6,8 @@ setup.steepness.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Changes the fixed value of steepness in the assessment by editing the doitall file. 
+The setup files are generally used in structural sensitivity analyses. They modify an object that contains all the MULTIFAN-CL input files. 
 }
 \usage{
 setup.steepness(rungrp, newsteep)
@@ -34,6 +36,7 @@ setup.steepness(rungrp, newsteep)
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

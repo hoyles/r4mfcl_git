@@ -6,6 +6,7 @@ region_single_tag.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Change a tag object to a single region, removing all fisheries outside that region
 }
 \usage{
 region_single_tag(tag, region, keepfish)
@@ -37,6 +38,7 @@ region_single_tag(tag, region, keepfish)
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

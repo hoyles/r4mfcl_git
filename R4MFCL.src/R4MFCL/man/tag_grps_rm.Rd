@@ -6,6 +6,7 @@ tag_grps_rm.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Remove the specified tag groups from the tag object. 
 }
 \usage{
 tag_grps_rm(tag.obj, keep)
@@ -34,6 +35,7 @@ tag_grps_rm(tag.obj, keep)
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

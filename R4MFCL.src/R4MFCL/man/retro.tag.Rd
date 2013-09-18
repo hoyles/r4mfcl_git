@@ -6,6 +6,7 @@ retro.tag.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Set a tag object up fo a retrospective analysis. Need some more testing. 
 }
 \usage{
 retro.tag(tag.obj, yr)
@@ -34,6 +35,7 @@ retro.tag(tag.obj, yr)
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

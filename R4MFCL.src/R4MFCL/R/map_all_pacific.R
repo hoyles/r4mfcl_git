@@ -1,5 +1,5 @@
  map_all_pacific <-
-function(plot_title="",lims=c(100,300,-45,45),eezfile="L:\\alb\\2008\\Pago\\eznew2.txt") {
+function(plot_title="",lims=c(100,300,-45,45),eezfile="L:/alb/2008/Pago/eznew2.txt") {
 # By Adam Langley
 # Modified by Simon Hoyle
 # need these libraries

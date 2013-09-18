@@ -6,6 +6,7 @@ plot.F.time.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Plots annual F by year for adults and juveniles (as defined by the maturity ogive in the *.ini file)
 }
 \usage{
 plot.F.time(plotdir = "H:/rmfcl/test/figs/", plotrep = "C:/assessments/alb/2008/6_area/28.splitgr3/plot-08.par.rep", inifile = "C:/assessments/alb/2008/6_area/28.splitgr3/alb.ini", plotname = "plotFtime", plottype = "wmf", COL = T)
@@ -46,6 +47,7 @@ plot.F.time(plotdir = "H:/rmfcl/test/figs/", plotrep = "C:/assessments/alb/2008/
 }
 \author{
 %%  ~~who you are~~
+Pierre Kleiber
 }
 \note{
 %%  ~~further notes~~

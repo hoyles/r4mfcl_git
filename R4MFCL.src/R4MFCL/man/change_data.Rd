@@ -39,6 +39,7 @@ change_data(obj, searchtext, xlines, newline)
 %% ~put references to the literature/web site here ~
 }
 \author{
+Simon Hoyle
 %%  ~~who you are~~
 }
 \note{

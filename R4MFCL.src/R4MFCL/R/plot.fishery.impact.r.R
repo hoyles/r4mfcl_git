@@ -1,6 +1,6 @@
  plot.fishery.impact.r <-
 function(
-plotdir="H:\\rmfcl\\test\\figs\\",
+plotdir="H:/rmfcl/test/figs/",
 type = "Total",
 plotrep = testq0,
 impnames = c("ll","psass","psunass","idph","other"),

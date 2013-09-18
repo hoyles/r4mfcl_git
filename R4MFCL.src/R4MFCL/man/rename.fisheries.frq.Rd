@@ -6,6 +6,7 @@ rename.fisheries.frq.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Rename all the fisheries in the vector oldfish to the numbers in the vector newfish. 
 }
 \usage{
 rename.fisheries.frq(frq.obj, oldfish, newfish)
@@ -37,6 +38,7 @@ rename.fisheries.frq(frq.obj, oldfish, newfish)
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

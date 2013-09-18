@@ -6,6 +6,7 @@ rm_fisheries.tag.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Removes all recoveries in specified fisheries from a tag object. 
 }
 \usage{
 rm_fisheries.tag(tag.obj, fisheries)
@@ -34,6 +35,7 @@ rm_fisheries.tag(tag.obj, fisheries)
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

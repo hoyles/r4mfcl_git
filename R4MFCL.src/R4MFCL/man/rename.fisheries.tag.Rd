@@ -6,6 +6,7 @@ rename.fisheries.tag.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Rename the fisheries in oldfish to the fishery numbers in newfish. 
 }
 \usage{
 rename.fisheries.tag(tag.obj, oldfish, newfish)
@@ -37,6 +38,7 @@ rename.fisheries.tag(tag.obj, oldfish, newfish)
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

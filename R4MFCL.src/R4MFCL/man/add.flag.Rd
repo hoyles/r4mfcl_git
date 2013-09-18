@@ -6,6 +6,7 @@ add.flag.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Adds a flag to the doitall object. 
 }
 \usage{
 add.flag(doitall, flagtype, flagnum, newval, phase)
@@ -43,6 +44,7 @@ add.flag(doitall, flagtype, flagnum, newval, phase)
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

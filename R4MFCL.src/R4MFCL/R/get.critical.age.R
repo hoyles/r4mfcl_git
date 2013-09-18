@@ -3,6 +3,7 @@ function(data=Base.rep)
 {
 # calculates the age (and associated length, and weight)
 # where the weight of a cohort is maximised
+# Shelton Harley
 
 model <- data.frame(age=seq(1,data$nAges),length=data$mean.LatAge,
 weight=data$mean.WatAge,M=data$MatAge,Numbers=rep(NA,data$nAges),Biomass=rep(NA,data$nAges))

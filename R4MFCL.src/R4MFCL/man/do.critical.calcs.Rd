@@ -6,6 +6,8 @@ do.critical.calcs.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Uses the dimensioning stuff provided in the rep file and the mean lengths and weights at age, 
+and takes the fishery specific catch at age from the ests file
 }
 \usage{
 do.critical.calcs(repfile = "P:/yft/2007/BaseYFT/yftfinal2007.rep", ests = "P:/yft/2007/BaseYFT/ests.rep")
@@ -33,6 +35,7 @@ do.critical.calcs(repfile = "P:/yft/2007/BaseYFT/yftfinal2007.rep", ests = "P:/y
 %% ~put references to the literature/web site here ~
 }
 \author{
+Shelton Harley
 %%  ~~who you are~~
 }
 \note{

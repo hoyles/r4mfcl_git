@@ -1,5 +1,4 @@
-compare.size.frq <- function(frq1,frq2,fishery=5, wt=T, prefx = "_",doyears,
-                             fdesc="",summary=TRUE)
+compare.size.frq <- function(frq1,frq2,fishery=5, wt=T, prefx = "_",doyears, fdesc="",summary=TRUE)
 {
 ##==================================================================================
 ## takes two frq files and compares the length and weight data on an annual basis for

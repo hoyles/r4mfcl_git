@@ -6,7 +6,8 @@ plot.recruitment.combined.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
-}
+Plots biomass combined across all regions
+Option to add on CI as a polygoon}
 \usage{
 plot.recruitment.combined(plotdir = "H:/rmfcl/test/figs/", plotrep = test, varfile = NULL, plotname = "H:/rmfcl/test/figs/recruitment_combined", plottype = "wmf")
 }
@@ -43,6 +44,7 @@ plot.recruitment.combined(plotdir = "H:/rmfcl/test/figs/", plotrep = test, varfi
 }
 \author{
 %%  ~~who you are~~
+Pierre Kleiber
 }
 \note{
 %%  ~~further notes~~

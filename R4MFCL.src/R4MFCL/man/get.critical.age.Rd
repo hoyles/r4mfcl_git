@@ -6,6 +6,7 @@ get.critical.age.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Calculates the age (and associated length, and weight) where the weight of a cohort is maximised. 
 }
 \usage{
 get.critical.age(data = Base.rep)
@@ -14,6 +15,7 @@ get.critical.age(data = Base.rep)
 \arguments{
   \item{data}{
 %%     ~~Describe \code{data} here~~
+A .rep object
 }
 }
 \details{
@@ -31,6 +33,7 @@ get.critical.age(data = Base.rep)
 }
 \author{
 %%  ~~who you are~~
+Shelton Harley
 }
 \note{
 %%  ~~further notes~~

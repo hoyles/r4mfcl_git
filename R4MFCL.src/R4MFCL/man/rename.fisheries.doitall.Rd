@@ -6,6 +6,7 @@ rename.fisheries.doitall.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Rename all the fisheries in the vector oldfs to the numbers in the vector newfs. 
 }
 \usage{
 rename.fisheries.doitall(doitall, oldfs, newfs)
@@ -37,6 +38,7 @@ rename.fisheries.doitall(doitall, oldfs, newfs)
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

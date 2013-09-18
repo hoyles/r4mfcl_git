@@ -1,11 +1,6 @@
 add.catch.frq	add.catch.frq
 add.cpue.frq	add.cpue.frq
 add.flag	add.flag
-alb.clean.lfdata	alb.clean.lfdata
-alb.initial_clean_2008	alb.initial_clean_2008
-alb.initial_clean_2009	alb.initial_clean_2009
-alb.initial_clean_2011	alb.initial_clean_2011
-alb.pagocatch_2009	alb.pagocatch_2009
 carry.effort.frq	carry.effort.frq
 change.fishflag	change.fishflag
 change.flag	change.flag
@@ -18,13 +13,12 @@ clean.lfdata	clean.lfdata
 compare.ce.frq	compare.ce.frq
 compare.frq	compare.frq
 compare.size.frq	compare.size.frq
-compare.size.frq2	compare.size.frq2
 compare_par_flags	compare_par_flags
 condor.go	condor.go
 condor.go2	condor.go2
-Convert.frq.ver6	Convert.frq.ver6
+convert.frq.ver6	Convert.frq.ver6
+copy.condor.files	copy.condor.files
 create.missing.ce	create.missing.ce
-create.ver6.frq	create.ver6.frq
 crit.fishery.summary	crit.fishery.summary
 crit.summary	crit.summary
 datfromstr	datfromstr
@@ -37,10 +31,8 @@ frq.remove.size.or.weight.data	frq.remove.size.or.weight.data
 get.critical.age	get.critical.age
 get.length.output	get.length.output
 get.outcomes	get.outcomes
-get.outcomes.alb	get.outcomes.alb
-get.outcomes.test	get.outcomes.test
+get.tag.structure	get.tag.structure
 get.weight.output	get.weight.output
-initial_clean_2008	initial_clean_2008
 labels_store	labels_store
 load.LFdata	load.LFdata
 make.projection.betyft.frq	make.projection.betyft.frq
@@ -48,10 +40,7 @@ map_all_pacific	map_all_pacific
 merge.frq	merge.frq
 merge.tag	merge.tag
 merge_tag_objs	merge_tag_objs
-NZtrollglm	NZtrollglm
-oldsetup	oldsetup
 pack.fisheries.frq	pack.fisheries.frq
-pagocatch	pagocatch
 plot.base.comparison	plot.base.comparison
 plot.biomass	plot.biomass
 plot.biomass.combined	plot.biomass.combined
@@ -71,6 +60,8 @@ plot.pacific.yft	plot.pacific.yft
 plot.recruitment	plot.recruitment
 plot.recruitment.combined	plot.recruitment.combined
 plot_cpue_cv_frq	plot_cpue_cv_frq
+ppath	ppath
+R4MFCL	R4MFCL-package
 read.catchrep	read.catchrep
 read.ests	read.ests
 read.fit	read.fit
@@ -80,12 +71,9 @@ read.ini	read.ini
 read.par	read.par
 read.rep	read.rep
 read.tag	read.tag
-read.tags.JP	read.tags.JP
 read.var	read.var
 read_nmd.frq	read_nmd.frq
-read_nmd.par	read_nmd.par
 reconstruct.frq.ce	reconstruct.frq.ce
-reconstruct.frq.ce2008	reconstruct.frq.ce2008
 reconstruct.frq.size	reconstruct.frq.size
 region_single_frq	region_single_frq
 region_single_ini	region_single_ini
@@ -132,4 +120,3 @@ write.ini	write.ini
 write.par	write.par
 write.tag	write.tag
 write_nmd.frq	write_nmd.frq
-write_nmd.par	write_nmd.par

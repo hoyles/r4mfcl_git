@@ -6,6 +6,7 @@ start_year.frq.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Change the starting year of the assessment by removing all frq data before that time and changing the start year parameter. 
 }
 \usage{
 start_year.frq(frq.obj, start_yr, halfyr = F)
@@ -37,6 +38,7 @@ start_year.frq(frq.obj, start_yr, halfyr = F)
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

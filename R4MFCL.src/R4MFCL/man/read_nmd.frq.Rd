@@ -6,6 +6,7 @@ read_nmd.frq.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Reads in the frq file into a frq object for either version 4 or 6+. 
 }
 \usage{
 read_nmd.frq(frq.file, frq.title = "", ntop = 0, fishdefs = NA)
@@ -40,6 +41,7 @@ read_nmd.frq(frq.file, frq.title = "", ntop = 0, fishdefs = NA)
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

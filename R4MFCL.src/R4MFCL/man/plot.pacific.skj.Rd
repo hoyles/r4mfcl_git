@@ -6,6 +6,7 @@ plot.pacific.skj.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Plots the Pacific and includes boundaries for the skipjack tuna model. 
 }
 \usage{
 plot.pacific.skj(plot_title = "")
@@ -31,6 +32,7 @@ plot.pacific.skj(plot_title = "")
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

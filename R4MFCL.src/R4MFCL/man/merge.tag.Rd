@@ -6,6 +6,7 @@ merge.tag.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Change the fishery numbers for tag recoveries in a tag object. 
 }
 \usage{
 merge.tag(tag.obj, oldf, newf)
@@ -37,6 +38,7 @@ merge.tag(tag.obj, oldf, newf)
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

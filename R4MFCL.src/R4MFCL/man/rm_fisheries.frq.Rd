@@ -6,6 +6,7 @@ rm_fisheries.frq.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Removes all catch and effort in specific fisheries. 
 }
 \usage{
 rm_fisheries.frq(frq.obj, fishery)
@@ -34,6 +35,7 @@ rm_fisheries.frq(frq.obj, fishery)
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

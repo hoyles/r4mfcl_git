@@ -1,5 +1,5 @@
  read.impact <-
-function(impdir = "H:\\rmfcl\\test\\",impnames = c("ll","psassoc","psunassoc","idph","other"))
+function(impdir = "H:/rmfcl/test/",impnames = c("ll","psassoc","psunassoc","idph","other"))
 {
 for(i in 1:length(impnames))
 {

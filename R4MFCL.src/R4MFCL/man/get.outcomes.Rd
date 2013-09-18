@@ -6,6 +6,7 @@ get.outcomes.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Extracts management information from result files
 }
 \usage{
 get.outcomes(file.rep, file.par, nofish = T)
@@ -37,6 +38,7 @@ get.outcomes(file.rep, file.par, nofish = T)
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

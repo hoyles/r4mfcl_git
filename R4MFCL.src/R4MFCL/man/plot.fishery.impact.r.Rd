@@ -6,6 +6,8 @@ plot.fishery.impact.r.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Does the fishery impact plot by taking the output straight from the plot.rep files
+You need to give the file names for the input files
 }
 \usage{
 plot.fishery.impact.r(plotdir = "H:/rmfcl/test/figs/", type = "Total", plotrep = testq0, impnames = c("ll", "psass", "psunass", "idph", "other"), plotname = "plotimpact", plottype = "wmf", COL = T)
@@ -49,6 +51,7 @@ plot.fishery.impact.r(plotdir = "H:/rmfcl/test/figs/", type = "Total", plotrep =
 }
 \author{
 %%  ~~who you are~~
+Shelton Harley
 }
 \note{
 %%  ~~further notes~~

@@ -2,8 +2,8 @@
 function(ver=6,data=data,FISH=1,
 # By Shelton Harley 2009
 
-LF.FILE="P:\\yft\\2009\\Data Preparation\\size data\\LLlendataR1.txt",
-WT.FILE="P:\\yft\\2009\\Data Preparation\\size data\\LLwtdataR1.txt")
+LF.FILE="P:/yft/2009/Data Preparation/size data/LLlendataR1.txt",
+WT.FILE="P:/yft/2009/Data Preparation/size data/LLwtdataR1.txt")
 {
 #  modified 30/06/09 to be able to handle ver 4 and ver 6 frq files
 

@@ -1,5 +1,5 @@
  do.critical.calcs <-
-function(repfile="P:\\yft\\2007\\BaseYFT\\yftfinal2007.rep",ests="P:\\yft\\2007\\BaseYFT\\ests.rep")
+function(repfile="P:/yft/2007/BaseYFT/yftfinal2007.rep",ests="P:/yft/2007/BaseYFT/ests.rep")
 {
 # Uses the dimensioning stuff provided in the rep file and the mean lengths and weights at age
 # And takes the fishery specific catch at age from the ests file

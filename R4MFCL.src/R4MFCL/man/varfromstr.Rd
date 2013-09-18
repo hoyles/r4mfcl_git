@@ -34,6 +34,7 @@ varfromstr(datstring, cols = c(2:3))
 }
 \author{
 %%  ~~who you are~~
+Pierre Kleiber
 }
 \note{
 %%  ~~further notes~~

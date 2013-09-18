@@ -6,6 +6,8 @@ setup.pscatch.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Replace the catches in purse seine fisheries (2011 WCPO bigeye) with values supplied in a folder with prefix 'PScatch'. Needs modification to be more general. 
+The setup files are generally used in structural sensitivity analyses. They modify an object that contains all the MULTIFAN-CL input files. 
 }
 \usage{
 setup.pscatch(rungrp, sourcedir, PScatch, spp)
@@ -40,6 +42,7 @@ setup.pscatch(rungrp, sourcedir, PScatch, spp)
 }
 \author{
 %%  ~~who you are~~
+Nick Davies
 }
 \note{
 %%  ~~further notes~~

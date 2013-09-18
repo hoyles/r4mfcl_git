@@ -6,6 +6,7 @@ read.var.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Reads the *.var result file into an object. 
 }
 \usage{
 read.var(var.file)
@@ -31,6 +32,7 @@ read.var(var.file)
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

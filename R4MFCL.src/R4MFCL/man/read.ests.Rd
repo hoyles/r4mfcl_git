@@ -6,6 +6,7 @@ read.ests.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Load the ests.rep file into an object. 
 }
 \usage{
 read.ests(rep.obj, ests = "C:/assessments/alb/2008/6_area/28.splitgr3/ests.rep", x = 1)
@@ -37,6 +38,7 @@ read.ests(rep.obj, ests = "C:/assessments/alb/2008/6_area/28.splitgr3/ests.rep",
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

@@ -1,8 +1,8 @@
  plot.recruitment <-
 function(
-plotdir="H:\\rmfcl\\test\\figs\\",plotrep=test,
+plotdir="H:/rmfcl/test/figs/",plotrep=test,
 varfile=NULL,
-plotname="H:\\rmfcl\\test\\figs\\recruitment",
+plotname="H:/rmfcl/test/figs/recruitment",
 plottype="wmf")
 {
 ##-----------------------------------------------------------------------

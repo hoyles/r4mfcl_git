@@ -6,6 +6,8 @@ setup.LFwt.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Change the likelihood weight on the length frequencies to the specified value in specified fisheries, defaulting to all fisheries. 
+The setup files are generally used in structural sensitivity analyses. They modify an object that contains all the MULTIFAN-CL input files. 
 }
 \usage{
 setup.LFwt(rungrp, newLFwt)
@@ -34,6 +36,7 @@ setup.LFwt(rungrp, newLFwt)
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

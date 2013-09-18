@@ -1,17 +1,84 @@
+Loading required package: tcltk
+Loading required package: Hmisc
+Loading required package: survival
+Loading required package: stats
+Loading required package: graphics
+Loading required package: splines
+Loading required package: Formula
+Hmisc library by Frank E Harrell Jr
 
-x86_64-unknown-linux-gnu, R 2.13.0, Sat Dec 10 07:04:44 2011
+Type library(help='Hmisc'), ?Overview, or ?Hmisc.Overview')
+to see overall documentation.
 
+
+Attaching package: 'Hmisc'
+
+The following object is masked from 'package:survival':
+
+    untangle.specials
+
+The following objects are masked from 'package:base':
+
+    format.pval, round.POSIXt, trunc.POSIXt, units
+
+Loading required package: R2HTML
 * installing *source* package 'R4MFCL' ...
 ** R
+** data
+** inst
 ** preparing package for lazy loading
 ** help
-Warning: /home/shares/assessments/R/packages/R4MFCL.src/R4MFCL/man/alb.pagocatch_2009.Rd:52: unexpected END_OF_INPUT '
-'
 *** installing help indices
-** building package indices ...
+** building package indices
 ** testing if installed package can be loaded
+*** arch - i386
+Loading required package: tcltk
+Loading required package: Hmisc
+Loading required package: survival
+Loading required package: stats
+Loading required package: graphics
+Loading required package: splines
+Loading required package: Formula
+Hmisc library by Frank E Harrell Jr
 
-x86_64-unknown-linux-gnu, R 2.13.0, Sat Dec 10 07:04:46 2011
+Type library(help='Hmisc'), ?Overview, or ?Hmisc.Overview')
+to see overall documentation.
 
 
+Attaching package: 'Hmisc'
+
+The following object is masked from 'package:survival':
+
+    untangle.specials
+
+The following objects are masked from 'package:base':
+
+    format.pval, round.POSIXt, trunc.POSIXt, units
+
+Loading required package: R2HTML
+*** arch - x64
+Loading required package: tcltk
+Loading required package: Hmisc
+Loading required package: survival
+Loading required package: stats
+Loading required package: graphics
+Loading required package: splines
+Loading required package: Formula
+Hmisc library by Frank E Harrell Jr
+
+Type library(help='Hmisc'), ?Overview, or ?Hmisc.Overview')
+to see overall documentation.
+
+
+Attaching package: 'Hmisc'
+
+The following object is masked from 'package:survival':
+
+    untangle.specials
+
+The following objects are masked from 'package:base':
+
+    format.pval, round.POSIXt, trunc.POSIXt, units
+
+Loading required package: R2HTML
 * DONE (R4MFCL)

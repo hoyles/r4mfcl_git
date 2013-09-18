@@ -6,6 +6,7 @@ crit.fishery.summary.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Takes the output from do.critical.calcs and gets the key reference points
 }
 \usage{
 crit.fishery.summary(crit)
@@ -30,6 +31,7 @@ crit.fishery.summary(crit)
 %% ~put references to the literature/web site here ~
 }
 \author{
+Shelton Harley
 %%  ~~who you are~~
 }
 \note{

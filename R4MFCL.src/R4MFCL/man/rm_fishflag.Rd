@@ -6,6 +6,7 @@ rm_fishflag.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Removes all occurrences of changes to a specified fish flag from the doitall. 
 }
 \usage{
 rm_fishflag(doitall, flag)
@@ -34,6 +35,7 @@ rm_fishflag(doitall, flag)
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

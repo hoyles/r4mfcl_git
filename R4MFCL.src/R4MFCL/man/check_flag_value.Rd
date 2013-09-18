@@ -42,6 +42,7 @@ check_flag_value(parname, flagtype, flagnums, fishery = NA, flaglist = T)
 %% ~put references to the literature/web site here ~
 }
 \author{
+Simon Hoyle
 %%  ~~who you are~~
 }
 \note{

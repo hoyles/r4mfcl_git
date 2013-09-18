@@ -6,9 +6,10 @@ condor.go.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Used to compile MULTIFAN-CL files and submit a job to condor. 
 }
 \usage{
-condor.go(run.dir, frq.obj, tag.obj, doitall.obj, ini.obj, sub.obj = suball, species = "alb", condor_f = condor_files, par.obj = NA, run_now = T)
+condor.go(run.dir, frq.obj, tag.obj, doitall.obj, ini.obj, sub.obj, species = "alb", condor_f = condor_files, par.obj = NA, run_now = TRUE,fixpermissions=TRUE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -42,6 +43,9 @@ condor.go(run.dir, frq.obj, tag.obj, doitall.obj, ini.obj, sub.obj = suball, spe
   \item{run_now}{
 %%     ~~Describe \code{run_now} here~~
 }
+  \item{fixpermissions}{
+%%     ~~Describe \code{fixpermissions} here~~
+}
 }
 \details{
 %%  ~~ If necessary, more details than the description above ~~
@@ -57,6 +61,7 @@ condor.go(run.dir, frq.obj, tag.obj, doitall.obj, ini.obj, sub.obj = suball, spe
 %% ~put references to the literature/web site here ~
 }
 \author{
+Simon Hoyle and Pierre Kleiber
 %%  ~~who you are~~
 }
 \note{

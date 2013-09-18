@@ -6,6 +6,7 @@ reconstruct.frq.size.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Pull in new size and weight frequency data and rebuild the frq object. Not generalized - specific to WCPO bigeye. 
 }
 \usage{
 reconstruct.frq.size(data = data, FISH = 1, LF.FILE = "P:/yft/2009/Data Preparation/size data/LLlendataR1.txt", WT.FILE = "P:/yft/2009/Data Preparation/size data/LLwtdataR1.txt")
@@ -40,6 +41,7 @@ reconstruct.frq.size(data = data, FISH = 1, LF.FILE = "P:/yft/2009/Data Preparat
 }
 \author{
 %%  ~~who you are~~
+Shelton Harley
 }
 \note{
 %%  ~~further notes~~

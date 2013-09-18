@@ -6,14 +6,15 @@ write.frq.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Writes out the frq file (catch and effort, size frequency and model structure). 
 }
 \usage{
-write.frq(new.frq, frq.obj)
+write.frq(frqfile, frq.obj)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{new.frq}{
-%%     ~~Describe \code{new.frq} here~~
+  \item{frqfile}{
+%%     ~~Describe \code{frqfile} here~~
 }
   \item{frq.obj}{
 %%     ~~Describe \code{frq.obj} here~~
@@ -34,6 +35,7 @@ write.frq(new.frq, frq.obj)
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

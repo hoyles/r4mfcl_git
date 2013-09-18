@@ -6,6 +6,7 @@ plot.pacific.species.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Plots the Pacific and includes boundaries for the specified model. 
 }
 \usage{
 plot.pacific.species(plot_title = "", uselims = NA, add.WCPFC = F, add.EPO = F, sp = "YFT", add.EEZ = T, eez_file = "I:/assessments/Pop dy modeling/MFCL/R functions/EZNEW2.TXT")
@@ -49,6 +50,7 @@ plot.pacific.species(plot_title = "", uselims = NA, add.WCPFC = F, add.EPO = F, 
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

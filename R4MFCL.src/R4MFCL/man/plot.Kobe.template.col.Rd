@@ -6,6 +6,7 @@ plot.Kobe.template.col.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Make the template for a Kobe plot
 }
 \usage{
 plot.Kobe.template.col(Type)
@@ -31,6 +32,7 @@ plot.Kobe.template.col(Type)
 }
 \author{
 %%  ~~who you are~~
+Adam Langley and Shelton Harley
 }
 \note{
 %%  ~~further notes~~

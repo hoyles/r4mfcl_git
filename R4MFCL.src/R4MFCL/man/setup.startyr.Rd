@@ -6,6 +6,8 @@ setup.startyr.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Changes the start year of the assessment. Runs start_year.frq. Currently doesn't change the tag file. 
+The setup files are generally used in structural sensitivity analyses. They modify an object that contains all the MULTIFAN-CL input files. 
 }
 \usage{
 setup.startyr(rungrp, newstartyr)
@@ -34,6 +36,7 @@ setup.startyr(rungrp, newstartyr)
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

@@ -6,6 +6,7 @@ pack.fisheries.frq.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Remove gaps between fishery numbers
 }
 \usage{
 pack.fisheries.frq(frq.obj)
@@ -31,6 +32,7 @@ pack.fisheries.frq(frq.obj)
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

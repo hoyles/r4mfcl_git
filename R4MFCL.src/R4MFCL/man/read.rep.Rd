@@ -6,6 +6,7 @@ read.rep.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Reads the rep file, which contains most of the important results, into an object. 
 }
 \usage{
 read.rep(rep.file)
@@ -31,6 +32,7 @@ read.rep(rep.file)
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

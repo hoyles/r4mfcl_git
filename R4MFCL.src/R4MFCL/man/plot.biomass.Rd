@@ -6,6 +6,8 @@ plot.biomass.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Plots biomass by region and then combined
+Option to add on CI as a polygoon
 }
 \usage{
 plot.biomass(plotdir = "H:/rmfcl/test/figs/", plotrep = test, varfile = NULL, type = "SSB", plotname = "H:/rmfcl/test/figs/biomass", plottype = "wmf")
@@ -46,6 +48,7 @@ plot.biomass(plotdir = "H:/rmfcl/test/figs/", plotrep = test, varfile = NULL, ty
 }
 \author{
 %%  ~~who you are~~
+Pierre Kleiber and Shelton Harley
 }
 \note{
 %%  ~~further notes~~

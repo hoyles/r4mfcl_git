@@ -6,6 +6,7 @@ merge.frq.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Combine catch, effort and size frequency data when merging fisheries together. Currently set up for the albacore assessment and needs adapting. 
 }
 \usage{
 merge.frq(frq.obj, oldf, newf, mergelf = FALSE)
@@ -40,6 +41,7 @@ merge.frq(frq.obj, oldf, newf, mergelf = FALSE)
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

@@ -6,6 +6,7 @@ plot.Kobe.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Take MULTIFAN-CL results and produce a Kobe plot
 }
 \usage{
 plot.Kobe(plotdir = "S:/OFP Publications/Tuna Fishery Assessment Report/2007/Figures/BET/", plotrep = test, type = "SSB", plotname = "Kobe", plottype = "wmf", COL = T)
@@ -46,6 +47,7 @@ plot.Kobe(plotdir = "S:/OFP Publications/Tuna Fishery Assessment Report/2007/Fig
 }
 \author{
 %%  ~~who you are~~
+Adam Langley and Shelton Harley
 }
 \note{
 %%  ~~further notes~~

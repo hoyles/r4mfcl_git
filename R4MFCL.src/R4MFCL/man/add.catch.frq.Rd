@@ -6,6 +6,9 @@ add.catch.frq.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Used in sensitivity analyses, this function replaces the catch column relating to the fisheries specified - while accounting for the possibility that the number 
+of rows or order differ between the sensitivity runs. 
+The script assumes that the sensitivity *.frq will contain either: only those rows which are to be modified; or all rows to be modified. 
 }
 \usage{
 add.catch.frq(frq, filepath, fshries)
@@ -14,12 +17,15 @@ add.catch.frq(frq, filepath, fshries)
 \arguments{
   \item{frq}{
 %%     ~~Describe \code{frq} here~~
+The frq file object
 }
   \item{filepath}{
 %%     ~~Describe \code{filepath} here~~
+The path and filename of the frq file with the replacement fishery data. 
 }
   \item{fshries}{
 %%     ~~Describe \code{fshries} here~~
+The id numbers of the fisheries to be edited 
 }
 }
 \details{
@@ -37,6 +43,7 @@ add.catch.frq(frq, filepath, fshries)
 }
 \author{
 %%  ~~who you are~~
+Nick Davies
 }
 \note{
 %%  ~~further notes~~

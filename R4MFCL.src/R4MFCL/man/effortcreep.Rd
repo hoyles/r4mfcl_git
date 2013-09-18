@@ -6,6 +6,7 @@ effortcreep.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Adjusts effort in a specified fishery at a consistent rate through time. 
 }
 \usage{
 effortcreep(frq.obj, fisheries, creep)
@@ -37,6 +38,7 @@ effortcreep(frq.obj, fisheries, creep)
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

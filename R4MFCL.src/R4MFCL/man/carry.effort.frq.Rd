@@ -6,6 +6,7 @@ carry.effort.frq.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Replaces the effort in the last year with effort in the previous year and sets catch to -1. 
 }
 \usage{
 carry.effort.frq(data = out.data, fishery = 1, last = 2008)
@@ -37,6 +38,7 @@ carry.effort.frq(data = out.data, fishery = 1, last = 2008)
 }
 \author{
 %%  ~~who you are~~
+Shelton Harley and Nick Davies
 }
 \note{
 %%  ~~further notes~~

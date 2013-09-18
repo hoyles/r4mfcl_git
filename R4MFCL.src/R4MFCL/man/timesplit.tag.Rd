@@ -6,6 +6,8 @@ timesplit.tag.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Changes a tag file to account for time splits. 
+Time splits occur when a fishery is broken up into several fisheries by time, with dates and new fishery codes specified in the 'fishsplit' parameter. 
 }
 \usage{
 timesplit.tag(tag.obj, fishsplit)
@@ -34,6 +36,7 @@ timesplit.tag(tag.obj, fishsplit)
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

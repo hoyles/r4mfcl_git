@@ -6,6 +6,8 @@ setup.lensel.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Change selectivity to fully length-based in the specified fisheries. 
+The setup files are generally used in structural sensitivity analyses. They modify an object that contains all the MULTIFAN-CL input files. 
 }
 \usage{
 setup.lensel(rungrp, fisheries, tog)
@@ -37,6 +39,7 @@ setup.lensel(rungrp, fisheries, tog)
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

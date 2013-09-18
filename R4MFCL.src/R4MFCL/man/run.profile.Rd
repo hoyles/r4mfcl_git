@@ -6,6 +6,7 @@ run.profile.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Run a likelihood profile analysis on a stock assessment. Needs to be generalized and tested. 
 }
 \usage{
 run.profile(rundir, rungrp, startpar = NA, ptype = "Fmult", target, nsteps = 300, penalty = 5e+05)
@@ -49,6 +50,7 @@ run.profile(rundir, rungrp, startpar = NA, ptype = "Fmult", target, nsteps = 300
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

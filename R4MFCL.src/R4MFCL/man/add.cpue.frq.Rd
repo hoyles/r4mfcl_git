@@ -5,7 +5,9 @@
 add.cpue.frq.Rd
 }
 \description{
-%%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Replaces the nominal effort in the original .FRQ file with stanadrdised effort based on the CPUE index
+Flexible to handle either sort of frq file and you have the choice to include the cv.  
+Puts in -1 for effort first to make sure we account for missing values of CPUE 
 }
 \usage{
 add.cpue.frq(CPUE.file = "P:/yft/2009/Data Preparation/CPUE/indices/yft_JPstd_R1.txt", data = out.data, fishery = 1, add.cv = "T")
@@ -40,6 +42,7 @@ add.cpue.frq(CPUE.file = "P:/yft/2009/Data Preparation/CPUE/indices/yft_JPstd_R1
 }
 \author{
 %%  ~~who you are~~
+Shelton Harley
 }
 \note{
 %%  ~~further notes~~

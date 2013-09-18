@@ -6,6 +6,7 @@ plot.pacific.yft.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Plots the Pacific and includes boundaries for the yellowfin tuna model. 
 }
 \usage{
 plot.pacific.yft(plot_title = "", lims = c(100, 260, -45, 45), add.WCPFC = F)
@@ -37,6 +38,7 @@ plot.pacific.yft(plot_title = "", lims = c(100, 260, -45, 45), add.WCPFC = F)
 }
 \author{
 %%  ~~who you are~~
+Adam Langley and Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

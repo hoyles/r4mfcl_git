@@ -40,6 +40,7 @@ change.flag(doitall, flagtype, flagnum, newval)
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

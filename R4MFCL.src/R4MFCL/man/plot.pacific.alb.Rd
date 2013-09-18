@@ -6,6 +6,7 @@ plot.pacific.alb.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Plots the Pacific and includes boundaries for the albacore tuna model. 
 }
 \usage{
 plot.pacific.alb(plot_title = "", eez_dir = "I:/assessments/Pop dy modeling/MFCL/R functions/", plot_eez = T)
@@ -37,6 +38,7 @@ plot.pacific.alb(plot_title = "", eez_dir = "I:/assessments/Pop dy modeling/MFCL
 }
 \author{
 %%  ~~who you are~~
+Adam Langley and Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

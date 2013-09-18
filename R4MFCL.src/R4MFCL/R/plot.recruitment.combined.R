@@ -1,8 +1,5 @@
  plot.recruitment.combined <-
-function(plotdir="H:\\rmfcl\\test\\figs\\",plotrep=test,
-varfile=NULL,
-plotname="H:\\rmfcl\\test\\figs\\recruitment_combined",
-plottype="wmf")
+function(plotdir="H:/rmfcl/test/figs/",plotrep=test,varfile=NULL,plotname="H:/rmfcl/test/figs/recruitment_combined",plottype="wmf")
 {
 ##-----------------------------------------------------------------------
 # SJH 20/1/2009

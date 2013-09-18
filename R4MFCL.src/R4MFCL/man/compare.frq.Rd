@@ -8,7 +8,7 @@ compare.frq.Rd
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-compare.frq(file1, file2, fm = "all", plotname, fdesc = "")
+compare.frq(file1, file2, fm = "all", plotname, fdesc = "",lwd=2,what=rep(TRUE,3))
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -27,6 +27,12 @@ compare.frq(file1, file2, fm = "all", plotname, fdesc = "")
   \item{fdesc}{
 %%     ~~Describe \code{fdesc} here~~
 }
+  \item{lwd}{
+%%     ~~Describe \code{fdesc} here~~
+}
+  \item{what}{
+%%     ~~Describe \code{fdesc} here~~
+}
 }
 \details{
 %%  ~~ If necessary, more details than the description above ~~
@@ -42,6 +48,7 @@ compare.frq(file1, file2, fm = "all", plotname, fdesc = "")
 %% ~put references to the literature/web site here ~
 }
 \author{
+Adam Langley and Simon Hoyle
 %%  ~~who you are~~
 }
 \note{

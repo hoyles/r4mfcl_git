@@ -6,6 +6,7 @@ get.length.output.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Not for standard use, and now may be obsolete. Adjusts the weight data to focus on the areas with most of the catch.
 }
 \usage{
 get.length.output(REGION = 1, DIR = "P:/yft/2009/Data Preparation/size data/")
@@ -34,6 +35,7 @@ get.length.output(REGION = 1, DIR = "P:/yft/2009/Data Preparation/size data/")
 }
 \author{
 %%  ~~who you are~~
+Adam Langley
 }
 \note{
 %%  ~~further notes~~

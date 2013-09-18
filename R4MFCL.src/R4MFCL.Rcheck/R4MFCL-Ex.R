@@ -1,38 +1,19 @@
 pkgname <- "R4MFCL"
 source(file.path(R.home("share"), "R", "examples-header.R"))
 options(warn = 1)
+options(pager = "console")
 library('R4MFCL')
 
-assign(".oldSearch", search(), pos = 'CheckExEnv')
+base::assign(".oldSearch", base::search(), pos = 'CheckExEnv')
 cleanEx()
 nameEx("Convert.frq.ver6")
 ### * Convert.frq.ver6
 
 flush(stderr()); flush(stdout())
 
-### Name: Convert.frq.ver6
+### Name: convert.frq.ver6
 ### Title: Convert.frq.ver6.Rd
-### Aliases: Convert.frq.ver6
-### Keywords: ~kwd1 ~kwd2
-
-### ** Examples
-
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
-
-
-
-
-cleanEx()
-nameEx("NZtrollglm")
-### * NZtrollglm
-
-flush(stderr()); flush(stdout())
-
-### Name: NZtrollglm
-### Title: NZtrollglm.Rd
-### Aliases: NZtrollglm
+### Aliases: convert.frq.ver6
 ### Keywords: ~kwd1 ~kwd2
 
 ### ** Examples
@@ -100,106 +81,6 @@ flush(stderr()); flush(stdout())
 ##---- Should be DIRECTLY executable !! ----
 ##-- ==>  Define data, use random,
 ##--	or do  help(data=index)  for the standard data sets.
-
-
-
-
-cleanEx()
-nameEx("alb.clean.lfdata")
-### * alb.clean.lfdata
-
-flush(stderr()); flush(stdout())
-
-### Name: alb.clean.lfdata
-### Title: alb.clean.lfdata.Rd
-### Aliases: alb.clean.lfdata
-### Keywords: ~kwd1 ~kwd2
-
-### ** Examples
-
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
-
-
-
-
-cleanEx()
-nameEx("alb.initial_clean_2008")
-### * alb.initial_clean_2008
-
-flush(stderr()); flush(stdout())
-
-### Name: alb.initial_clean_2008
-### Title: alb.initial_clean_2008.Rd
-### Aliases: alb.initial_clean_2008
-### Keywords: ~kwd1 ~kwd2
-
-### ** Examples
-
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
-
-
-
-
-cleanEx()
-nameEx("alb.initial_clean_2009")
-### * alb.initial_clean_2009
-
-flush(stderr()); flush(stdout())
-
-### Name: alb.initial_clean_2009
-### Title: alb.initial_clean_2009.Rd
-### Aliases: alb.initial_clean_2009
-### Keywords: ~kwd1 ~kwd2
-
-### ** Examples
-
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
-
-
-
-
-cleanEx()
-nameEx("alb.initial_clean_2011")
-### * alb.initial_clean_2011
-
-flush(stderr()); flush(stdout())
-
-### Name: alb.initial_clean_2011
-### Title: alb.initial_clean_2011.Rd
-### Aliases: alb.initial_clean_2011
-### Keywords: ~kwd1 ~kwd2
-
-### ** Examples
-
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
-
-
-
-
-cleanEx()
-nameEx("alb.pagocatch_2009")
-### * alb.pagocatch_2009
-
-flush(stderr()); flush(stdout())
-
-### Name: alb.pagocatch_2009
-### Title: alb.pagocatch_2009.Rd
-### Aliases: alb.pagocatch_2009
-
-### ** Examples
-
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
-
 
 
 
@@ -445,26 +326,6 @@ flush(stderr()); flush(stdout())
 
 
 cleanEx()
-nameEx("compare.size.frq2")
-### * compare.size.frq2
-
-flush(stderr()); flush(stdout())
-
-### Name: compare.size.frq2
-### Title: compare.size.frq2.Rd
-### Aliases: compare.size.frq2
-### Keywords: ~kwd1 ~kwd2
-
-### ** Examples
-
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
-
-
-
-
-cleanEx()
 nameEx("compare_par_flags")
 ### * compare_par_flags
 
@@ -525,14 +386,14 @@ flush(stderr()); flush(stdout())
 
 
 cleanEx()
-nameEx("create.missing.ce")
-### * create.missing.ce
+nameEx("copy.condor.files")
+### * copy.condor.files
 
 flush(stderr()); flush(stdout())
 
-### Name: create.missing.ce
-### Title: create.missing.ce.Rd
-### Aliases: create.missing.ce
+### Name: copy.condor.files
+### Title: copy.condor.files.Rd
+### Aliases: copy.condor.files
 ### Keywords: ~kwd1 ~kwd2
 
 ### ** Examples
@@ -545,14 +406,14 @@ flush(stderr()); flush(stdout())
 
 
 cleanEx()
-nameEx("create.ver6.frq")
-### * create.ver6.frq
+nameEx("create.missing.ce")
+### * create.missing.ce
 
 flush(stderr()); flush(stdout())
 
-### Name: create.ver6.frq
-### Title: create.ver6.frq.Rd
-### Aliases: create.ver6.frq
+### Name: create.missing.ce
+### Title: create.missing.ce.Rd
+### Aliases: create.missing.ce
 ### Keywords: ~kwd1 ~kwd2
 
 ### ** Examples
@@ -805,34 +666,14 @@ flush(stderr()); flush(stdout())
 
 
 cleanEx()
-nameEx("get.outcomes.alb")
-### * get.outcomes.alb
+nameEx("get.tag.structure")
+### * get.tag.structure
 
 flush(stderr()); flush(stdout())
 
-### Name: get.outcomes.alb
-### Title: get.outcomes.alb.Rd
-### Aliases: get.outcomes.alb
-### Keywords: ~kwd1 ~kwd2
-
-### ** Examples
-
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
-
-
-
-
-cleanEx()
-nameEx("get.outcomes.test")
-### * get.outcomes.test
-
-flush(stderr()); flush(stdout())
-
-### Name: get.outcomes.test
-### Title: get.outcomes.test.Rd
-### Aliases: get.outcomes.test
+### Name: get.tag.structure
+### Title: get.tag.structure.Rd
+### Aliases: get.tag.structure
 ### Keywords: ~kwd1 ~kwd2
 
 ### ** Examples
@@ -853,26 +694,6 @@ flush(stderr()); flush(stdout())
 ### Name: get.weight.output
 ### Title: get.weight.output.Rd
 ### Aliases: get.weight.output
-### Keywords: ~kwd1 ~kwd2
-
-### ** Examples
-
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
-
-
-
-
-cleanEx()
-nameEx("initial_clean_2008")
-### * initial_clean_2008
-
-flush(stderr()); flush(stdout())
-
-### Name: initial_clean_2008
-### Title: initial_clean_2008.Rd
-### Aliases: initial_clean_2008
 ### Keywords: ~kwd1 ~kwd2
 
 ### ** Examples
@@ -1025,25 +846,6 @@ flush(stderr()); flush(stdout())
 
 
 cleanEx()
-nameEx("oldsetup")
-### * oldsetup
-
-flush(stderr()); flush(stdout())
-
-### Name: oldsetup
-### Title: oldsetup.Rd
-### Aliases: oldsetup
-### Keywords: ~kwd1 ~kwd2
-
-### ** Examples
-
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
-
-
-
-cleanEx()
 nameEx("pack.fisheries.frq")
 ### * pack.fisheries.frq
 
@@ -1052,26 +854,6 @@ flush(stderr()); flush(stdout())
 ### Name: pack.fisheries.frq
 ### Title: pack.fisheries.frq.Rd
 ### Aliases: pack.fisheries.frq
-### Keywords: ~kwd1 ~kwd2
-
-### ** Examples
-
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
-
-
-
-
-cleanEx()
-nameEx("pagocatch")
-### * pagocatch
-
-flush(stderr()); flush(stdout())
-
-### Name: pagocatch
-### Title: pagocatch.Rd
-### Aliases: pagocatch
 ### Keywords: ~kwd1 ~kwd2
 
 ### ** Examples
@@ -1464,6 +1246,26 @@ flush(stderr()); flush(stdout())
 
 
 cleanEx()
+nameEx("ppath")
+### * ppath
+
+flush(stderr()); flush(stdout())
+
+### Name: ppath
+### Title: ppath.Rd
+### Aliases: ppath
+### Keywords: ~kwd1 ~kwd2
+
+### ** Examples
+
+##---- Should be DIRECTLY executable !! ----
+##-- ==>  Define data, use random,
+##--	or do  help(data=index)  for the standard data sets.
+
+
+
+
+cleanEx()
 nameEx("read.catchrep")
 ### * read.catchrep
 
@@ -1644,26 +1446,6 @@ flush(stderr()); flush(stdout())
 
 
 cleanEx()
-nameEx("read.tags.JP")
-### * read.tags.JP
-
-flush(stderr()); flush(stdout())
-
-### Name: read.tags.JP
-### Title: read.tags.JP.Rd
-### Aliases: read.tags.JP
-### Keywords: ~kwd1 ~kwd2
-
-### ** Examples
-
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
-
-
-
-
-cleanEx()
 nameEx("read.var")
 ### * read.var
 
@@ -1704,26 +1486,6 @@ flush(stderr()); flush(stdout())
 
 
 cleanEx()
-nameEx("read_nmd.par")
-### * read_nmd.par
-
-flush(stderr()); flush(stdout())
-
-### Name: read_nmd.par
-### Title: read_nmd.par.Rd
-### Aliases: read_nmd.par
-### Keywords: ~kwd1 ~kwd2
-
-### ** Examples
-
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
-
-
-
-
-cleanEx()
 nameEx("reconstruct.frq.ce")
 ### * reconstruct.frq.ce
 
@@ -1732,26 +1494,6 @@ flush(stderr()); flush(stdout())
 ### Name: reconstruct.frq.ce
 ### Title: reconstruct.frq.ce.Rd
 ### Aliases: reconstruct.frq.ce
-### Keywords: ~kwd1 ~kwd2
-
-### ** Examples
-
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
-
-
-
-
-cleanEx()
-nameEx("reconstruct.frq.ce2008")
-### * reconstruct.frq.ce2008
-
-flush(stderr()); flush(stdout())
-
-### Name: reconstruct.frq.ce2008
-### Title: reconstruct.frq.ce2008.Rd
-### Aliases: reconstruct.frq.ce2008
 ### Keywords: ~kwd1 ~kwd2
 
 ### ** Examples
@@ -2683,29 +2425,10 @@ flush(stderr()); flush(stdout())
 
 
 
-cleanEx()
-nameEx("write_nmd.par")
-### * write_nmd.par
-
-flush(stderr()); flush(stdout())
-
-### Name: write_nmd.par
-### Title: write_nmd.par.Rd
-### Aliases: write_nmd.par
-### Keywords: ~kwd1 ~kwd2
-
-### ** Examples
-
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
-
-
-
-
 ### * <FOOTER>
 ###
-cat("Time elapsed: ", proc.time() - get("ptime", pos = 'CheckExEnv'),"\n")
+options(digits = 7L)
+base::cat("Time elapsed: ", proc.time() - base::get("ptime", pos = 'CheckExEnv'),"\n")
 grDevices::dev.off()
 ###
 ### Local variables: ***

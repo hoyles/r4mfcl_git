@@ -30,6 +30,7 @@ datfromstr(datstring)
 %% ~put references to the literature/web site here ~
 }
 \author{
+Pierre Kleiber
 %%  ~~who you are~~
 }
 \note{

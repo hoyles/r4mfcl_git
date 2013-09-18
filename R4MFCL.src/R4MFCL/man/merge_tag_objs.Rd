@@ -6,6 +6,7 @@ merge_tag_objs.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Combine two tag objects into one. 
 }
 \usage{
 merge_tag_objs(obj1, obj2, relgrps)
@@ -37,6 +38,7 @@ merge_tag_objs(obj1, obj2, relgrps)
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

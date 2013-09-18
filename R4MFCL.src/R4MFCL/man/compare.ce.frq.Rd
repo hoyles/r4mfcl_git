@@ -42,6 +42,7 @@ compare.ce.frq(file1, file2, fm, plotname, fdesc = "")
 %% ~put references to the literature/web site here ~
 }
 \author{
+Adam Langley
 %%  ~~who you are~~
 }
 \note{

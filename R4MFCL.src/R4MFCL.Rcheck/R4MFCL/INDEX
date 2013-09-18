@@ -1,16 +1,7 @@
-Convert.frq.ver6        Convert.frq.ver6.Rd
-NZtrollglm              NZtrollglm.Rd
+R4MFCL                  R4MFCL-package.Rd
 add.catch.frq           add.catch.frq.Rd
 add.cpue.frq            add.cpue.frq.Rd
 add.flag                add.flag.Rd
-alb.clean.lfdata        alb.clean.lfdata.Rd
-alb.initial_clean_2008
-                        alb.initial_clean_2008.Rd
-alb.initial_clean_2009
-                        alb.initial_clean_2009.Rd
-alb.initial_clean_2011
-                        alb.initial_clean_2011.Rd
-alb.pagocatch_2009      alb.pagocatch_2009.Rd
 carry.effort.frq        carry.effort.frq.Rd
 change.fishflag         change.fishflag.Rd
 change.flag             change.flag.Rd
@@ -23,12 +14,12 @@ clean.lfdata            clean.lfdata.Rd
 compare.ce.frq          compare.ce.frq.Rd
 compare.frq             compare.frq.Rd
 compare.size.frq        compare.size.frq.Rd
-compare.size.frq2       compare.size.frq2.Rd
 compare_par_flags       compare_par_flags.Rd
 condor.go               condor.go.Rd
 condor.go2              condor.go2.Rd
+convert.frq.ver6        Convert.frq.ver6.Rd
+copy.condor.files       copy.condor.files.Rd
 create.missing.ce       create.missing.ce.Rd
-create.ver6.frq         create.ver6.frq.Rd
 crit.fishery.summary    crit.fishery.summary.Rd
 crit.summary            crit.summary.Rd
 datfromstr              datfromstr.Rd
@@ -42,10 +33,8 @@ frq.remove.size.or.weight.data
 get.critical.age        get.critical.age.Rd
 get.length.output       get.length.output.Rd
 get.outcomes            get.outcomes.Rd
-get.outcomes.alb        get.outcomes.alb.Rd
-get.outcomes.test       get.outcomes.test.Rd
+get.tag.structure       get.tag.structure.Rd
 get.weight.output       get.weight.output.Rd
-initial_clean_2008      initial_clean_2008.Rd
 labels_store            labels_store.Rd
 load.LFdata             load.LFdata.Rd
 make.projection.betyft.frq
@@ -54,9 +43,7 @@ map_all_pacific         map_all_pacific.Rd
 merge.frq               merge.frq.Rd
 merge.tag               merge.tag.Rd
 merge_tag_objs          merge_tag_objs.Rd
-oldsetup                oldsetup.Rd
 pack.fisheries.frq      pack.fisheries.frq.Rd
-pagocatch               pagocatch.Rd
 plot.F.time             plot.F.time.Rd
 plot.Kobe               plot.Kobe.Rd
 plot.Kobe.template.bw   plot.Kobe.template.bw.Rd
@@ -79,6 +66,7 @@ plot.recruitment        plot.recruitment.Rd
 plot.recruitment.combined
                         plot.recruitment.combined.Rd
 plot_cpue_cv_frq        plot_cpue_cv_frq.Rd
+ppath                   ppath.Rd
 read.catchrep           read.catchrep.Rd
 read.ests               read.ests.Rd
 read.fit                read.fit.Rd
@@ -88,13 +76,9 @@ read.ini                read.ini.Rd
 read.par                read.par.Rd
 read.rep                read.rep.Rd
 read.tag                read.tag.Rd
-read.tags.JP            read.tags.JP.Rd
 read.var                read.var.Rd
 read_nmd.frq            read_nmd.frq.Rd
-read_nmd.par            read_nmd.par.Rd
 reconstruct.frq.ce      reconstruct.frq.ce.Rd
-reconstruct.frq.ce2008
-                        reconstruct.frq.ce2008.Rd
 reconstruct.frq.size    reconstruct.frq.size.Rd
 region_single_frq       region_single_frq.Rd
 region_single_ini       region_single_ini.Rd
@@ -145,4 +129,3 @@ write.ini               write.ini.Rd
 write.par               write.par.Rd
 write.tag               write.tag.Rd
 write_nmd.frq           write_nmd.frq.Rd
-write_nmd.par           write_nmd.par.Rd

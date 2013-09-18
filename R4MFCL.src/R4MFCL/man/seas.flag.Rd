@@ -6,6 +6,7 @@ seas.flag.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Change the doitall object so that the specified fishery is made seasonal. 
 }
 \usage{
 seas.flag(a, fishery, flagnum, seasf.list)
@@ -40,6 +41,7 @@ seas.flag(a, fishery, flagnum, seasf.list)
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

@@ -6,6 +6,7 @@ write.tag.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Writes a tag object out into a *.tag text file for input to MULTIFAN-CL. 
 }
 \usage{
 write.tag(tagfile, tag.obj)
@@ -34,6 +35,7 @@ write.tag(tagfile, tag.obj)
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

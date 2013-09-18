@@ -1,5 +1,5 @@
  get.length.output <-
-function(REGION=1,DIR="P:\\yft\\2009\\Data Preparation\\size data\\")
+function(REGION=1,DIR="P:/yft/2009/Data Preparation/size data/")
 {
 # By Adam Langley
 ##do a single region REGION X

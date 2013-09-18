@@ -6,6 +6,7 @@ region_single_frq.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Change a frq object to a single region, removing all fisheries outside that region
 }
 \usage{
 region_single_frq(frq, region)
@@ -34,6 +35,7 @@ region_single_frq(frq, region)
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

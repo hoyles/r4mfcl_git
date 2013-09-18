@@ -1,5 +1,5 @@
  reconstruct.frq.ce <-
-function(CPUE.file="X:\\yft\\2009\\Data Preparation\\CPUE\\indices\\yft_JPstd_R1.txt",
+function(CPUE.file="X:/yft/2009/Data Preparation/CPUE/indices/yft_JPstd_R1.txt",
 data=out.data,fishery=1)
 {
 # Replaces the nominal effort in the original .FRQ file with stanadrdised effort

@@ -6,6 +6,7 @@ compare_par_flags.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Compares the flags in two par files and reports differences. 
 }
 \usage{
 compare_par_flags(par1, par2, flaglist = T)
@@ -37,6 +38,7 @@ compare_par_flags(par1, par2, flaglist = T)
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

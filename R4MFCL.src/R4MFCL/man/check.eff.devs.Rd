@@ -39,6 +39,7 @@ check.eff.devs(parfile, repfile, frqfile, parlim = 5.9)
 %% ~put references to the literature/web site here ~
 }
 \author{
+Simon Hoyle
 %%  ~~who you are~~
 }
 \note{

@@ -6,6 +6,7 @@ read.fit.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Loads the observed and expected size frequency from the *.fit file by fishery and time period. 
 }
 \usage{
 read.fit(fit.file)
@@ -31,6 +32,7 @@ read.fit(fit.file)
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

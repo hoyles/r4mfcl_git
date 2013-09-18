@@ -1,10 +1,5 @@
  plot.nofishing.combined <-
-function(
-plotdir="H:\\rmfcl\\test\\figs\\",plotrep=testq0,
-type="SSB",
-plotname="H:\\rmfcl\\test\\figs\\Kobe",
-plottype="wmf",
-COL=T)
+function(plotdir="H:/rmfcl/test/figs/",plotrep=testq0,type="SSB",plotname="H:/rmfcl/test/figs/Kobe",plottype="wmf",COL=T)
 {
 ##-----------------------------------------------------------------------
 ##-----------------------------------------------------------------------

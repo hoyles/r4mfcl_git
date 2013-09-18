@@ -6,6 +6,8 @@ timesplit.doitall.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Changes a doitall file to account for time splits. 
+Time splits occur when a fishery is broken up into several fisheries by time, with dates and new fishery codes specified in the 'fishsplit' parameter. 
 }
 \usage{
 timesplit.doitall(doitall, fishsplit, qsplit = T)
@@ -37,6 +39,7 @@ timesplit.doitall(doitall, fishsplit, qsplit = T)
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

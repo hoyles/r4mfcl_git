@@ -6,6 +6,7 @@ map_all_pacific.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Draw a map with dimensions as specified, adding the EEZ boundaries. 
 }
 \usage{
 map_all_pacific(plot_title = "", lims = c(100, 300, -45, 45), eezfile = "L:/alb/2008/Pago/eznew2.txt")
@@ -37,6 +38,7 @@ map_all_pacific(plot_title = "", lims = c(100, 300, -45, 45), eezfile = "L:/alb/
 }
 \author{
 %%  ~~who you are~~
+Adam Langley and Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

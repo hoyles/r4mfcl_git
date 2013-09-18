@@ -1,6 +1,7 @@
 copy.condor.files <-
 function (rundir, condor.files = "./condor.files/") 
 {
+# SDH and Pierre Kleiber
     dir.create(rundir, recursive = T, showWarnings = T)
     Sys.chmod(rundir, mode = "0777")
     mycopy <- function(fn, dir1, dir2) {

@@ -6,6 +6,8 @@ summarise.size.frq.bet.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Takes two frq files from the bigeye assessment and compares the length and weight data on an annual basis for the range of years
+Just does the last 15 years at the moment. Specific for the 2009 BET assessment, and included as an example. . 
 }
 \usage{
 summarise.size.frq.bet(frq1, fishery = 5)
@@ -34,6 +36,7 @@ summarise.size.frq.bet(frq1, fishery = 5)
 }
 \author{
 %%  ~~who you are~~
+Shelton Harley
 }
 \note{
 %%  ~~further notes~~

@@ -1,8 +1,8 @@
  reconstruct.frq.size <-
 function(data=data,FISH=1,
 # By Shelton J Harley 2009
-LF.FILE="P:\\yft\\2009\\Data Preparation\\size data\\LLlendataR1.txt",
-WT.FILE="P:\\yft\\2009\\Data Preparation\\size data\\LLwtdataR1.txt")
+LF.FILE="P:/yft/2009/Data Preparation/size data/LLlendataR1.txt",
+WT.FILE="P:/yft/2009/Data Preparation/size data/LLwtdataR1.txt")
 {
 # then do the matching
 fish <- FISH

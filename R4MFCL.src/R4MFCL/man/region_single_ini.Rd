@@ -6,6 +6,7 @@ region_single_ini.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Change an ini object to a single region, removing all fisheries outside that region
 }
 \usage{
 region_single_ini(ini)
@@ -31,6 +32,7 @@ region_single_ini(ini)
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

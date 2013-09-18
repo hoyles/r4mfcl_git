@@ -1,0 +1,18 @@
+write.par <-
+function(par.file,par.obj) {
+  # by Simon Hoyle June 2008
+  # SDH 29/01/09 changed order of obj and par to be consistent with other
+  # SDH 29/01/09 fixed bug where p$ was missing from p$nages
+  p <- par.obj
+  con <- file(par.file,open="wt")
+  a <- c("# The parest_flags",paste("",formatC(p$pfl,format="d"),collapse=""))
+  a <- c(a,"","# The number of age classes",p$nages,"# age flags",paste("",formatC(p$afl,format="d"),collapse=""),"")
+  a <- c(a,"# fish flags")
+  writeLines(a,con)
+#  apply(ffl,1,paste,collapse=" ")
+  write.table(p$ffl, con, quote=F, sep=" ", row.names=rep("",dim(p$ffl)[1]),col.names=F,append=T)
+  writeLines("# tag flags",con)
+  write.table(p$tfl, con, quote=F, sep=" ", row.names=rep("",dim(p$tfl)[1]),col.names=F,append=T)
+  writeLines(p$rem,con)
+  close(con)
+  }

@@ -1,0 +1,53 @@
+ read.ini <-
+function(ini.file) {
+  # by Simon Hoyle June 2008
+  a <- readLines(ini.file)
+  pos <- grep("# number of age classes",a); nages <- as.numeric(a[pos+1])
+  pos <- grep("# MATURITY AT AGE",a,ignore.case=T); mat <- as.numeric(unlist(strsplit(a[pos+1],split="[[:blank:]]+")))
+  if (is.na(mat[1])) mat <- mat[2:length(mat)]
+  pos <- grep("# natural mortality",a,ignore.case=T); M <- a[pos+1]
+  pos <- grep("# move",a,ignore.case=T); movemap <- as.numeric(unlist(strsplit(a[pos+1],split="[[:blank:]]+"))); movemap <- movemap[is.na(movemap)==F]
+  pos <- grep("# diffusion coffs",a,ignore.case=T);
+  lendiffs  <- as.numeric(unlist(strsplit(a[pos+1],split="[[:blank:]]+")));lendiffs <- length(lendiffs[is.na(lendiffs)==F])
+  if(movemap[1]==0)
+  {
+    diffcoffs <- 0
+  } else {
+#   Determine dimensions of diffusion coffs as read in
+    b <- grep("# age_pars",a,ignore.case=T);
+    hghtdiffs <- (b-1)-pos
+    diffcoffs <- array(dim=c(hghtdiffs,lendiffs))
+    for (i in 1:hghtdiffs) {
+      tmp  <- as.numeric(unlist(strsplit(a[pos+i],split="[[:blank:]]+")));diffcoffs[i,] <- tmp[is.na(tmp)==F]
+      }
+    }
+  agepars <- array(dim=c(10,nages))
+  pos <- grep("# age_pars",a,ignore.case=T);
+  for (i in 1:10) {
+    tmp <- as.numeric(unlist(strsplit(a[pos+i],split="[[:blank:]]+"))); agepars[i,] <- tmp[is.na(tmp)==F]
+    }
+  pos <- grep("# recruitment",a,ignore.case=T); recbyreg <- as.numeric(unlist(strsplit(a[pos+1],split="[[:blank:]]+")));recbyreg<-recbyreg[is.na(recbyreg)==F]
+  b <- scan(ini.file, comment.char="#",skip=pos+1)
+  VBLmin   <- b[1:3]
+  VBLmax   <- b[4:6]
+  VBK      <- b[7:9]
+  LW       <- b[10:11]
+  sdLatA   <- b[12:14]
+  Ldep_sd  <- b[15:17]
+  Nmeanconstr <- b[18:length(b)]
+  ini.obj <- list(nages=nages,
+      mat=mat,
+      M=M,
+      movemap=movemap,
+      diffcoffs=diffcoffs,
+      agepars=agepars,
+      recbyreg=recbyreg,
+      VBLmin=VBLmin,
+      VBLmax=VBLmax,
+      VBK=VBK,
+      LW=LW,
+      sdLatA=sdLatA,
+      Ldep_sd=Ldep_sd,
+      Nmeanconstr=Nmeanconstr)
+  return(ini.obj)
+}

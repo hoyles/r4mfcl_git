@@ -6,6 +6,7 @@ plot.base.comparison.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Plot F/FMSY against B/BMSY 
 }
 \usage{
 plot.base.comparison(baseres, labs)
@@ -34,6 +35,7 @@ plot.base.comparison(baseres, labs)
 }
 \author{
 %%  ~~who you are~~
+Adam Langley
 }
 \note{
 %%  ~~further notes~~

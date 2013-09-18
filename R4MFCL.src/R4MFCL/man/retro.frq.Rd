@@ -6,6 +6,7 @@ retro.frq.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Set a frq object up fo a retrospective analysis. Need some more testing. 
 }
 \usage{
 retro.frq(frq.obj, retro.tag.obj = NA)
@@ -34,6 +35,7 @@ retro.frq(frq.obj, retro.tag.obj = NA)
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

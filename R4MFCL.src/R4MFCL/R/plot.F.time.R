@@ -1,8 +1,8 @@
  plot.F.time <-
 function(
-plotdir="H:\\rmfcl\\test\\figs\\",
-plotrep="C:\\assessments\\alb\\2008\\6_area\\28.splitgr3\\plot-08.par.rep",
-inifile="C:\\assessments\\alb\\2008\\6_area\\28.splitgr3\\alb.ini",
+plotdir="H:/rmfcl/test/figs/",
+plotrep="C:/assessments/alb/2008/6_area/28.splitgr3/plot-08.par.rep",
+inifile="C:/assessments/alb/2008/6_area/28.splitgr3/alb.ini",
 plotname="plotFtime",
 plottype="wmf",
 COL=T)

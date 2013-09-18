@@ -42,6 +42,7 @@ change.size.frq(ver = 6, data = data, FISH = 1, LF.FILE = "P:/yft/2009/Data Prep
 %% ~put references to the literature/web site here ~
 }
 \author{
+Shelton Harley
 %%  ~~who you are~~
 }
 \note{

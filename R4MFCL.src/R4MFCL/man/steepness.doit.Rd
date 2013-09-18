@@ -6,7 +6,9 @@ steepness.doit.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
-}
+ Inserts a new line "recruitmentConstraints 01.par ###" after PHASE 1. 
+ This allows steepness to be fixed at a chosen level. 
+ }
 \usage{
 steepness.doit(doitall, new.steepness, add_header = T, gap = 2)
 }
@@ -40,6 +42,7 @@ steepness.doit(doitall, new.steepness, add_header = T, gap = 2)
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

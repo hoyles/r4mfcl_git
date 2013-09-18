@@ -3,6 +3,7 @@ function(par.file,par.obj) {
   # by Simon Hoyle June 2008
   # SDH 29/01/09 changed order of obj and par to be consistent with other
   # SDH 29/01/09 fixed bug where p$ was missing from p$nages
+  # NMD 22/06/12 - allow instance of no tag flags or tag pars at all (e.g. striped marlin)
   p <- par.obj
   con <- file(par.file,open="wt")
   a <- c("# The parest_flags",paste("",formatC(p$pfl,format="d"),collapse=""))
@@ -11,8 +12,10 @@ function(par.file,par.obj) {
   writeLines(a,con)
 #  apply(ffl,1,paste,collapse=" ")
   write.table(p$ffl, con, quote=F, sep=" ", row.names=rep("",dim(p$ffl)[1]),col.names=F,append=T)
-  writeLines("# tag flags",con)
-  write.table(p$tfl, con, quote=F, sep=" ", row.names=rep("",dim(p$tfl)[1]),col.names=F,append=T)
+  if("tfl" %in% names(p)){
+    writeLines("# tag flags",con)
+    write.table(p$tfl, con, quote=F, sep=" ", row.names=rep("",dim(p$tfl)[1]),col.names=F,append=T)
+  }
 # Check for existence of new tag reporting rate parameters
   if("trpfl" %in% names(p)){
     writeLines("# tag fish rep",con)

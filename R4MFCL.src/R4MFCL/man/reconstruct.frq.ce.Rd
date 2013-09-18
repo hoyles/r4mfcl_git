@@ -6,6 +6,8 @@ reconstruct.frq.ce.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Replaces the nominal effort in the original .FRQ file with stanadrdised effort based on a CPUE index. Not generalised - specific to bigeye 2008. 
+
 }
 \usage{
 reconstruct.frq.ce(CPUE.file = "X:/yft/2009/Data Preparation/CPUE/indices/yft_JPstd_R1.txt", data = out.data, fishery = 1)
@@ -37,6 +39,7 @@ reconstruct.frq.ce(CPUE.file = "X:/yft/2009/Data Preparation/CPUE/indices/yft_JP
 }
 \author{
 %%  ~~who you are~~
+Shelton Harley
 }
 \note{
 %%  ~~further notes~~

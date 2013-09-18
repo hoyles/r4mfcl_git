@@ -31,6 +31,7 @@ plot.mfcl.betyft09(lims = c(100, 260, -45, 45))
 }
 \author{
 %%  ~~who you are~~
+Adam Langley and Simon Hoyle
 }
 \note{
 %%  ~~further notes~~

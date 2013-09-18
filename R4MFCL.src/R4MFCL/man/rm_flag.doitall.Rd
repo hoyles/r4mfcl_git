@@ -6,6 +6,7 @@ rm_flag.doitall.Rd
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Removes all occurrences of changes to a specified flag from the doitall.
 }
 \usage{
 rm_flag.doitall(a, flagtype, flag, value)
@@ -40,6 +41,7 @@ rm_flag.doitall(a, flagtype, flag, value)
 }
 \author{
 %%  ~~who you are~~
+Simon Hoyle
 }
 \note{
 %%  ~~further notes~~
