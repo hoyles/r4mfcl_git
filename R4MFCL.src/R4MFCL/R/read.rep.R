@@ -160,9 +160,9 @@ read.rep <- function(rep.file) {
   pos1 <- grep("# Total biomass in absence of fishing",a) ;
   if(length(pos1)>0) {
     TotalBiomass.nofish <- t(sapply(a[(pos1+1):(pos1+nTimes)],datfromstr,USE.NAMES =F))
-    pos1 <- grep("# Adult biomass in absence of fishing",a) ; if(length(pos1)>0) AdultBiomass.nofish <- t(sapply(a[(pos1+1):(pos1+nTimes)],datfromstr,USE.NAMES =F)) else AdultBiomass.nofish <- NA
-    pos1 <- grep("# Exploitable populations in absence of fishing",a) ; if(length(pos1)>0) ExplBiomass.nofish <- t(sapply(a[(pos1+1):(pos1+nTimes)],datfromstr,USE.NAMES =F)) else ExplBiomass.nofish <- NA
-    pos1 <- grep("# Predicted catch for interaction analysis",a) ;
+    pos1 <- grep("# Adult biomass in absence of fishing",a)[1] ; if(length(pos1)>0) AdultBiomass.nofish <- t(sapply(a[(pos1+1):(pos1+nTimes)],datfromstr,USE.NAMES =F)) else AdultBiomass.nofish <- NA
+    pos1 <- grep("# Exploitable populations in absence of fishing",a)[1] ; if(length(pos1)>0) ExplBiomass.nofish <- t(sapply(a[(pos1+1):(pos1+nTimes)],datfromstr,USE.NAMES =F)) else ExplBiomass.nofish <- NA
+    pos1 <- grep("# Predicted catch for interaction analysis",a)[1] ;
     if(length(pos1)>0) {
       PredCatch.interact <- matrix(nrow=nFisheries,ncol=max(nRlz.fsh)) ;
       for(i in 1:nFisheries) { PredCatch.interact[i,1:nRlz.fsh[i]] <- datfromstr(a[pos1+i]) } }
