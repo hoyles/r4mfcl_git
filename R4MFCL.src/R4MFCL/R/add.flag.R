@@ -11,3 +11,6 @@ function(doitall,flagtype,flagnum,newval,phase) {
     }
   return(doitall)
 }
+
+#add.flag(readLines('C:\\R4MFCL\\test_data\\skj_ref_case\\doitall.skj"), 1, 20, 2, 11)
+
