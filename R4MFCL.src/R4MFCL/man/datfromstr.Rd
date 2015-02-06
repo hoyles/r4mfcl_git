@@ -5,7 +5,7 @@
 datfromstr.Rd
 }
 \description{
-%%  ~~ A concise (1-5 lines) description of what the function does. ~~
+converts a character string of numbers to a numeric vector
 }
 \usage{
 datfromstr(datstring)
@@ -13,7 +13,7 @@ datfromstr(datstring)
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{datstring}{
-%%     ~~Describe \code{datstring} here~~
+A character string of numbers seperated by whitespace
 }
 }
 \details{
@@ -30,11 +30,11 @@ datfromstr(datstring)
 %% ~put references to the literature/web site here ~
 }
 \author{
-Pierre Kleiber
-%%  ~~who you are~~
+Shelton Harley
+
 }
 \note{
-%%  ~~further notes~~
+First character of string must be a space - see examples below
 }
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
@@ -43,9 +43,11 @@ Pierre Kleiber
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
+
+class(datfromstr("2 4 5 66 786 2 3 1"))
+
+el(datfromstr("2 4 5 66 786 2 3 1"),1)
+el(datfromstr(" 2 4 5 66 786 2 3 1"),1)
 
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the

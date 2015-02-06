@@ -1,6 +1,6 @@
-get.tag.structure <- function(tagrepfile="temporary_tag_report",tagfile="skj.tag",
+get.tag.structure <- function(frqfile=basefrq,tagrepfile="temporary_tag_report",tagfile="skj.tag",
                 year1=1972) {           
-##==========================================================================
+##========================================================
 ##  Read tag data from temporary_tag_reportt into an R object consisting
 ## of two lists, one for predicted and one for observed recaps at
 ## age. Within each list there is a series of sub-lists, each containing
@@ -25,7 +25,25 @@ get.tag.structure <- function(tagrepfile="temporary_tag_report",tagfile="skj.tag
 ##    t2rec: num  time at large
 ##    orec : num  sum of observed recoveries (sum of corresponding sub-list)
 ##    prec : num  sum of predicted recoveries (sum of corresponding sub-list)
-##==========================================================================
+##========================================================
+
+getnums <- function(string){
+##========================================================
+## Extracts numbers out of mixed numbers and other text
+##========================================================
+  tt <- as.numeric(unlist(strsplit(string,"[^0-9.]+")))
+  tt <- tt[!is.na(tt)]
+  tt
+}
+
+scanText <- function (string, what = character(0), ...) 
+{
+    tc <- textConnection(string)
+    result <- as.numeric(scan(tc, what = what, quiet = TRUE, ...))
+    close(tc)
+    return(result)
+}
+
   ## get text of tag report
   aa <- readLines(tagrepfile)
   
@@ -47,6 +65,9 @@ get.tag.structure <- function(tagrepfile="temporary_tag_report",tagfile="skj.tag
   rpp[is.na(rpp)] <- max(rpp,na.rm=T)+1
 
   ##  make data frame of group and region for each cap record
+#  grp <- getnums(aa[grp.pt])
+#  reg <- getnums(aa[reg.pt])  
+  
   grp <- numeric(length(grp.pt))
   reg <- numeric(length(reg.pt))
   for(i in 1:length(grp.pt)) grp[i] <- getnums(aa[grp.pt[i]])
@@ -54,9 +75,14 @@ get.tag.structure <- function(tagrepfile="temporary_tag_report",tagfile="skj.tag
   xx <- data.frame(grp=grp[gpp],creg=reg[rpp])
 
   ## add fishery cap yr and cap month
+#  yy <- matrix(getnums(aa[cap.pt]), ncol=3, byrow=T)
+#  colnames(yy) <- c('fyr','cyr','cmo')
+
+  
   yy <- matrix(nrow=nrow(xx),ncol=3)
-  colnames(yy) <- c("fry","cyr","cmo")
-  for(i in 1:nrow(yy)) yy[i,] <- getnums(aa[cap.pt[i]])
+  colnames(yy) <- c("fry","cyr","cmo")#  
+  for(i in 1:nrow(yy)) 
+    yy[i,] <- getnums(aa[cap.pt[i]])
   xx <- cbind(xx,yy)
   xx$cyr <- xx$cyr+year1-1
   
@@ -78,6 +104,10 @@ get.tag.structure <- function(tagrepfile="temporary_tag_report",tagfile="skj.tag
   captxt <- matrix(aa[tt],ncol=2,byrow=TRUE)
   
   ##  make lists of pred and obs recap-by-size vectors 
+  
+#  predtag <- lapply(as.list(captxt[,1]), scanText)
+#  obstag  <- lapply(as.list(captxt[,2]), scanText)
+  
   predtag <- obstag <- list()
   for(i in 1:nrow(captxt)) {
     predtag[[i]] <- as.numeric(scanText(captxt[i,1]))
@@ -90,3 +120,8 @@ get.tag.structure <- function(tagrepfile="temporary_tag_report",tagfile="skj.tag
 
   list(auxdat=xx,predtag=predtag,obstag=obstag)
 }
+
+#setwd('C:/temp/MFCL plotting stuff/YFT Assessment run/')
+#kk <- get.tag.structure('temporary_tag_report', 'yft.tag', year1=1952)
+
+
