@@ -35,7 +35,7 @@ Returns a data.frame of flags and flag descriptions
 %% ~put references to the literature/web site here ~
 }
 \author{
-%%  ~~who you are~~
+
 Robert Scott
 }
 \note{
