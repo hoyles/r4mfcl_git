@@ -28,5 +28,5 @@ plot.tag.recaps <- function(tagdat, parfile){
 }
 
 
-plot.tag.diags2(kk, yftpar)
+#plot.tag.diags2(kk, yftpar)
 
