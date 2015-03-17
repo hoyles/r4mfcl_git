@@ -26,7 +26,6 @@ subCtrl <- function(universe='vanilla', executable='file path', fileTrans='YES',
        requirements <- "(OpSys == 'WINDOWS') && \\
                         (Machine != 'SPC112083.noumea.spc.local') && \\
                         (Machine != 'nouofpscalc01.corp.spc.local') && \\
-                        (Machine != 'penguin.spc.local') && \\
                         (Memory > 15000)"
      
      if(requirements=="LINUX")
